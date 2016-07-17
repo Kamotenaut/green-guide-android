@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_lpep"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="LPEP Sched" />
+        <item
+            android:id="@+id/nav_arrow_express"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Arrow Express" />
+        <item
+            android:id="@+id/nav_pledge"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Lasallian Pledge" />
+        <item
+            android:id="@+id/nav_values"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Lasallian Values" />
+
+            <item
+                android:id="@+id/nav_hymn"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Hymn and Cheers" />
+            <item
+                android:id="@+id/nav_usg"
+                android:icon="@drawable/ic_menu_send"
+                android:title="USG" />
+        <item
+            android:id="@+id/nav_admin"
+            android:icon="@drawable/ic_menu_send"
+            android:title="Admin Offices" />
+        <item
+            android:id="@+id/nav_services"
+            android:icon="@drawable/ic_menu_send"
+            android:title="University Services" />
+    </group>
+
+
+</menu>
