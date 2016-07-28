@@ -1,9 +1,11 @@
 package com.greenguide.dlsu.greenguide;
 
+import android.app.Fragment;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.v4.app.FragmentManager;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -17,12 +19,18 @@ import android.view.MenuItem;
 public class Navigation extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
+    private android.app.FragmentManager fragmentManager;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_navigation);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        fragmentManager = getFragmentManager();
+        fragmentManager.beginTransaction().replace(R.id.content_frame, new HymnsAndCheers()).commit();
+
         setTitle("");
 
         Intent i = new Intent(getBaseContext(),DeanMessage.class);
@@ -53,12 +61,13 @@ public class Navigation extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
+        Fragment fragment = null;
         if (id == R.id.nav_admin) {
             // Handle the camera action
         } else if (id == R.id.nav_arrow_express) {
 
         } else if (id == R.id.nav_hymn) {
-
+            fragmentManager.beginTransaction().replace(R.id.content_frame, new HymnsAndCheers()).commit();
         } else if (id == R.id.nav_lpep) {
 
         } else if (id == R.id.nav_pledge) {
@@ -72,7 +81,6 @@ public class Navigation extends AppCompatActivity
         } else if (id == R.id.nav_view) {
 
         }
-
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
