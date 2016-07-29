@@ -11,17 +11,15 @@ import com.greenguide.dlsu.greenguide.data.model.Officers;
 import com.greenguide.dlsu.greenguide.data.model.SongsAndPrayers;
 import com.greenguide.dlsu.greenguide.data.model.Spot;
 import com.greenguide.dlsu.greenguide.data.model.Tips;
-import com.greenguide.dlsu.greenguide.data.model.USGOfficers;
-import com.greenguide.dlsu.greenguide.data.model.WifiSpot;
 
+import com.greenguide.dlsu.greenguide.data.model.Unit;
 import com.greenguide.dlsu.greenguide.data.query.ActivityQuery;
 import com.greenguide.dlsu.greenguide.data.query.DressCodeQuery;
 import com.greenguide.dlsu.greenguide.data.query.OfficersQuery;
 import com.greenguide.dlsu.greenguide.data.query.SongsAndPrayersQuery;
 import com.greenguide.dlsu.greenguide.data.query.SpotQuery;
 import com.greenguide.dlsu.greenguide.data.query.TipsQuery;
-import com.greenguide.dlsu.greenguide.data.query.USGOfficersQuery;
-import com.greenguide.dlsu.greenguide.data.query.WifiSpotQuery;
+import com.greenguide.dlsu.greenguide.data.query.UnitQuery;
 
 public class DatabaseHelper extends SQLiteOpenHelper{
 
@@ -40,8 +38,7 @@ public class DatabaseHelper extends SQLiteOpenHelper{
         db.execSQL(SongsAndPrayersQuery.SQL_CREATE_ENTRIES);
         db.execSQL(SpotQuery.SQL_CREATE_ENTRIES);
         db.execSQL(TipsQuery.SQL_CREATE_ENTRIES);
-        db.execSQL(USGOfficersQuery.SQL_CREATE_ENTRIES);
-        db.execSQL(WifiSpotQuery.SQL_CREATE_ENTRIES);
+        db.execSQL(UnitQuery.SQL_CREATE_ENTRIES);
     }
 
     @Override
@@ -52,8 +49,7 @@ public class DatabaseHelper extends SQLiteOpenHelper{
         db.execSQL(SongsAndPrayersQuery.SQL_DELETE_ENTRIES);
         db.execSQL(SpotQuery.SQL_DELETE_ENTRIES);
         db.execSQL(TipsQuery.SQL_DELETE_ENTRIES);
-        db.execSQL(USGOfficersQuery.SQL_DELETE_ENTRIES);
-        db.execSQL(WifiSpotQuery.SQL_DELETE_ENTRIES);
+        db.execSQL(UnitQuery.SQL_DELETE_ENTRIES);
         onCreate(db);
     }
 
@@ -87,15 +83,9 @@ public class DatabaseHelper extends SQLiteOpenHelper{
         db.close();
     }
 
-    public void insertUSGOfficers(USGOfficers usgofficers){
+    public void insertUnits(Unit unit){
         SQLiteDatabase db = getWritableDatabase();
-        db.insert(USGOfficers.TABLE_NAME, null, USGOfficersQuery.insertUSGOfficers(usgofficers));
-        db.close();
-    }
-
-    public void insertWifiSpot(WifiSpot wifispot){
-        SQLiteDatabase db = getWritableDatabase();
-        db.insert(WifiSpot.TABLE_NAME, null, WifiSpotQuery.insertWifiSpot(wifispot));
+        db.insert(Unit.TABLE_NAME, null, UnitQuery.insertUnit(unit));
         db.close();
     }
 
@@ -165,25 +155,15 @@ public class DatabaseHelper extends SQLiteOpenHelper{
         return tips;
     }
 
-    public USGOfficers queryUSGOfficers(int id){
+    public Unit queryUnit(int id){
         SQLiteDatabase db = getReadableDatabase();
-        Cursor cursor = db.query(USGOfficers.TABLE_NAME, null,
-                USGOfficers.COLUMN_NAME_ID + " =? ", new String[]{String.valueOf(id)},
-                null, null, null);
-        USGOfficers usgofficers = USGOfficersQuery.queryUSGOfficers(cursor);
-        cursor.close();
-        db.close();
-        return usgofficers;
-    }
+        Cursor cursor = db.query(Unit.TABLE_NAME , null,
+                Unit.COLUMN_NAME_ID + " =? ", new String[]{String.valueOf(id)},
+                null, null, null) ;
 
-    public WifiSpot queryWifiSpot(int id){
-        SQLiteDatabase db = getReadableDatabase();
-        Cursor cursor = db.query(WifiSpot.TABLE_NAME, null,
-                WifiSpot.COLUMN_NAME_ID + " =? ", new String[]{String.valueOf(id)},
-                null, null, null);
-        WifiSpot wifispot = WifiSpotQuery.queryWifiSpot(cursor);
+        Unit unit = UnitQuery.queryUnit(cursor);
         cursor.close();
         db.close();
-        return wifispot;
+        return unit;
     }
 }

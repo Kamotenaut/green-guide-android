@@ -1,6 +1,8 @@
 package com.greenguide.dlsu.greenguide;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Typeface;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -23,6 +25,12 @@ public class DeanMessage extends AppCompatActivity {
         setContentView(R.layout.activity_dean_message);
 
         String fontPath = "fonts/Montserrat-Regular.ttf";
+
+        SharedPreferences sharedPreferences = getSharedPreferences(Navigation.DEAN_PREF, Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+
+        editor.putString(Navigation.KEY_MESSAGE_IS_READ, "true");
+        editor.commit();
 
         deantxt = (TextView) findViewById(R.id.deantxt);
         messagetxt = (TextView) findViewById(R.id.messagetxt);

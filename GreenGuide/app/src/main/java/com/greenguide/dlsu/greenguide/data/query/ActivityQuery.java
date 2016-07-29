@@ -17,7 +17,6 @@ public class ActivityQuery {
             Activity.COLUMN_NAME_DAY + TEXT_TYPE + COMMA_SEP +
             Activity.COLUMN_NAME_START_TIME + TEXT_TYPE + COMMA_SEP +
             Activity.COLUMN_NAME_END_TIME + TEXT_TYPE + COMMA_SEP +
-            Activity.COLUMN_NAME_TYPE + TEXT_TYPE + COMMA_SEP +
             " )";
 
     public static final String SQL_DELETE_ENTRIES =
@@ -30,7 +29,6 @@ public class ActivityQuery {
         values.put(Activity.COLUMN_NAME_DAY, activity.getDay());
         values.put(Activity.COLUMN_NAME_START_TIME, activity.getStart_time());
         values.put(Activity.COLUMN_NAME_END_TIME, activity.getEnd_time());
-        values.put(Activity.COLUMN_NAME_TYPE, activity.getType());
         return values;
     }
 
@@ -43,7 +41,6 @@ public class ActivityQuery {
             activity.setDay(cursor.getString(cursor.getColumnIndex(Activity.COLUMN_NAME_DAY)));
             activity.setStart_time(cursor.getString(cursor.getColumnIndex(Activity.COLUMN_NAME_START_TIME)));
             activity.setEnd_time(cursor.getString(cursor.getColumnIndex(Activity.COLUMN_NAME_END_TIME)));
-            activity.setType(cursor.getString(cursor.getColumnIndex(Activity.COLUMN_NAME_TYPE)));
         }
 
         return activity;

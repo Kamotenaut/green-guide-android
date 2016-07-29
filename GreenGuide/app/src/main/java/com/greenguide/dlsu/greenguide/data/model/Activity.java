@@ -8,7 +8,6 @@ public class Activity {
     public static final String COLUMN_NAME_START_TIME = "start_time";
     public static final String COLUMN_NAME_END_TIME = "end_time";
     public static final String COLUMN_NAME_NAME = "name";
-    public static final String COLUMN_NAME_TYPE = "type";
 
     private int id;
     private String name;
@@ -59,11 +58,4 @@ public class Activity {
         this.end_time = end_time;
     }
 
-    public String getType() {
-        return type;
-    }
-
-    public void setType(String type) {
-        this.type = type;
-    }
 }

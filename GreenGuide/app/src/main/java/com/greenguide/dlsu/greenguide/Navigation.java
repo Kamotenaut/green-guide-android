@@ -1,8 +1,11 @@
 package com.greenguide.dlsu.greenguide;
 
 import android.app.Fragment;
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v4.app.FragmentManager;
@@ -20,6 +23,8 @@ public class Navigation extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
     private android.app.FragmentManager fragmentManager;
+    final static String KEY_MESSAGE_IS_READ = "message_is_read";
+    final static String DEAN_PREF = "dean_message_pref";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,8 +38,14 @@ public class Navigation extends AppCompatActivity
 
         setTitle("");
 
-        Intent i = new Intent(getBaseContext(),DeanMessage.class);
-        startActivity(i);
+        SharedPreferences sharedPreferences = getSharedPreferences(DEAN_PREF, Context.MODE_PRIVATE);
+        String message = sharedPreferences.getString(KEY_MESSAGE_IS_READ, null);
+
+        if( message == null ){
+            Intent i = new Intent(getBaseContext(),DeanMessage.class);
+            startActivity(i);
+        }
+
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);

@@ -7,11 +7,13 @@ public class SongsAndPrayers {
     public static final String COLUMN_NAME_NAME = "name";
     public static final String COLUMN_NAME_DESC = "description";
     public static final String COLUMN_NAME_TYPE = "type";
+    public static final String COLUMN_NAME_URL = "file_url";
 
     private int id;
     private String name;
     private String description;
     private String type;
+    private String file_url;
 
     public SongsAndPrayers(){}
 
@@ -45,5 +47,13 @@ public class SongsAndPrayers {
 
     public void setType(String type) {
         this.type = type;
+    }
+
+    public String getFile_url() {
+        return file_url;
+    }
+
+    public void setFile_url(String file_url) {
+        this.file_url = file_url;
     }
 }

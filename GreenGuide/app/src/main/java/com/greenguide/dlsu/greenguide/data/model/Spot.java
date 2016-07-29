@@ -7,6 +7,8 @@ public class Spot {
     public static final String COLUMN_NAME_NAME = "name";
     public static final String COLUMN_NAME_DESC = "description";
     public static final String COLUMN_NAME_LOCATION = "location";
+    public static final String COLUMN_NAME_LAT = "latitude";
+    public static final String COLUMN_NAME_LONG = "longitude";
     public static final String COLUMN_NAME_TYPE = "type";
     public static final String COLUMN_NAME_IMAGE_URL = "image_url";
 
@@ -14,6 +16,8 @@ public class Spot {
     private String name;
     private String description;
     private String location;
+    private double latitude;
+    private double longitude;
     private String type;
     private String image_url;
 
@@ -49,6 +53,22 @@ public class Spot {
 
     public void setLocation(String location) {
         this.location = location;
+    }
+
+    public double getLatitude() {
+        return latitude;
+    }
+
+    public void setLatitude(double latitude) {
+        this.latitude = latitude;
+    }
+
+    public double getLongitude() {
+        return longitude;
+    }
+
+    public void setLongitude(double longitude) {
+        this.longitude = longitude;
     }
 
     public String getType() {

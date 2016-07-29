@@ -16,6 +16,7 @@ public class SongsAndPrayersQuery {
             SongsAndPrayers.COLUMN_NAME_NAME + TEXT_TYPE + COMMA_SEP +
             SongsAndPrayers.COLUMN_NAME_DESC + TEXT_TYPE + COMMA_SEP +
             SongsAndPrayers.COLUMN_NAME_TYPE + TEXT_TYPE + COMMA_SEP +
+            SongsAndPrayers.COLUMN_NAME_URL + TEXT_TYPE + COMMA_SEP +
             " )";
 
     public static final String SQL_DELETE_ENTRIES =
@@ -27,6 +28,7 @@ public class SongsAndPrayersQuery {
         values.put(SongsAndPrayers.COLUMN_NAME_NAME, songsandprayers.getName());
         values.put(SongsAndPrayers.COLUMN_NAME_DESC, songsandprayers.getDescription());
         values.put(SongsAndPrayers.COLUMN_NAME_TYPE, songsandprayers.getType());
+        values.put(SongsAndPrayers.COLUMN_NAME_URL, songsandprayers.getFile_url());
         return values;
     }
 
@@ -38,6 +40,7 @@ public class SongsAndPrayersQuery {
             songsAndPrayers.setName(cursor.getString(cursor.getColumnIndex(SongsAndPrayers.COLUMN_NAME_NAME)));
             songsAndPrayers.setDescription(cursor.getString(cursor.getColumnIndex(SongsAndPrayers.COLUMN_NAME_DESC)));
             songsAndPrayers.setType(cursor.getString(cursor.getColumnIndex(SongsAndPrayers.COLUMN_NAME_TYPE)));
+            songsAndPrayers.setFile_url(cursor.getString(cursor.getColumnIndex(SongsAndPrayers.COLUMN_NAME_URL)));
         }
 
         return songsAndPrayers;

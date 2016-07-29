@@ -7,12 +7,14 @@ public class Officers {
     public static final String COLUMN_NAME_NAME = "name";
     public static final String COLUMN_NAME_POSITION = "position";
     public static final String COLUMN_NAME_OFFICE = "office";
+    public static final String COLUMN_NAME_TYPE = "type";
     public static final String COLUMN_NAME_IMAGE_URL = "image_url";
 
     private int id;
     private String name;
     private String position;
     private String office;
+    private String type;
     private String image_url;
 
     public Officers(){}
@@ -47,6 +49,14 @@ public class Officers {
 
     public void setOffice(String office) {
         this.office = office;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
     }
 
     public String getImage_url() {
