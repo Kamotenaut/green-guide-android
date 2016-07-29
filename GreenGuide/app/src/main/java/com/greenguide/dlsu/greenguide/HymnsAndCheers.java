@@ -4,14 +4,13 @@ import android.content.Context;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
-import android.widget.ListView;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 
 
@@ -25,6 +24,9 @@ import java.util.List;
  */
 public class HymnsAndCheers extends android.app.Fragment{
 
+    RecyclerView recycler;
+    CommonAdapter adapter;
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,47 +37,20 @@ public class HymnsAndCheers extends android.app.Fragment{
                              Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.fragment_hymns_and_cheers, container, false);
 
-        ListView list = (ListView) v.findViewById(R.id.list);
-
-
-        final ArrayList<String> arrlist = new ArrayList<String>();
-        arrlist.add("Hymns");
-        arrlist.add("Cheers");
-        arrlist.add("Pledge");
-
-        final StableArrayAdapter adapter = new StableArrayAdapter(v.getContext(),
-                android.R.layout.simple_list_item_1, arrlist);
-
-        list.setAdapter(adapter);
+        List list = new ArrayList();
+        list.add("Lasallian pledge");
+        list.add("Lasallian Hymn");
+        adapter = new CommonAdapter(list);
+        recycler = (RecyclerView) v.findViewById(R.id.hymncheerlist);
+        recycler.setHasFixedSize(true);
+        LinearLayoutManager llm = new LinearLayoutManager(v.getContext());
+        recycler.setLayoutManager(llm);
+        llm.setOrientation(LinearLayoutManager.VERTICAL);
+        recycler.setAdapter(adapter);
 
         return v;
     }
 
-
-    private class StableArrayAdapter extends ArrayAdapter<String> {
-
-        HashMap<String, Integer> mIdMap = new HashMap<String, Integer>();
-
-        public StableArrayAdapter(Context context, int textViewResourceId,
-                                  List<String> objects) {
-            super(context, textViewResourceId, objects);
-            for (int i = 0; i < objects.size(); ++i) {
-                mIdMap.put(objects.get(i), i);
-            }
-        }
-
-        @Override
-        public long getItemId(int position) {
-            String item = getItem(position);
-            return mIdMap.get(item);
-        }
-
-        @Override
-        public boolean hasStableIds() {
-            return true;
-        }
-
-    }
 
 
 

@@ -29,7 +29,7 @@ public class Navigation extends AppCompatActivity
         setSupportActionBar(toolbar);
 
         fragmentManager = getFragmentManager();
-        fragmentManager.beginTransaction().replace(R.id.content_frame, new HymnsAndCheers()).commit();
+        fragmentManager.beginTransaction().replace(R.id.content_frame, new Home()).commit();
 
         setTitle("");
 
@@ -62,7 +62,9 @@ public class Navigation extends AppCompatActivity
         int id = item.getItemId();
 
         Fragment fragment = null;
-        if (id == R.id.nav_admin) {
+        if (id == R.id.nav_home) {
+            fragmentManager.beginTransaction().replace(R.id.content_frame, new Home()).commit();
+        } else if (id == R.id.nav_admin) {
             // Handle the camera action
         } else if (id == R.id.nav_arrow_express) {
 

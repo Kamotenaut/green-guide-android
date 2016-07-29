@@ -26,7 +26,6 @@
                 android:layout_width="150dp"
                 android:layout_height="50dp"
                 android:layout_marginTop="20dp"
-                android:src="@drawable/banner"
                 android:layout_centerHorizontal="true"
                 />
         </RelativeLayout>
