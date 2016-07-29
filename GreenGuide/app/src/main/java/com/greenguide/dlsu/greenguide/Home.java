@@ -7,6 +7,7 @@ import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -30,13 +31,11 @@ public class Home extends android.app.Fragment{
             View v = inflater.inflate(R.layout.fragment_hymns_and_cheers, container, false);
 
             List list = new ArrayList();
-            list.add("Lasallian pledge");
+            list.add("LPEP Schedule");
+            list.add("Lasallian Pledge");
             list.add("Lasallian Hymn");
-
-            list.add("Lasallian pledge");
-            list.add("Lasallian Hymn");
-            list.add("Lasallian pledge");
-            list.add("Lasallian Hymn");
+            list.add("Lasallian Cheers");
+            list.add("Tips");
             adapter = new CommonAdapter(list);
             recycler = (RecyclerView) v.findViewById(R.id.hymncheerlist);
             recycler.setHasFixedSize(true);
@@ -47,9 +46,6 @@ public class Home extends android.app.Fragment{
 
             return v;
         }
-
-
-
 
 
         /**

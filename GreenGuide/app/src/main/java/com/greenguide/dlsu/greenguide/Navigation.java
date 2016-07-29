@@ -64,23 +64,27 @@ public class Navigation extends AppCompatActivity
         Fragment fragment = null;
         if (id == R.id.nav_home) {
             fragmentManager.beginTransaction().replace(R.id.content_frame, new Home()).commit();
-        } else if (id == R.id.nav_admin) {
-            // Handle the camera action
-        } else if (id == R.id.nav_arrow_express) {
-
-        } else if (id == R.id.nav_hymn) {
-            fragmentManager.beginTransaction().replace(R.id.content_frame, new HymnsAndCheers()).commit();
         } else if (id == R.id.nav_lpep) {
+            fragmentManager.beginTransaction().replace(R.id.content_frame, new Lpep()).commit();
+        } else if (id == R.id.nav_hymncheers) {
+            fragmentManager.beginTransaction().replace(R.id.content_frame, new HymnsAndCheers()).commit();
+        } else if (id == R.id.nav_valuesprayers) {
 
-        } else if (id == R.id.nav_pledge) {
+        } else if (id == R.id.nav_USG) {
+
+        } else if (id == R.id.nav_admin) {
+
+        } else if (id == R.id.nav_cso) {
+
+        } else if (id == R.id.nav_dress) {
+
+        } else if (id == R.id.nav_around) {
 
         } else if (id == R.id.nav_services) {
 
-        } else if (id == R.id.nav_usg) {
+        } else if (id == R.id.nav_lspo) {
 
-        } else if (id == R.id.nav_values) {
-
-        } else if (id == R.id.nav_view) {
+        } else if (id == R.id.nav_about) {
 
         }
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

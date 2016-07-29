@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    >
 
     <group android:checkableBehavior="single">
         <item
@@ -9,36 +10,48 @@
         <item
             android:id="@+id/nav_lpep"
             android:icon="@drawable/ic_menu_camera"
-            android:title="LPEP Sched" />
+            android:title="LPEP" />
         <item
-            android:id="@+id/nav_arrow_express"
+            android:id="@+id/nav_hymncheers"
             android:icon="@drawable/ic_menu_gallery"
-            android:title="Arrow Express" />
+            android:title="Hymn and Cheers" />
         <item
-            android:id="@+id/nav_pledge"
+            android:id="@+id/nav_valuesprayers"
             android:icon="@drawable/ic_menu_slideshow"
-            android:title="Lasallian Pledge" />
+            android:title="Values and Prayers" />
         <item
-            android:id="@+id/nav_values"
+            android:id="@+id/nav_USG"
             android:icon="@drawable/ic_menu_manage"
-            android:title="Lasallian Values" />
+            android:title="USG" />
 
             <item
-                android:id="@+id/nav_hymn"
+                android:id="@+id/nav_admin"
                 android:icon="@drawable/ic_menu_share"
-                android:title="Hymn and Cheers" />
+                android:title="Admin Offices" />
             <item
-                android:id="@+id/nav_usg"
+                android:id="@+id/nav_cso"
                 android:icon="@drawable/ic_menu_send"
-                android:title="USG" />
+                android:title="CSO" />
         <item
-            android:id="@+id/nav_admin"
+            android:id="@+id/nav_dress"
             android:icon="@drawable/ic_menu_send"
-            android:title="Admin Offices" />
+            android:title="Dress Code" />
+        <item
+            android:id="@+id/nav_around"
+            android:icon="@drawable/ic_menu_send"
+            android:title="Around DLSU" />
         <item
             android:id="@+id/nav_services"
             android:icon="@drawable/ic_menu_send"
-            android:title="University Services" />
+            android:title="Campus Services" />
+        <item
+            android:id="@+id/nav_lspo"
+            android:icon="@drawable/ic_menu_send"
+            android:title="LSPO" />
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/ic_menu_send"
+            android:title="About" />
     </group>
 
 

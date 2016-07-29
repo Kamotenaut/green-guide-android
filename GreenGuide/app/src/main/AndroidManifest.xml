@@ -22,7 +22,10 @@
             android:name=".Navigation"
             android:label="@string/title_activity_navigation"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".Home"></activity>
+        <activity android:name=".Home" />
+        <activity android:name=".LasallianHymn" />
+        <activity android:name=".LasallianPledge" />
+        <activity android:name=".LasallianCheers"></activity>
     </application>
 
 </manifest>
