@@ -21,19 +21,6 @@ public class TipsQuery {
     public static final String SQL_DELETE_ENTRIES =
             "DROP TABLE IF EXISTS " + Tips.TABLE_NAME;
 
-    public static final String SQL_INSERT_ENTRIES =
-            "INSERT INTO " + Tips.TABLE_NAME + "(" + Tips.COLUMN_NAME_DESC + ") VALUES " +
-                "('Always visibly wear your ID whenever you’re inside the campus.')" + COMMA_SEP +
-                    "('You don’t always have to buy a new book, you can borrow from the Library or avail of the Pahiram Libro service of the USG.')" + COMMA_SEP +
-                    "('You can also buy second hand books from the Buy Back Books service of DLSU SCOOP.')" + COMMA_SEP +
-                    "('Familiarize yourself with the different policies of the school so that you can avoid having any offenses.')" + COMMA_SEP +
-                    "('“H” in your EAF mean Huwebes/ Thursday.')" + COMMA_SEP +
-                    "('Maximize our computer laboratories and libraries.')" + COMMA_SEP +
-                    "('For your classes, always make sure that you give leeway for elevator traffic in Andrew Building.')" + COMMA_SEP +
-                    "('Try the different food served by student entrepreneurs in Animo BIZ in the Taft Campus or The Entrep Hub in STC.')" + COMMA_SEP +
-                    "('Join student organizations, it’s a great way for your to meet new people.')" + COMMA_SEP +
-                    "('As you start off college, try to get really good grades so that you can become a Dean’s Lister.')";
-
     public static void insertTips(SQLiteDatabase db){
         String[] tipList = new String[]{
             "Always visibly wear your ID whenever you’re inside the campus.",
@@ -56,7 +43,6 @@ public class TipsQuery {
 
     }
 
-
     public static Tips queryRandomTip(SQLiteDatabase db){
         Tips tips = new Tips();
         //Cursor cursor = sqLiteDatabase.query(tableName, tableColumns, whereClause, whereArgs, groupBy, having, orderBy);
@@ -69,14 +55,4 @@ public class TipsQuery {
         return tips;
     }
 
-    public static Tips queryTips(Cursor cursor) {
-        Tips tips = new Tips();
-
-        if( cursor.moveToFirst() ){
-            tips.setId(cursor.getInt(cursor.getColumnIndex(Tips.COLUMN_NAME_ID)));
-            tips.setDescription(cursor.getString(cursor.getColumnIndex(Tips.COLUMN_NAME_DESC)));
-        }
-
-        return tips;
-    }
 }
