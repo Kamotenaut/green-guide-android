@@ -23,8 +23,17 @@ import com.greenguide.dlsu.greenguide.data.query.UnitQuery;
 
 public class DatabaseHelper extends SQLiteOpenHelper{
 
-    public static final int VERSION = 0;
+    public static final int VERSION = 1;
     public static final String SCHEMA = "greenguide";
+
+    private static DatabaseHelper instance = null;
+
+    public static DatabaseHelper getInstance (Context context){
+        if (instance == null){
+            instance = new DatabaseHelper(context.getApplicationContext());
+        }
+        return instance;
+    }
 
     public DatabaseHelper (Context context){
         super (context, SCHEMA, null, VERSION);
@@ -32,24 +41,25 @@ public class DatabaseHelper extends SQLiteOpenHelper{
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        db.execSQL(ActivityQuery.SQL_CREATE_ENTRIES);
-        db.execSQL(DressCodeQuery.SQL_CREATE_ENTRIES);
-        db.execSQL(OfficersQuery.SQL_CREATE_ENTRIES);
-        db.execSQL(SongsAndPrayersQuery.SQL_CREATE_ENTRIES);
-        db.execSQL(SpotQuery.SQL_CREATE_ENTRIES);
+//        db.execSQL(ActivityQuery.SQL_CREATE_ENTRIES);
+//        db.execSQL(DressCodeQuery.SQL_CREATE_ENTRIES);
+//        db.execSQL(OfficersQuery.SQL_CREATE_ENTRIES);
+//        db.execSQL(SongsAndPrayersQuery.SQL_CREATE_ENTRIES);
+//        db.execSQL(SpotQuery.SQL_CREATE_ENTRIES);
         db.execSQL(TipsQuery.SQL_CREATE_ENTRIES);
-        db.execSQL(UnitQuery.SQL_CREATE_ENTRIES);
+        TipsQuery.insertTips(db);
+//        db.execSQL(UnitQuery.SQL_CREATE_ENTRIES);
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-        db.execSQL(ActivityQuery.SQL_DELETE_ENTRIES);
-        db.execSQL(DressCodeQuery.SQL_DELETE_ENTRIES);
-        db.execSQL(OfficersQuery.SQL_DELETE_ENTRIES);
-        db.execSQL(SongsAndPrayersQuery.SQL_DELETE_ENTRIES);
-        db.execSQL(SpotQuery.SQL_DELETE_ENTRIES);
+//        db.execSQL(ActivityQuery.SQL_DELETE_ENTRIES);
+//        db.execSQL(DressCodeQuery.SQL_DELETE_ENTRIES);
+//        db.execSQL(OfficersQuery.SQL_DELETE_ENTRIES);
+//        db.execSQL(SongsAndPrayersQuery.SQL_DELETE_ENTRIES);
+//        db.execSQL(SpotQuery.SQL_DELETE_ENTRIES);
         db.execSQL(TipsQuery.SQL_DELETE_ENTRIES);
-        db.execSQL(UnitQuery.SQL_DELETE_ENTRIES);
+//        db.execSQL(UnitQuery.SQL_DELETE_ENTRIES);
         onCreate(db);
     }
 
@@ -74,12 +84,6 @@ public class DatabaseHelper extends SQLiteOpenHelper{
     public void insertSpot(Spot spot){
         SQLiteDatabase db = getWritableDatabase();
         db.insert(Spot.TABLE_NAME, null, SpotQuery.insertSpot(spot));
-        db.close();
-    }
-
-    public void insertTips(Tips tips){
-        SQLiteDatabase db = getWritableDatabase();
-        db.insert(Tips.TABLE_NAME, null, TipsQuery.insertTips(tips));
         db.close();
     }
 
@@ -144,13 +148,9 @@ public class DatabaseHelper extends SQLiteOpenHelper{
         return spot;
     }
 
-    public Tips queryTips(int id){
+    public Tips queryRandomTip(){
         SQLiteDatabase db = getReadableDatabase();
-        Cursor cursor = db.query(Tips.TABLE_NAME, null,
-                Tips.COLUMN_NAME_ID + " =? ", new String[]{String.valueOf(id)},
-                null, null, null);
-        Tips tips = TipsQuery.queryTips(cursor);
-        cursor.close();
+        Tips tips = TipsQuery.queryRandomTip(db);
         db.close();
         return tips;
     }

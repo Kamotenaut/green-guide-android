@@ -23,8 +23,6 @@ public class Navigation extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
     private android.app.FragmentManager fragmentManager;
-    final static String KEY_MESSAGE_IS_READ = "message_is_read";
-    final static String DEAN_PREF = "dean_message_pref";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,13 +36,8 @@ public class Navigation extends AppCompatActivity
 
         setTitle("");
 
-        SharedPreferences sharedPreferences = getSharedPreferences(DEAN_PREF, Context.MODE_PRIVATE);
-        String message = sharedPreferences.getString(KEY_MESSAGE_IS_READ, null);
-
-        if( message == null ){
-            Intent i = new Intent(getBaseContext(),DeanMessage.class);
-            startActivity(i);
-        }
+        Intent i = new Intent(getBaseContext(),DeanMessage.class);
+        startActivity(i);
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
