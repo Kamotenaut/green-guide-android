@@ -26,7 +26,22 @@
                 android:layout_width="150dp"
                 android:layout_height="50dp"
                 android:layout_marginTop="20dp"
+                android:src="@drawable/banner"
                 android:layout_centerHorizontal="true"
+                android:id="@+id/logo"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:text="Home"
+                android:textSize="20sp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/logo"
+                android:id="@+id/navtitle"
+                android:textColor="#fff"
+                android:textAllCaps="true"
                 />
         </RelativeLayout>
 

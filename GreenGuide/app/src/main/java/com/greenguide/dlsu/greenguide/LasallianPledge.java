@@ -3,27 +3,33 @@ package com.greenguide.dlsu.greenguide;
 import android.graphics.Typeface;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.widget.TextView;
 
 public class LasallianPledge extends AppCompatActivity {
+    private Toolbar toolbar;
     TextView title;
     TextView content;
+    TextView header;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_lasallian_pledge);
-        setTitle("Lasallian Hymn");
+        toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setTitle("");
+        setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         title = (TextView) findViewById(R.id.pledgetitle);
+        header = (TextView) findViewById(R.id.pledgeheader);
         content = (TextView) findViewById(R.id.pledgetxt);
         String fontPath = "fonts/Montserrat-Regular.ttf";
         Typeface tf = Typeface.createFromAsset(getAssets(), fontPath);
 
         title.setTypeface(tf);
         content.setTypeface(tf);
-
+        header.setTypeface(tf);
     }
 
     @Override

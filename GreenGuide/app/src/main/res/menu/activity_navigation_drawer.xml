@@ -5,7 +5,7 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_home"
-            android:icon="@drawable/ic_menu_send"
+            android:icon="@drawable/ic_home"
             android:title="Home" />
         <item
             android:id="@+id/nav_lpep"
@@ -15,10 +15,6 @@
             android:id="@+id/nav_hymncheers"
             android:icon="@drawable/ic_menu_gallery"
             android:title="Hymn and Cheers" />
-        <item
-            android:id="@+id/nav_valuesprayers"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="Values and Prayers" />
         <item
             android:id="@+id/nav_USG"
             android:icon="@drawable/ic_menu_manage"
@@ -33,12 +29,8 @@
                 android:icon="@drawable/ic_menu_send"
                 android:title="CSO" />
         <item
-            android:id="@+id/nav_dress"
-            android:icon="@drawable/ic_menu_send"
-            android:title="Dress Code" />
-        <item
             android:id="@+id/nav_around"
-            android:icon="@drawable/ic_menu_send"
+            android:icon="@drawable/ic_around"
             android:title="Around DLSU" />
         <item
             android:id="@+id/nav_services"
@@ -50,7 +42,7 @@
             android:title="LSPO" />
         <item
             android:id="@+id/nav_about"
-            android:icon="@drawable/ic_menu_send"
+            android:icon="@drawable/ic_about"
             android:title="About" />
     </group>
 

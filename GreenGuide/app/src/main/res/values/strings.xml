@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Green Guide</string>
+    <string name="app_name">DLSU Green Guide</string>
     <string name="title_activity_navigation_drawer">NavigationDrawer</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>

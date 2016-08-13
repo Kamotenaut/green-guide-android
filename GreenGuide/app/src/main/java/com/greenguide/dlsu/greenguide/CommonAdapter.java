@@ -61,6 +61,15 @@ public class CommonAdapter extends RecyclerView.Adapter<CommonAdapter.CommonView
                         case "Lasallian Hymn":i = new Intent(v.getContext(),LasallianHymn.class); v.getContext().startActivity(i);break;
                         case "Lasallian Pledge":i = new Intent(v.getContext(),LasallianPledge.class); v.getContext().startActivity(i);break;
                         case "Lasallian Cheers":i = new Intent(v.getContext(),LasallianCheers.class); v.getContext().startActivity(i);break;
+                        case "LPEP Schedule":i = new Intent(v.getContext(),LpepSchedule.class);v.getContext().startActivity(i);break;
+                        case "Arrows Express":i = new Intent(v.getContext(),ArrowsExpress.class);v.getContext().startActivity(i);break;
+                        case "Photocopy Services":i = new Intent(v.getContext(),Photocopy.class);v.getContext().startActivity(i);break;
+                        case "CSO Executive Board":i = new Intent(v.getContext(),Csoexecom.class);v.getContext().startActivity(i);break;
+                        case "Parking Locations":i = new Intent(v.getContext(),Parking.class);v.getContext().startActivity(i);break;
+                        case "Wifi Spots":i = new Intent(v.getContext(),Wifi.class);v.getContext().startActivity(i);break;
+                        case "Printing Services":i = new Intent(v.getContext(),Printing.class);v.getContext().startActivity(i);break;
+                        case "Places to Eat":i = new Intent(v.getContext(),EatingPlaces.class);v.getContext().startActivity(i);break;
+                        case "School Supplies":i = new Intent(v.getContext(),Supplies.class);v.getContext().startActivity(i);break;
                     }
                 }
             });

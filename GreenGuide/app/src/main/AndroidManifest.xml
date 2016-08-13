@@ -22,10 +22,43 @@
             android:name=".Navigation"
             android:label="@string/title_activity_navigation"
             android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".LpepSchedule"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".Home" />
-        <activity android:name=".LasallianHymn" />
-        <activity android:name=".LasallianPledge" />
-        <activity android:name=".LasallianCheers"></activity>
+        <activity
+            android:name=".LasallianHymn"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".LasallianPledge"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".LasallianCheers"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".AroundDLSU" />
+        <activity
+            android:name=".ArrowsExpress"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Photocopy"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Csoexecom"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Parking"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Wifi"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Printing"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".EatingPlaces"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Supplies"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

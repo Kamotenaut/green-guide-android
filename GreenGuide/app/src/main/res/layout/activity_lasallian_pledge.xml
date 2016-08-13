@@ -1,30 +1,111 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.greenguide.dlsu.greenguide.LasallianPledge">
-    <TextView
+    >
+
+    <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="30dp"
-        android:id="@+id/pledgetitle"
-        android:textSize="30sp"
-        android:text="Lorem"
-        android:gravity="center"
-        android:textStyle="bold"
-        />
+        android:layout_height="120dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/banner"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/logo"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:layout_below="@id/logo"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/pledgeheader"
+                android:text="Lasallian Pledge"
+                android:layout_marginTop="10dp"
+                android:textSize="25sp"
+                />
+
+        </RelativeLayout>
+    </android.support.design.widget.AppBarLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="30dp"
+                android:id="@+id/pledgetitle"
+                android:textSize="30sp"
+                android:text="The Lasallian Pledge"
+                android:textColor="#1e1e1e"
+                android:gravity="center"
+                android:textStyle="bold"
+                />
 
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginRight="40dp"
-        android:layout_marginLeft="40dp"
-        android:textAlignment="center"
-        android:layout_below="@+id/pledgetitle"
-        android:textSize="18sp"
-        android:id="@+id/pledgetxt"
-        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-        />
-</RelativeLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="40dp"
+                android:layout_marginLeft="40dp"
+                android:textColor="#393939"
+                android:textAlignment="center"
+                android:layout_below="@+id/pledgetitle"
+                android:layout_marginBottom="30dp"
+                android:textSize="18sp"
+                android:id="@+id/pledgetxt"
+                android:text="I am Lasallian. I will come to appreciate the history and pride of the Lasallian Family to which I now belong as a student of De La Salle University.
+
+I recognize in faith that my life and my abilities are the gifts of a good and gracious God with the guidance of the Almighty, and the inspiration of our
+Founder, St. John Baptist de La Salle, I will take progressive responsibility for my own learning and development so that I maybecome the kind of person God intends me to be.
+
+I will strive to integrate the spiritual
+values of my home and my religion with
+the Lasallian values of Faith, Service and
+Communion in the conduct of my daily life.
+I commit myself to excellence in order to
+be of greater service to God and country.
+
+I pledge to work creatively, constructively
+and enthusiastically with other members
+of the Lasallian community to support the
+Lasallian Mission which seeks to serve
+the needs of the last, the lost and the least
+in our society by teaching minds, touching
+hearts and transforming lives.
+
+I am Lasallian. I am Filipino. I will become
+the change I want to see in my country.
+By my education here at DLSU and by
+my personal commitment I will become
+an effective and compassionate agent of
+social transformation, a worthy child of
+God and proud citizen of my country.
+
+So help me God!"/>
+        </RelativeLayout>
+    </ScrollView>
+</android.support.design.widget.CoordinatorLayout>

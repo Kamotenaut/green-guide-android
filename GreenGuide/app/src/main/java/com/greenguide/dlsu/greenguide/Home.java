@@ -32,6 +32,7 @@ public class Home extends android.app.Fragment{
 
             List list = new ArrayList();
             list.add("LPEP Schedule");
+            list.add("Dress Code");
             list.add("Lasallian Pledge");
             list.add("Lasallian Hymn");
             list.add("Lasallian Cheers");

@@ -5,62 +5,82 @@
     android:layout_height="match_parent"
     android:background="@drawable/bg"
     tools:context=".DeanMessage">
-
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
 <LinearLayout
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
     android:layout_centerHorizontal="true"
     android:layout_centerVertical="true"
     android:orientation="vertical"
+    android:paddingTop="50dp"
     >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="30dp"
+        android:orientation="vertical">
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="20sp"
         android:textColor="#fff"
-        android:text="Welcome to \nDe La Salle University!"
-        android:layout_marginBottom="15dp"
+        android:paddingBottom="20dp"
+        android:text="Our dear Lasallian froshies,\nWelcome to De La Salle University!"
         android:id="@+id/welcometxt"
         />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="30dp"
         android:textSize="15sp"
-        android:text="Sed ut perspiciatis unde omnis iste natus
-error sit voluptatem accusantium
-doloremque laudantium, totaam rem
-aperiam, eaque ipsa quae ab illo inventore
-veritatis et quasi architecto beatae vitae
-dicta sunt explicabo. Nemo enim ipsam
-voluptatem quia voluptas sit aspernatur
-aut odit aut fugit, sed quia consequuntur
-magni dolores eos qui ratione voluptatem
-sequi nesciunt."
+        android:text="
+In our tradition of teaching minds, touching hearts, and
+transforming lives, allow us to accompany you in your journey
+as college students through the Lasallian Personal
+Effectiveness Program (LPEP).\n
+LPEP will introduce you to our University, its culture, and the
+Lasallian core values we constantly uphold in all the things
+that we do here. It will give you a glimpse of what your college
+life will be for the next three to four years. Make sure you
+enjoy your LPEP! \n
+LPEP is made more exciting this year with the launch of this
+Green Guide app, prepared especially for your batch by your
+fellow Lasallians from the College of Computer Studies. The
+app contains more information about the student life here in
+DLSU. With just one click, you will find the different offices,
+groups, and organizations that you may join to make your
+college life more productive and exciting.\n
+Lastly, as you start your journey in DLSU, I am happy to
+introduce you to a community that takes care of your
+welfare, looks after you, and ensures the development of
+your whole potential. We commit ourselves to molding you
+to become Lasallian achievers for God and country. 
+I thank God for bringing you all here in DLSU.\n
+Animo La Salle!"
         android:textColor="#fff"
         android:id="@+id/messagetxt"
         />
+    </LinearLayout>
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:paddingBottom="30dp"
         android:orientation="horizontal"
         >
     <ImageView
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginRight="15dp"
         android:src="@drawable/avatar"
         android:layout_centerHorizontal="true" />
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:paddingLeft="10dp"
             android:layout_gravity="center"
             >
         <TextView
@@ -83,17 +103,19 @@ sequi nesciunt."
                 />
             </LinearLayout>
     </LinearLayout>
-</LinearLayout>
     <Button
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:text="Begin Journey"
         android:textAllCaps="false"
         android:layout_gravity="bottom"
-        android:layout_alignParentBottom="true"
         android:background="#015249"
         android:textColor="#fff"
         android:textSize="20sp"
         android:id="@+id/btnbegin"
         />
+</LinearLayout>
+
+</ScrollView>
+
 </RelativeLayout>
