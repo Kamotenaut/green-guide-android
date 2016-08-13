@@ -36,7 +36,7 @@ public class Home extends android.app.Fragment{
             list.add("Lasallian Pledge");
             list.add("Lasallian Hymn");
             list.add("Lasallian Cheers");
-            list.add("Tips");
+            list.add("Tips and Tidbits");
             adapter = new CommonAdapter(list);
             recycler = (RecyclerView) v.findViewById(R.id.hymncheerlist);
             recycler.setHasFixedSize(true);

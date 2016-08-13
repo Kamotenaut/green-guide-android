@@ -70,6 +70,13 @@ public class CommonAdapter extends RecyclerView.Adapter<CommonAdapter.CommonView
                         case "Printing Services":i = new Intent(v.getContext(),Printing.class);v.getContext().startActivity(i);break;
                         case "Places to Eat":i = new Intent(v.getContext(),EatingPlaces.class);v.getContext().startActivity(i);break;
                         case "School Supplies":i = new Intent(v.getContext(),Supplies.class);v.getContext().startActivity(i);break;
+                        case "Values and Prayers":i = new Intent(v.getContext(),ValuesPrayers.class);v.getContext().startActivity(i);break;
+                        case "About the USG":i = new Intent(v.getContext(),AboutUsg.class);v.getContext().startActivity(i);break;
+                        case "About the CSO":i = new Intent(v.getContext(),AboutCso.class);v.getContext().startActivity(i);break;
+                        case "USG Executive Board":i = new Intent(v.getContext(),Usgexecom.class);v.getContext().startActivity(i);break;
+                        case "Programs and Services":i = new Intent(v.getContext(),ProgramsServices.class);v.getContext().startActivity(i);break;
+                        case "Organizations":i = new Intent(v.getContext(),Organizations.class);v.getContext().startActivity(i);break;
+                        case "Tips and Tidbits":i = new Intent(v.getContext(),Tips.class);v.getContext().startActivity(i);break;
                     }
                 }
             });

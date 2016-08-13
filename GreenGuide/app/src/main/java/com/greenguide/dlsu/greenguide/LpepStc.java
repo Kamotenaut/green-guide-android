@@ -11,20 +11,19 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import java.util.ArrayList;
-import java.util.List;
 
 
 /**
  * A simple {@link Fragment} subclass.
  * Activities that contain this fragment must implement the
- * {@link Usg.OnFragmentInteractionListener} interface
+ * {@link LpepStc.OnFragmentInteractionListener} interface
  * to handle interaction events.
- * Use the {@link Usg#newInstance} factory method to
+ * Use the {@link LpepStc#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class Usg extends android.app.Fragment {
+public class LpepStc extends Fragment {
     RecyclerView recycler;
-    CommonAdapter adapter;
+    ListAdapter adapter;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -34,14 +33,18 @@ public class Usg extends android.app.Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View v = inflater.inflate(R.layout.fragment_usg, container, false);
+        View v = inflater.inflate(R.layout.fragment_lpep_stc, container, false);
 
-        List list = new ArrayList();
-        list.add("About the USG");
-        list.add("Programs and Services");
-        list.add("USG Executive Board");
-        adapter = new CommonAdapter(list);
-        recycler = (RecyclerView) v.findViewById(R.id.usglist);
+        ArrayList<Schedule> list = new ArrayList();
+        list.add(new Schedule("Opening Prayer","8:30AM"));
+        list.add(new Schedule("Opening Remarks","9:00AM"));
+        list.add(new Schedule("Ice Breaker","10:00AM"));
+        list.add(new Schedule("Lunch","12:00PM"));
+        list.add(new Schedule("SDFO Orientation","1:30PM"));
+        list.add(new Schedule("Closing Remarks","4:30PM"));
+
+        adapter = new ListAdapter(list);
+        recycler = (RecyclerView) v.findViewById(R.id.lpepstclist);
         recycler.setHasFixedSize(true);
         LinearLayoutManager llm = new LinearLayoutManager(v.getContext());
         recycler.setLayoutManager(llm);
@@ -50,6 +53,7 @@ public class Usg extends android.app.Fragment {
 
         return v;
     }
+
 
     public interface OnFragmentInteractionListener {
         // TODO: Update argument type and name

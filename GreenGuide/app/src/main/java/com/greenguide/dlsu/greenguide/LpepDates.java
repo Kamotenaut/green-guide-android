@@ -11,20 +11,19 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import java.util.ArrayList;
-import java.util.List;
 
 
 /**
  * A simple {@link Fragment} subclass.
  * Activities that contain this fragment must implement the
- * {@link Usg.OnFragmentInteractionListener} interface
+ * {@link LpepDates.OnFragmentInteractionListener} interface
  * to handle interaction events.
- * Use the {@link Usg#newInstance} factory method to
+ * Use the {@link LpepDates#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class Usg extends android.app.Fragment {
+public class LpepDates extends Fragment {
     RecyclerView recycler;
-    CommonAdapter adapter;
+    ListAdapter adapter;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -34,14 +33,20 @@ public class Usg extends android.app.Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View v = inflater.inflate(R.layout.fragment_usg, container, false);
+        View v = inflater.inflate(R.layout.fragment_lpep_dates, container, false);
 
-        List list = new ArrayList();
-        list.add("About the USG");
-        list.add("Programs and Services");
-        list.add("USG Executive Board");
-        adapter = new CommonAdapter(list);
-        recycler = (RecyclerView) v.findViewById(R.id.usglist);
+        ArrayList<Schedule> list = new ArrayList();
+        list.add(new Schedule("CCS/SOE",""));
+        list.add(new Schedule("September 11, 2016","Day 1"));
+        list.add(new Schedule("September 12, 2016","Day 2"));
+        list.add(new Schedule("September 14, 2016","Day 3"));
+        list.add(new Schedule("COB/COE",""));
+        list.add(new Schedule("September 15, 2016","Day 1"));
+        list.add(new Schedule("September 16, 2016","Day 2"));
+        list.add(new Schedule("September 17, 2016","Day 3"));
+
+        adapter = new ListAdapter(list);
+        recycler = (RecyclerView) v.findViewById(R.id.lpepdateslist);
         recycler.setHasFixedSize(true);
         LinearLayoutManager llm = new LinearLayoutManager(v.getContext());
         recycler.setLayoutManager(llm);
@@ -50,6 +55,7 @@ public class Usg extends android.app.Fragment {
 
         return v;
     }
+
 
     public interface OnFragmentInteractionListener {
         // TODO: Update argument type and name

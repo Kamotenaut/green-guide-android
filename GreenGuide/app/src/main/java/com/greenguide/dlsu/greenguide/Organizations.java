@@ -1,9 +1,8 @@
 package com.greenguide.dlsu.greenguide;
 
-import android.app.Fragment;
-import android.app.FragmentManager;
 import android.graphics.Typeface;
 import android.support.design.widget.TabLayout;
+import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
@@ -15,7 +14,7 @@ import android.widget.TextView;
 import java.util.ArrayList;
 import java.util.List;
 
-public class LpepSchedule extends AppCompatActivity {
+public class Organizations extends AppCompatActivity {
 
     private Toolbar toolbar;
     private TabLayout tabLayout;
@@ -25,13 +24,13 @@ public class LpepSchedule extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_lpep_schedule);
+        setContentView(R.layout.activity_organizations);
 
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         String fontPath = "fonts/Montserrat-Regular.ttf";
         Typeface tf = Typeface.createFromAsset(getBaseContext().getAssets(), fontPath);
-        title = (TextView) findViewById(R.id.lpeptitle);
+        title = (TextView) findViewById(R.id.organizationstitle);
         title.setTypeface(tf);
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
@@ -47,11 +46,11 @@ public class LpepSchedule extends AppCompatActivity {
 
     private void setupViewPager(ViewPager viewPager) {
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
-        adapter.addFragment(new LpepDates(), "Dates");
-        adapter.addFragment(new LpepD1(), "Day 1");
-        adapter.addFragment(new LpepD2(), "Day 2");
-        adapter.addFragment(new LpepD3(), "Day 3");
-        adapter.addFragment(new LpepStc(), "STC");
+        adapter.addFragment(new Aso(), "ASO");
+        adapter.addFragment(new Aspire(), "ASPIRE");
+        adapter.addFragment(new Cap11(), "CAP11");
+        adapter.addFragment(new Probe(), "PROBE");
+        adapter.addFragment(new Engage(), "ENGAGE");
         viewPager.setAdapter(adapter);
     }
 
@@ -66,7 +65,7 @@ public class LpepSchedule extends AppCompatActivity {
     }
 
     class ViewPagerAdapter extends FragmentPagerAdapter {
-        private final List<android.support.v4.app.Fragment> mFragmentList = new ArrayList<>();
+        private final List<Fragment> mFragmentList = new ArrayList<>();
         private final List<String> mFragmentTitleList = new ArrayList<>();
 
         public ViewPagerAdapter(android.support.v4.app.FragmentManager manager) {
@@ -93,6 +92,4 @@ public class LpepSchedule extends AppCompatActivity {
             return mFragmentTitleList.get(position);
         }
     }
-
-
 }

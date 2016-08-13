@@ -57,8 +57,31 @@
         <activity
             android:name=".EatingPlaces"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".Supplies"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".Supplies"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ValuesPrayers"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AboutUsg"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AboutCso"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Usgexecom"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ProgramsServices"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Organizations"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Tips"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Developers"></activity>
     </application>
 
 </manifest>

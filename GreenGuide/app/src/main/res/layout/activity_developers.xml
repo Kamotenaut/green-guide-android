@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    >
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
-        android:layout_height="155dp"
+        android:layout_height="120dp"
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             >
             <android.support.v7.widget.Toolbar
                 android:id="@+id/toolbar"
@@ -22,39 +23,32 @@
             <ImageView
                 android:layout_width="150dp"
                 android:layout_height="50dp"
-                android:src="@drawable/banner"
-                android:id="@+id/expresslogo"
                 android:layout_marginTop="20dp"
+                android:src="@drawable/banner"
                 android:layout_centerHorizontal="true"
+                android:id="@+id/logo"
                 />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/arrowsexpresstitle"
                 android:textColor="#fff"
-                android:layout_below="@+id/expresslogo"
+                android:layout_below="@id/logo"
                 android:layout_centerHorizontal="true"
-                android:text="Arrows Express Schedule"
-                android:layout_marginTop="5dp"
-                android:textSize="20sp"
+                android:id="@+id/devheader"
+                android:text="Developers"
+                android:layout_marginTop="10dp"
+                android:textSize="25sp"
                 />
 
         </RelativeLayout>
-        <android.support.design.widget.TabLayout
-            android:id="@+id/expresstabs"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/logo"
-            app:tabMode="fixed"
-            app:tabGravity="fill"/>
-
     </android.support.design.widget.AppBarLayout>
-
-    <android.support.v4.view.ViewPager
-        android:id="@+id/expressviewpager"
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="#fff"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior"  />
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+    </ScrollView>
 </android.support.design.widget.CoordinatorLayout>

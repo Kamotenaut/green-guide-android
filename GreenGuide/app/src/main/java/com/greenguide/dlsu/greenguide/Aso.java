@@ -1,6 +1,7 @@
 package com.greenguide.dlsu.greenguide;
 
 import android.content.Context;
+import android.graphics.Typeface;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -9,22 +10,16 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
+
+import org.w3c.dom.Text;
 
 import java.util.ArrayList;
-import java.util.List;
 
 
-/**
- * A simple {@link Fragment} subclass.
- * Activities that contain this fragment must implement the
- * {@link Usg.OnFragmentInteractionListener} interface
- * to handle interaction events.
- * Use the {@link Usg#newInstance} factory method to
- * create an instance of this fragment.
- */
-public class Usg extends android.app.Fragment {
+public class Aso extends Fragment {
     RecyclerView recycler;
-    CommonAdapter adapter;
+    OrgAdapter adapter;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -34,14 +29,17 @@ public class Usg extends android.app.Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View v = inflater.inflate(R.layout.fragment_usg, container, false);
+        View v = inflater.inflate(R.layout.fragment_aso, container, false);
 
-        List list = new ArrayList();
-        list.add("About the USG");
-        list.add("Programs and Services");
-        list.add("USG Executive Board");
-        adapter = new CommonAdapter(list);
-        recycler = (RecyclerView) v.findViewById(R.id.usglist);
+        ArrayList<Org> list = new ArrayList();
+        String fontPath = "fonts/Montserrat-Regular.ttf";
+        Typeface tf = Typeface.createFromAsset(v.getContext().getAssets(), fontPath);
+        list.add(new Org("La Salle Computer Society","LSCS is an org under CCS that provides programs and seminars focused on computers."));
+        list.add(new Org("Englicom","Englicom is an organization that aims to unite the Chinese community within DLSU"));
+        list.add(new Org("AIESEC","AIESEC is an organization that aims to provide fun and engaging activities for the student body."));
+        list.add(new Org("AIESEC","AIESEC is an organization that aims to provide fun and engaging activities for the student body."));
+        adapter = new OrgAdapter(list);
+        recycler = (RecyclerView) v.findViewById(R.id.asolist);
         recycler.setHasFixedSize(true);
         LinearLayoutManager llm = new LinearLayoutManager(v.getContext());
         recycler.setLayoutManager(llm);
@@ -50,6 +48,7 @@ public class Usg extends android.app.Fragment {
 
         return v;
     }
+
 
     public interface OnFragmentInteractionListener {
         // TODO: Update argument type and name
