@@ -35,10 +35,11 @@ public class Usgexecom extends AppCompatActivity {
 
 
         ArrayList<Profile> list = new ArrayList();
-        list.add(new Profile("John Doe", "USG President", "USG president is the highest position of the USG"));
-        list.add(new Profile("Jane Santos", "Vice President for External Affairs", "USG president is the highest position of the USG"));
-        list.add(new Profile("Juan Cruz", "Vice President for Internal Affairs", "USG president is the highest position of the USG"));
-
+        list.add(new Profile("Zed Laqui", "USG President", "USG president is the highest position of the USG"));
+        list.add(new Profile("Karl Ong", "Vice President for Internal Affairs", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porttitor sed orci quis imperdiet. Aenean ac lorem non magna pellentesque molestie. "));
+        list.add(new Profile("Reigner Sanchez", "Vice President for External Affairs", "Lorem ipsum dolor sit amet, consectetur adipiscing elit."));
+        list.add(new Profile("Monica Otayza", "Executive Secretary", "Lorem ipsum dolor sit amet, consectetur adipiscing elit."));
+        list.add(new Profile("Brian Chen", "Executive Treasurer", "Lorem ipsum dolor sit amet, consectetur adipiscing elit."));
         adapter = new ProfileAdapter(list);
         recycler = (RecyclerView) findViewById(R.id.usgexecomlist);
         recycler.setHasFixedSize(true);

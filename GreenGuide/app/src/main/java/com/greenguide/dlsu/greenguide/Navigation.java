@@ -80,9 +80,6 @@ public class Navigation extends AppCompatActivity
         } else if (id == R.id.nav_USG) {
             fragmentManager.beginTransaction().replace(R.id.content_frame, new Usg()).commit();
             title.setText("USG");
-        } else if (id == R.id.nav_admin) {
-            fragmentManager.beginTransaction().replace(R.id.content_frame, new AdminOffices()).commit();
-            title.setText("Admin Offices");
         } else if (id == R.id.nav_cso) {
             fragmentManager.beginTransaction().replace(R.id.content_frame, new Cso()).commit();
             title.setText("CSO");
@@ -92,10 +89,7 @@ public class Navigation extends AppCompatActivity
         } else if (id == R.id.nav_services) {
             fragmentManager.beginTransaction().replace(R.id.content_frame, new CampusServices()).commit();
             title.setText("Campus Services");
-        } else if (id == R.id.nav_lspo) {
-            fragmentManager.beginTransaction().replace(R.id.content_frame, new Lspo()).commit();
-            title.setText("LSPO");
-        } else if (id == R.id.nav_about) {
+        } else  if (id == R.id.nav_about) {
             fragmentManager.beginTransaction().replace(R.id.content_frame, new About()).commit();
             title.setText("About");
         }

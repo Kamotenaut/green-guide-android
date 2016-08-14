@@ -100,11 +100,11 @@ Lasallians engaged in nation building."/>
                 android:layout_height="wrap_content"
                 android:textColor="#505050"
                 android:layout_marginBottom="30dp"
+                android:paddingLeft="30dp"
                 android:textSize="15sp"
-                android:textAlignment="center"
                 android:id="@+id/dousgtxt"
-                android:text="- Advance and defend students’ rights\n- Promote students’ holistic growth\n- Engage students in societal
-development\n- Strengthen the identity of the
+                android:text="\u2022 Advance and defend students’ rights\n\u2022 Promote students’ holistic growth\n\u2022 Engage students in societal
+development\n\u2022 Strengthen the identity of the
 Lasallian community"/>
 
 

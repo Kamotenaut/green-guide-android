@@ -14,14 +14,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-/**
- * A simple {@link Fragment} subclass.
- * Activities that contain this fragment must implement the
- * {@link About.OnFragmentInteractionListener} interface
- * to handle interaction events.
- * Use the {@link About#newInstance} factory method to
- * create an instance of this fragment.
- */
 public class About extends android.app.Fragment{
 
     RecyclerView recycler;
@@ -35,13 +27,13 @@ public class About extends android.app.Fragment{
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View v = inflater.inflate(R.layout.fragment_values_and_prayers, container, false);
+        View v = inflater.inflate(R.layout.fragment_about, container, false);
 
         List list = new ArrayList();
         list.add("What is the DLSU Green Guide?");
-        list.add("DLSU Green Guide Developers");
+        list.add("Developers");
         adapter = new CommonAdapter(list);
-        recycler = (RecyclerView) v.findViewById(R.id.valuesandprayerslist);
+        recycler = (RecyclerView) v.findViewById(R.id.aboutlist);
         recycler.setHasFixedSize(true);
         LinearLayoutManager llm = new LinearLayoutManager(v.getContext());
         recycler.setLayoutManager(llm);

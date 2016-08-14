@@ -2,7 +2,6 @@ package com.greenguide.dlsu.greenguide;
 
 import android.content.Intent;
 import android.graphics.Typeface;
-import android.media.Image;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -10,7 +9,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import java.util.List;
 
@@ -77,6 +75,10 @@ public class CommonAdapter extends RecyclerView.Adapter<CommonAdapter.CommonView
                         case "Programs and Services":i = new Intent(v.getContext(),ProgramsServices.class);v.getContext().startActivity(i);break;
                         case "Organizations":i = new Intent(v.getContext(),Organizations.class);v.getContext().startActivity(i);break;
                         case "Tips and Tidbits":i = new Intent(v.getContext(),Tips.class);v.getContext().startActivity(i);break;
+                        case "Admin Offices":i = new Intent(v.getContext(),Admin.class);v.getContext().startActivity(i);break;
+                        case "Developers":i = new Intent(v.getContext(),Developers.class);v.getContext().startActivity(i);break;
+                        case "Lasallian Pastoral Office":i = new Intent(v.getContext(),LspoServices.class);v.getContext().startActivity(i);break;
+                        case "Housing Facilities":i = new Intent(v.getContext(),Housing.class);v.getContext().startActivity(i);break;
                     }
                 }
             });

@@ -14,10 +14,10 @@ public class ExpandableChildListItem {
         this.mDetails = mDetails;
     }
 
-
     public String getmTitle() {
         return mTitle;
     }
+
 
     public String getmDetails() {
         return mDetails;

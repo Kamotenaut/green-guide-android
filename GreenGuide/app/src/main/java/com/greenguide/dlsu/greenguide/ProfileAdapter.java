@@ -14,6 +14,8 @@ import com.uncopt.android.widget.text.justify.JustifiedTextView;
 
 import java.util.List;
 
+import de.hdodenhof.circleimageview.CircleImageView;
+
 /**
  * Created by jasonsioco on 8/13/2016.
  */
@@ -30,19 +32,19 @@ public class ProfileAdapter extends RecyclerView.Adapter<ProfileAdapter.ProfileV
         protected TextView vName;
         protected TextView vPosition;
         protected JustifiedTextView vDescription;
-        protected ImageView vPhoto;
+        protected CircleImageView vPhoto;
 
         public ProfileViewHolder(View v, List<Profile> list) {
             super(v);
             vName =  (TextView) v.findViewById(R.id.profilename);
             vPosition = (TextView) v.findViewById(R.id.profileposition);
             vDescription = (JustifiedTextView) v.findViewById(R.id.profiledescription);
-            vPhoto = (ImageView)v.findViewById(R.id.profileimg);
+            vPhoto = (CircleImageView)v.findViewById(R.id.profileimg);
             String fontPath = "fonts/Montserrat-Regular.ttf";
             Typeface tf = Typeface.createFromAsset(v.getContext().getAssets(), fontPath);
             vName.setTypeface(tf);
             vPosition.setTypeface(tf);
-            vDescription.setTypeface(tf);
+            //vDescription.setTypeface(tf);
         }
 
 
@@ -61,7 +63,13 @@ public class ProfileAdapter extends RecyclerView.Adapter<ProfileAdapter.ProfileV
         holder.vDescription.setText(list.get(position).getDescription());
         holder.vPosition.setText(list.get(position).getPosition());
         switch(list.get(position).getPosition()){
-            case "":;break;
+            case "USG President":holder.vPhoto.setImageResource(R.drawable.usg_president);break;
+            case "Council Chairperson":holder.vPhoto.setImageResource(R.drawable.cso_council_chairperson);break;
+            case "Executive Vice Chairperson for Externals":holder.vPhoto.setImageResource(R.drawable.cso_vc_externals);break;
+            case "Executive Vice Chairperson for Internals":holder.vPhoto.setImageResource(R.drawable.cso_vc_internals);break;
+            case "Executive Vice Chairperson for Activities and Documentations":holder.vPhoto.setImageResource(R.drawable.cso_vc_docu);break;
+            case "Executive Vice Chairperson for Finance":holder.vPhoto.setImageResource(R.drawable.cso_vc_finance);break;
+            case "Executive Vice Chairperson for Science and Technology Complex":holder.vPhoto.setImageResource(R.drawable.cso_vc_stc);break;
         }
 
 

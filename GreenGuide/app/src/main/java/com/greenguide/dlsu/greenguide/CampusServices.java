@@ -14,14 +14,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-/**
- * A simple {@link Fragment} subclass.
- * Activities that contain this fragment must implement the
- * {@link CampusServices.OnFragmentInteractionListener} interface
- * to handle interaction events.
- * Use the {@link CampusServices#newInstance} factory method to
- * create an instance of this fragment.
- */
 public class CampusServices extends android.app.Fragment {
     RecyclerView recycler;
     CommonAdapter adapter;
@@ -37,6 +29,7 @@ public class CampusServices extends android.app.Fragment {
         View v = inflater.inflate(R.layout.fragment_campus_services, container, false);
 
         List list = new ArrayList();
+        list.add("Admin Offices");
         list.add("Arrows Express");
         list.add("Photocopy Services");
         list.add("Printing Services");

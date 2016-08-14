@@ -19,11 +19,6 @@
             android:id="@+id/nav_USG"
             android:icon="@drawable/ic_menu_manage"
             android:title="USG" />
-
-            <item
-                android:id="@+id/nav_admin"
-                android:icon="@drawable/ic_menu_share"
-                android:title="Admin Offices" />
             <item
                 android:id="@+id/nav_cso"
                 android:icon="@drawable/ic_menu_send"
@@ -36,10 +31,6 @@
             android:id="@+id/nav_services"
             android:icon="@drawable/ic_menu_send"
             android:title="Campus Services" />
-        <item
-            android:id="@+id/nav_lspo"
-            android:icon="@drawable/ic_menu_send"
-            android:title="LSPO" />
         <item
             android:id="@+id/nav_about"
             android:icon="@drawable/ic_about"

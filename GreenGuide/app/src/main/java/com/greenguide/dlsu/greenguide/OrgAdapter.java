@@ -36,7 +36,7 @@ public class OrgAdapter extends RecyclerView.Adapter<OrgAdapter.OrgViewHolder>{
             String fontPath = "fonts/Montserrat-Regular.ttf";
             Typeface tf = Typeface.createFromAsset(v.getContext().getAssets(), fontPath);
             vTitle.setTypeface(tf);
-            vDescription.setTypeface(tf);
+            //vDescription.setTypeface(tf);
         }
 
 

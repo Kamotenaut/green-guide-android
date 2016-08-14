@@ -81,7 +81,18 @@
         <activity
             android:name=".Tips"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".Developers"></activity>
+        <activity
+            android:name=".Developers"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Admin"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".LspoServices"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Housing"
+            android:theme="@style/AppTheme.NoActionBar"
+            ></activity>
     </application>
 
 </manifest>

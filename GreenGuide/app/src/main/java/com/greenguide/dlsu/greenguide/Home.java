@@ -32,10 +32,9 @@ public class Home extends android.app.Fragment{
 
             List list = new ArrayList();
             list.add("LPEP Schedule");
-            list.add("Dress Code");
             list.add("Lasallian Pledge");
-            list.add("Lasallian Hymn");
-            list.add("Lasallian Cheers");
+            list.add("Values and Prayers");
+            list.add("Dress Code");
             list.add("Tips and Tidbits");
             adapter = new CommonAdapter(list);
             recycler = (RecyclerView) v.findViewById(R.id.hymncheerlist);
