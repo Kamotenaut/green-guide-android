@@ -13,27 +13,10 @@
     <ImageView
         android:id="@+id/imageView"
         android:layout_marginTop="30dp"
-        android:layout_width="75dp"
-        android:layout_height="75dp"
+        android:layout_marginBottom="30dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:layout_gravity="center"
         android:src="@drawable/avatar" />
-
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Juan De La Cruz"
-        android:paddingTop="10dp"
-        android:layout_gravity="center_horizontal"
-        />
-
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="juan_de_la_cruz@dlsu.edu.ph"
-        android:layout_gravity="center_horizontal"
-        />
 
 </LinearLayout>

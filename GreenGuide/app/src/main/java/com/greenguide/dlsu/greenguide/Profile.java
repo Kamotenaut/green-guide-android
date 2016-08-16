@@ -7,6 +7,14 @@ public class Profile {
     private String name;
     private String position;
     private String description;
+    private int resid;
+
+    public Profile(String name, String position, String description,int resid){
+        this.setName(name);
+        this.setPosition(position);
+        this.setDescription(description);
+        this.setResid(resid);
+    }
 
     public Profile(String name, String position, String description){
         this.setName(name);
@@ -38,5 +46,13 @@ public class Profile {
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    public int getResid() {
+        return resid;
+    }
+
+    public void setResid(int resid) {
+        this.resid = resid;
     }
 }

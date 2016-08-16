@@ -49,6 +49,7 @@ public class Lpep extends android.app.Fragment {
         List list = new ArrayList();
         list.add("LPEP Schedule");
         list.add("Lasallian Pledge");
+        list.add("Hymns and Cheers");
         adapter = new CommonAdapter(list);
         recycler = (RecyclerView) v.findViewById(R.id.lpeplist);
         recycler.setHasFixedSize(true);

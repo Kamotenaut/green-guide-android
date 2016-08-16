@@ -74,10 +74,7 @@ public class Navigation extends AppCompatActivity
         } else if (id == R.id.nav_lpep) {
             fragmentManager.beginTransaction().replace(R.id.content_frame, new Lpep()).commit();
             title.setText("LPEP");
-        } else if (id == R.id.nav_hymncheers) {
-            fragmentManager.beginTransaction().replace(R.id.content_frame, new HymnsAndCheers()).commit();
-            title.setText("Hymns and Cheers");
-        } else if (id == R.id.nav_USG) {
+        } else  if (id == R.id.nav_USG) {
             fragmentManager.beginTransaction().replace(R.id.content_frame, new Usg()).commit();
             title.setText("USG");
         } else if (id == R.id.nav_cso) {

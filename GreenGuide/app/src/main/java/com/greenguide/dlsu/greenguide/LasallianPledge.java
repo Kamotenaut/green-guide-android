@@ -28,7 +28,7 @@ public class LasallianPledge extends AppCompatActivity {
         Typeface tf = Typeface.createFromAsset(getAssets(), fontPath);
 
         title.setTypeface(tf);
-        content.setTypeface(tf);
+        //content.setTypeface(tf);
         header.setTypeface(tf);
     }
 

@@ -77,35 +77,7 @@
                 android:layout_marginBottom="30dp"
                 android:textSize="18sp"
                 android:id="@+id/pledgetxt"
-                android:text="I am Lasallian. I will come to appreciate the history and pride of the Lasallian Family to which I now belong as a student of De La Salle University.
-
-I recognize in faith that my life and my abilities are the gifts of a good and gracious God with the guidance of the Almighty, and the inspiration of our
-Founder, St. John Baptist de La Salle, I will take progressive responsibility for my own learning and development so that I maybecome the kind of person God intends me to be.
-
-I will strive to integrate the spiritual
-values of my home and my religion with
-the Lasallian values of Faith, Service and
-Communion in the conduct of my daily life.
-I commit myself to excellence in order to
-be of greater service to God and country.
-
-I pledge to work creatively, constructively
-and enthusiastically with other members
-of the Lasallian community to support the
-Lasallian Mission which seeks to serve
-the needs of the last, the lost and the least
-in our society by teaching minds, touching
-hearts and transforming lives.
-
-I am Lasallian. I am Filipino. I will become
-the change I want to see in my country.
-By my education here at DLSU and by
-my personal commitment I will become
-an effective and compassionate agent of
-social transformation, a worthy child of
-God and proud citizen of my country.
-
-So help me God!"/>
+                android:text="@string/lasallian_pledge"/>
         </RelativeLayout>
     </ScrollView>
 </android.support.design.widget.CoordinatorLayout>

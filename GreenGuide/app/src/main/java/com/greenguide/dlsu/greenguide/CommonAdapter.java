@@ -56,9 +56,9 @@ public class CommonAdapter extends RecyclerView.Adapter<CommonAdapter.CommonView
                 public void onClick(View v){
                     Intent i;
                     switch(list.get(position)){
-                        case "Lasallian Hymn":i = new Intent(v.getContext(),LasallianHymn.class); v.getContext().startActivity(i);break;
+                        case "Dean's Message":i = new Intent(v.getContext(),DeanMessage.class); v.getContext().startActivity(i);break;
                         case "Lasallian Pledge":i = new Intent(v.getContext(),LasallianPledge.class); v.getContext().startActivity(i);break;
-                        case "Lasallian Cheers":i = new Intent(v.getContext(),LasallianCheers.class); v.getContext().startActivity(i);break;
+                        case "Hymns and Cheers":i = new Intent(v.getContext(),HymnsAndCheers.class); v.getContext().startActivity(i);break;
                         case "LPEP Schedule":i = new Intent(v.getContext(),LpepSchedule.class);v.getContext().startActivity(i);break;
                         case "Arrows Express":i = new Intent(v.getContext(),ArrowsExpress.class);v.getContext().startActivity(i);break;
                         case "Photocopy Services":i = new Intent(v.getContext(),Photocopy.class);v.getContext().startActivity(i);break;
@@ -71,18 +71,18 @@ public class CommonAdapter extends RecyclerView.Adapter<CommonAdapter.CommonView
                         case "Values and Prayers":i = new Intent(v.getContext(),ValuesPrayers.class);v.getContext().startActivity(i);break;
                         case "About the USG":i = new Intent(v.getContext(),AboutUsg.class);v.getContext().startActivity(i);break;
                         case "About the CSO":i = new Intent(v.getContext(),AboutCso.class);v.getContext().startActivity(i);break;
-                        case "USG Executive Board":i = new Intent(v.getContext(),Usgexecom.class);v.getContext().startActivity(i);break;
+                        case "USG Officers":i = new Intent(v.getContext(),UsgOfficers.class);v.getContext().startActivity(i);break;
                         case "Programs and Services":i = new Intent(v.getContext(),ProgramsServices.class);v.getContext().startActivity(i);break;
                         case "Organizations":i = new Intent(v.getContext(),Organizations.class);v.getContext().startActivity(i);break;
                         case "Tips and Tidbits":i = new Intent(v.getContext(),Tips.class);v.getContext().startActivity(i);break;
                         case "Admin Offices":i = new Intent(v.getContext(),Admin.class);v.getContext().startActivity(i);break;
-                        case "Developers":i = new Intent(v.getContext(),Developers.class);v.getContext().startActivity(i);break;
                         case "Lasallian Pastoral Office":i = new Intent(v.getContext(),LspoServices.class);v.getContext().startActivity(i);break;
                         case "Housing Facilities":i = new Intent(v.getContext(),Housing.class);v.getContext().startActivity(i);break;
+                        case "Dress Code":i = new Intent(v.getContext(),DressCode.class);v.getContext().startActivity(i);break;
                     }
                 }
             });
-            if(list.get(position).equals("Lasallian Hymn"))
+            if(list.get(position).equals("Hymns and Cheers"))
                 holder.vImage.setBackgroundResource(R.drawable.l1);
         }
 

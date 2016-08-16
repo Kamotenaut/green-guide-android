@@ -9,19 +9,15 @@
             android:title="Home" />
         <item
             android:id="@+id/nav_lpep"
-            android:icon="@drawable/ic_menu_camera"
+            android:icon="@drawable/ic_lpep"
             android:title="LPEP" />
         <item
-            android:id="@+id/nav_hymncheers"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="Hymn and Cheers" />
-        <item
             android:id="@+id/nav_USG"
-            android:icon="@drawable/ic_menu_manage"
+            android:icon="@drawable/ic_usg"
             android:title="USG" />
             <item
                 android:id="@+id/nav_cso"
-                android:icon="@drawable/ic_menu_send"
+                android:icon="@drawable/ic_cso"
                 android:title="CSO" />
         <item
             android:id="@+id/nav_around"
@@ -29,7 +25,7 @@
             android:title="Around DLSU" />
         <item
             android:id="@+id/nav_services"
-            android:icon="@drawable/ic_menu_send"
+            android:icon="@drawable/ic_services"
             android:title="Campus Services" />
         <item
             android:id="@+id/nav_about"

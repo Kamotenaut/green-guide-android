@@ -28,16 +28,15 @@ public class Home extends android.app.Fragment{
         @Override
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                                  Bundle savedInstanceState) {
-            View v = inflater.inflate(R.layout.fragment_hymns_and_cheers, container, false);
+            View v = inflater.inflate(R.layout.fragment_home, container, false);
 
             List list = new ArrayList();
-            list.add("LPEP Schedule");
-            list.add("Lasallian Pledge");
+            list.add("Dean's Message");
             list.add("Values and Prayers");
             list.add("Dress Code");
             list.add("Tips and Tidbits");
             adapter = new CommonAdapter(list);
-            recycler = (RecyclerView) v.findViewById(R.id.hymncheerlist);
+            recycler = (RecyclerView) v.findViewById(R.id.homelist);
             recycler.setHasFixedSize(true);
             LinearLayoutManager llm = new LinearLayoutManager(v.getContext());
             recycler.setLayoutManager(llm);

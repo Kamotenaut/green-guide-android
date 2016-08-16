@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#e6e6e6"
-    >
+    android:fitsSystemWindows="true"
+    tools:context=".HymnsAndCheers">
+
+
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
@@ -22,6 +24,25 @@
                 android:background="?attr/colorPrimary"
                 app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
             <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:padding="12dp"
+                android:id="@+id/backbtn"
+                android:src="@drawable/ic_back"
+                />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:padding="12dp"
+                android:id="@+id/btn"
+                android:src="@drawable/ic_menu"
+                android:layout_alignParentEnd="true"
+                />
+
+            <ImageView
                 android:layout_width="150dp"
                 android:layout_height="50dp"
                 android:layout_marginTop="20dp"
@@ -36,8 +57,8 @@
                 android:textColor="#fff"
                 android:layout_below="@id/logo"
                 android:layout_centerHorizontal="true"
-                android:id="@+id/usgexecomheader"
-                android:text="USG Executive Board"
+                android:id="@+id/cheerheader"
+                android:text="Hymns and Cheers"
                 android:layout_marginTop="10dp"
                 android:textSize="25sp"
                 />
@@ -45,12 +66,7 @@
         </RelativeLayout>
     </android.support.design.widget.AppBarLayout>
 
-    <android.support.v7.widget.RecyclerView
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        android:id="@+id/usgexecomlist"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior"
-        />
+    <include layout="@layout/content_hymns_cheers" />
+
 
 </android.support.design.widget.CoordinatorLayout>

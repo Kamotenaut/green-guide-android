@@ -39,7 +39,7 @@ public class Usg extends android.app.Fragment {
         List list = new ArrayList();
         list.add("About the USG");
         list.add("Programs and Services");
-        list.add("USG Executive Board");
+        list.add("USG Officers");
         adapter = new CommonAdapter(list);
         recycler = (RecyclerView) v.findViewById(R.id.usglist);
         recycler.setHasFixedSize(true);

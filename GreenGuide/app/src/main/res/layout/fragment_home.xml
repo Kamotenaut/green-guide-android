@@ -2,18 +2,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.greenguide.dlsu.greenguide.HymnsAndCheers">
-
-    <!-- TODO: Update blank fragment layout -->
-
+    tools:context="com.greenguide.dlsu.greenguide.CampusServices">
 
     <android.support.v7.widget.RecyclerView
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
-        android:id="@+id/hymncheerlist"
+        android:id="@+id/homelist"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
-
-
 
 </FrameLayout>

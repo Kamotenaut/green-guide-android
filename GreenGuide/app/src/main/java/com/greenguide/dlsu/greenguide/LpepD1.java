@@ -29,12 +29,25 @@ public class LpepD1 extends Fragment{
         View v = inflater.inflate(R.layout.fragment_lpep_d1, container, false);
 
         ArrayList<Schedule> list = new ArrayList();
-        list.add(new Schedule("Opening Prayer","7:30AM"));
-        list.add(new Schedule("Opening Remarks","8:00AM"));
-        list.add(new Schedule("Ice Breaker","9:00AM"));
-        list.add(new Schedule("Lunch","12:00PM"));
-        list.add(new Schedule("SDFO Orientation","2:30PM"));
-        list.add(new Schedule("Closing Remarks","3:30PM"));
+        list.add(new Schedule("Registration","7:00AM"));
+        list.add(new Schedule("Movement to HSSH Grounds","7:30AM"));
+        list.add(new Schedule("Introduction to Lasallian Prayers Eucharistic Celebration","7:45AM"));
+        list.add(new Schedule("Entrance of Colors\n" +
+                "National Anthem\n" +
+                "Welcoming Remarks","9:00AM"));
+        list.add(new Schedule("Movement to eating area","9:30AM"));
+        list.add(new Schedule("AM Snacks","9:40AM"));
+        list.add(new Schedule("Movement to classrooms","9:50AM"));
+        list.add(new Schedule("Getting to Know You Activities\n" +
+                "Institutional Video ","10:00AM"));
+        list.add(new Schedule("Academic Concerns","10:40AM"));
+        list.add(new Schedule("Movement to eating area","12:00PM"));
+        list.add(new Schedule("Lunch","12:10PM"));
+        list.add(new Schedule("Movement to classrooms","1:00PM"));
+        list.add(new Schedule("Introduction to the Lasallian Formation and Action Framework ","1:10PM"));
+        list.add(new Schedule("Counseling and Career Services","1:45PM"));
+        list.add(new Schedule("Synthesis/Recap","3:00PM"));
+        list.add(new Schedule("Campus Tour","3:15PM"));
 
         adapter = new ListAdapter(list);
         recycler = (RecyclerView) v.findViewById(R.id.lpepd1list);
