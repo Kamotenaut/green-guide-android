@@ -82,8 +82,10 @@ public class CommonAdapter extends RecyclerView.Adapter<CommonAdapter.CommonView
                     }
                 }
             });
-            if(list.get(position).equals("Hymns and Cheers"))
-                holder.vImage.setBackgroundResource(R.drawable.l1);
+            if(list.get(position).equals("Hymns and Cheers")) {
+
+                holder.vImage.setImageResource(R.drawable.l1);
+            }
         }
 
         @Override

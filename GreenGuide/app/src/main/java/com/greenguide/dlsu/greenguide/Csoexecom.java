@@ -7,6 +7,7 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -46,6 +47,10 @@ public class Csoexecom extends AppCompatActivity {
         adapter = new ProfileAdapter(list);
         recycler = (RecyclerView) findViewById(R.id.csoexecomlist);
         recycler.setHasFixedSize(true);
+
+        recycler.setItemViewCacheSize(20);
+        recycler.setDrawingCacheEnabled(true);
+        recycler.setDrawingCacheQuality(View.DRAWING_CACHE_QUALITY_HIGH);
         LinearLayoutManager llm = new LinearLayoutManager(getBaseContext());
         recycler.setLayoutManager(llm);
         llm.setOrientation(LinearLayoutManager.VERTICAL);
