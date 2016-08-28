@@ -58,8 +58,10 @@ public class CommonAdapter extends RecyclerView.Adapter<CommonAdapter.CommonView
                     switch(list.get(position)){
                         case "Dean's Message":i = new Intent(v.getContext(),DeanMessage.class); v.getContext().startActivity(i);break;
                         case "Lasallian Pledge":i = new Intent(v.getContext(),LasallianPledge.class); v.getContext().startActivity(i);break;
-                        case "Hymns and Cheers":i = new Intent(v.getContext(),HymnsAndCheers.class); v.getContext().startActivity(i);break;
-                        case "LPEP Schedule":i = new Intent(v.getContext(),LpepSchedule.class);v.getContext().startActivity(i);break;
+                        case "Lasallian Hymns":i = new Intent(v.getContext(),Hymns.class); v.getContext().startActivity(i);break;
+                        case "DLSU Cheers":i = new Intent(v.getContext(),Cheers.class); v.getContext().startActivity(i);break;
+                        case "LPEP Schedule A":i = new Intent(v.getContext(),LpepSchedule.class);v.getContext().startActivity(i);break;
+                        case "LPEP Schedule B":i = new Intent(v.getContext(),LpepScheduleb.class);v.getContext().startActivity(i);break;
                         case "Arrows Express":i = new Intent(v.getContext(),ArrowsExpress.class);v.getContext().startActivity(i);break;
                         case "Photocopy Services":i = new Intent(v.getContext(),Photocopy.class);v.getContext().startActivity(i);break;
                         case "CSO Executive Board":i = new Intent(v.getContext(),Csoexecom.class);v.getContext().startActivity(i);break;
@@ -68,17 +70,18 @@ public class CommonAdapter extends RecyclerView.Adapter<CommonAdapter.CommonView
                         case "Printing Services":i = new Intent(v.getContext(),Printing.class);v.getContext().startActivity(i);break;
                         case "Places to Eat":i = new Intent(v.getContext(),EatingPlaces.class);v.getContext().startActivity(i);break;
                         case "School Supplies":i = new Intent(v.getContext(),Supplies.class);v.getContext().startActivity(i);break;
-                        case "Values and Prayers":i = new Intent(v.getContext(),ValuesPrayers.class);v.getContext().startActivity(i);break;
+                        case "Core Values":i = new Intent(v.getContext(),CoreValues.class);v.getContext().startActivity(i);break;
+                        case "Prayers":i = new Intent(v.getContext(),Prayers.class);v.getContext().startActivity(i);break;
                         case "About the USG":i = new Intent(v.getContext(),AboutUsg.class);v.getContext().startActivity(i);break;
                         case "About the CSO":i = new Intent(v.getContext(),AboutCso.class);v.getContext().startActivity(i);break;
                         case "USG Officers":i = new Intent(v.getContext(),UsgOfficers.class);v.getContext().startActivity(i);break;
                         case "Programs and Services":i = new Intent(v.getContext(),ProgramsServices.class);v.getContext().startActivity(i);break;
-                        case "Organizations":i = new Intent(v.getContext(),Organizations.class);v.getContext().startActivity(i);break;
+                        case "CSO Organizations":i = new Intent(v.getContext(),Organizations.class);v.getContext().startActivity(i);break;
                         case "Tips and Tidbits":i = new Intent(v.getContext(),Tips.class);v.getContext().startActivity(i);break;
-                        case "Admin Offices":i = new Intent(v.getContext(),Admin.class);v.getContext().startActivity(i);break;
-                        case "Lasallian Pastoral Office":i = new Intent(v.getContext(),LspoServices.class);v.getContext().startActivity(i);break;
+                        case "Administrative Offices":i = new Intent(v.getContext(),Admin.class);v.getContext().startActivity(i);break;
+                        case "Liturgical Activities":i = new Intent(v.getContext(),LspoServices.class);v.getContext().startActivity(i);break;
                         case "Housing Facilities":i = new Intent(v.getContext(),Housing.class);v.getContext().startActivity(i);break;
-                        case "Dress Code":i = new Intent(v.getContext(),DressCode.class);v.getContext().startActivity(i);break;
+                        case "Student Affairs Offices":i = new Intent(v.getContext(),StudentAffairs.class);v.getContext().startActivity(i);break;
                     }
                 }
             });

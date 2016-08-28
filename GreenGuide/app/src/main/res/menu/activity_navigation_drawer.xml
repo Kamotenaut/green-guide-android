@@ -4,32 +4,28 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_home"
-            android:icon="@drawable/ic_home"
-            android:title="Home" />
-        <item
             android:id="@+id/nav_lpep"
-            android:icon="@drawable/ic_lpep"
+            android:icon="@drawable/lpep"
             android:title="LPEP" />
         <item
-            android:id="@+id/nav_USG"
-            android:icon="@drawable/ic_usg"
-            android:title="USG" />
-            <item
-                android:id="@+id/nav_cso"
-                android:icon="@drawable/ic_cso"
-                android:title="CSO" />
+            android:id="@+id/nav_valuesandprayers"
+            android:icon="@drawable/lasallian_core_prayers"
+            android:title="Values and Prayers" />
         <item
-            android:id="@+id/nav_around"
-            android:icon="@drawable/ic_around"
-            android:title="Around DLSU" />
+            android:id="@+id/nav_offices"
+            android:icon="@drawable/offices"
+            android:title="Offices" />
         <item
-            android:id="@+id/nav_services"
-            android:icon="@drawable/ic_services"
-            android:title="Campus Services" />
+            android:id="@+id/nav_studentorgs"
+            android:icon="@drawable/student_orgs"
+            android:title="Student Organizations" />
+        <item
+            android:id="@+id/nav_fyi"
+            android:icon="@drawable/fyi"
+            android:title="For Your Information" />
         <item
             android:id="@+id/nav_about"
-            android:icon="@drawable/ic_about"
+            android:icon="@drawable/about"
             android:title="About" />
     </group>
 

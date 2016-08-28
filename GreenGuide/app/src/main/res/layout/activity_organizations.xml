@@ -36,7 +36,7 @@
                 android:layout_below="@id/logo"
                 android:layout_centerHorizontal="true"
                 android:id="@+id/organizationstitle"
-                android:text="Organizations"
+                android:text="CSO Organizations"
                 android:layout_marginTop="10dp"
                 android:textSize="20sp"
                 />

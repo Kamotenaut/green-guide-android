@@ -12,6 +12,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import org.solovyev.android.views.llm.DividerItemDecoration;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -33,6 +35,8 @@ public class About extends android.app.Fragment{
         View v = inflater.inflate(R.layout.fragment_about, container, false);
         String fontPath = "fonts/Montserrat-Regular.ttf";
         Typeface tf = Typeface.createFromAsset(v.getContext().getAssets(), fontPath);
+        //final LinearLayoutManager layoutManager = new org.solovyev.android.views.llm.LinearLayoutManager(v.getContext(), LinearLayoutManager.VERTICAL, false);
+
         title = (TextView) v.findViewById(R.id.devtitle);
         title.setTypeface(tf);
         ArrayList<Profile> list = new ArrayList();
@@ -47,9 +51,13 @@ public class About extends android.app.Fragment{
         adapter = new DevAdapter(list);
         recycler = (RecyclerView) v.findViewById(R.id.devlist);
         recycler.setHasFixedSize(true);
+        recycler.setNestedScrollingEnabled(false);
+        //recycler.addItemDecoration(new DividerItemDecoration(v.getContext(), null));
+        //recycler.setLayoutManager(layoutManager);
+        //recycler.setAdapter(adapter);
         LinearLayoutManager llm = new LinearLayoutManager(v.getContext());
         recycler.setLayoutManager(llm);
-        llm.setOrientation(LinearLayoutManager.HORIZONTAL);
+        llm.setOrientation(LinearLayoutManager.VERTICAL);
         recycler.setAdapter(adapter);
 
         return v;

@@ -14,7 +14,7 @@
     <string name="seek_to">Jump To</string>
     <string name="seek_to_hint">Seconds</string>
     <string name="title_activity_lasallian_cheers">LasallianCheers</string>
-    <string name="alma_mater_song_title">Alma Mater Song</string>
+    <string name="alma_mater_song_title">Alma Mater Hymn</string>
     <string name="de_la_salle_song_title">De La Salle Song</string>
     <string name="green_archers_song_title">Green Archers Song</string>
     <string name="archers_song_title">Archers Song</string>
@@ -71,7 +71,7 @@
     <string name="animo">Animo green!\r\nAnimo white!\r\nAnimo L-S- C will fight!\r\nAnimo white!\r\nAnimo green!\r\nAnimo L-S- C will win!\r\nAaaaaaaaaahhhhhhhhhhhhhh!\r\nYippity, yippity, L-S- C!\r\nGreen white, green white, victory!\r\nYippity, yippity, L-S- C!\r\nGreen white, green white, victory!</string>
     <string name="archer">With an A with an A\r\nWith an A R C\r\nWith a C with a C\r\nWith a C H E\r\nWith an R with an R\r\nA R C H E R S\r\nArchers! Archers!</string>
     <string name="fight_again">Fight \u2018em again! Fight \u2018em again!\r\nFight \u2018em HARD! (Thrice)\r\nTeam, team, team!</string>
-    <string name="dean_message">In our tradition of teaching minds, touching hearts, and\r\ntransforming lives, allow\u00A0us to accompany you in your journey\r\nas college students through the Lasallian Personal\r\nEffectiveness Program (LPEP).\r\n\r\nLPEP will introduce you to our University, its culture, and the\r\nLasallian core values we constantly uphold in all the things\r\nthat we do here. It will give you a glimpse of what your college\r\nlife will be for the next three to four years. Make sure you\r\nenjoy your LPEP!\u00A0\r\n\r\nLPEP is made more exciting this year with the launch of this\r\nGreen Guide app, prepared especially for your batch by your\r\nfellow Lasallians from the College of Computer Studies. The\r\napp contains more information about the student life here in\r\nDLSU. With just one tap, you will find the different offices,\r\ngroups, and organizations that you may join to make your\r\ncollege life more productive and exciting.\r\n\r\nLastly, as you start your journey in DLSU, I am happy to\r\nintroduce you to a community that takes care of your\r\nwelfare, looks after you, and ensures the development of\r\nyour whole potential. We commit ourselves to molding you\r\nto become Lasallian achievers for God and country.\u00A0\r\n\r\nI thank God for bringing you all here in DLSU.\r\n\r\nAnimo La Salle!</string>
+    <string name="dean_message">In our tradition of teaching minds, touching hearts, and transforming lives, allow\u00A0us to accompany you in your journey  as college students through the Lasallian Personal  Effectiveness Program (LPEP).\r\n\r\nLPEP will introduce you to our University, its culture, and the Lasallian core values we constantly uphold in all the things  that we do here. It will give you a glimpse of what your college life will be for the next three to four years. Make sure yo enjoy your LPEP!\u00A0\r\n\r\nLPEP is made more exciting this year with the launch of this  Green Guide app, prepared especially for your batch by your  fellow Lasallians from the College of Computer Studies. The app contains more information about the student life here in DLSU. With just one click, you will find the different offices, groups, and organizations that you may join to make your college life more productive and exciting.\r\n\r\nLastly, as you start your journey in DLSU, I am happy to introduce you to a community that takes care of your  welfare, looks after you, and ensures the development of  your whole potential. We commit ourselves to molding you to become Lasallian achievers for God and country.\u00A0\r\n\r\nI thank God for bringing you all here in DLSU.\r\n\r\nAnimo La Salle!</string>
     <string name="dean_title">Dean of Student Affairs</string>
     <string name="dean_name">Amelia Galang</string>
     <string name="begin_button">Begin Journey</string>
@@ -113,5 +113,6 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_hymns">Hymns</string>
 
 </resources>

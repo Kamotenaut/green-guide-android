@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Hymns">
+        <menu>
+            <item
+                android:id="@+id/nav_alma_mater"
+                android:title="@string/alma_mater_song_title" />
+            <item
+                android:id="@+id/nav_dls_song"
+                android:title="@string/de_la_salle_song_title" />
+            <item
+                android:id="@+id/nav_green_archer_song"
+                android:title="@string/green_archers_song_title" />
+            <item
+                android:id="@+id/nav_archer_song"
+                android:title="@string/archers_song_title" />
+            <item
+                android:id="@+id/nav_victory_song"
+                android:title="@string/victory_song_title" />
+            <item
+                android:id="@+id/nav_marching"
+                android:title="@string/marching_song_title" />
+            <item
+                android:id="@+id/nav_fighting"
+                android:title="@string/fighting_song_title" />
+        </menu>
+    </item>
+
+</menu>

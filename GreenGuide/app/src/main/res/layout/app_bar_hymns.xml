@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    >
+    android:fitsSystemWindows="true"
+    tools:context=".Cheers">
+
+
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingBottom="10dp"
+        android:layout_height="120dp"
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
-
-
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -22,6 +23,25 @@
                 android:layout_height="?attr/actionBarSize"
                 android:background="?attr/colorPrimary"
                 app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:padding="12dp"
+                android:id="@+id/backbtn"
+                android:src="@drawable/ic_back"
+                />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:padding="12dp"
+                android:id="@+id/btn"
+                android:src="@drawable/ic_menu"
+                android:layout_alignParentEnd="true"
+                />
+
             <ImageView
                 android:layout_width="150dp"
                 android:layout_height="50dp"
@@ -34,23 +54,19 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/admintitle"
                 android:textColor="#fff"
                 android:layout_below="@id/logo"
                 android:layout_centerHorizontal="true"
-                android:text="Administrative Offices"
+                android:id="@+id/hymnheader"
+                android:text="Lasallian Hymns"
                 android:layout_marginTop="10dp"
                 android:textSize="25sp"
                 />
 
         </RelativeLayout>
     </android.support.design.widget.AppBarLayout>
-    <android.support.v7.widget.RecyclerView
-        android:background="#f2f2f2"
-        android:paddingBottom="3dp"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/adminlist"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior"
-        />
+
+    <include layout="@layout/content_hymns" />
+
+
 </android.support.design.widget.CoordinatorLayout>

@@ -4,17 +4,12 @@ import android.app.Fragment;
 import android.content.Intent;
 import android.graphics.Typeface;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.support.v4.app.FragmentManager;
-import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
 
@@ -32,12 +27,12 @@ public class Navigation extends AppCompatActivity
         setSupportActionBar(toolbar);
 
         fragmentManager = getFragmentManager();
-        fragmentManager.beginTransaction().replace(R.id.content_frame, new Home()).commit();
+        fragmentManager.beginTransaction().replace(R.id.content_frame, new Lpep()).commit();
         title = (TextView) findViewById(R.id.navtitle);
         String fontPath = "fonts/Montserrat-Regular.ttf";
         Typeface tf = Typeface.createFromAsset(getBaseContext().getAssets(), fontPath);
         title.setTypeface(tf);
-        title.setText("Home");
+        title.setText("LPEP");
         setTitle("");
 
         Intent i = new Intent(getBaseContext(),DeanMessage.class);
@@ -68,25 +63,22 @@ public class Navigation extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
         Fragment fragment = null;
-        if (id == R.id.nav_home) {
-            fragmentManager.beginTransaction().replace(R.id.content_frame, new Home()).commit();
-            title.setText("Home");
-        } else if (id == R.id.nav_lpep) {
+        if (id == R.id.nav_lpep) {
             fragmentManager.beginTransaction().replace(R.id.content_frame, new Lpep()).commit();
             title.setText("LPEP");
-        } else  if (id == R.id.nav_USG) {
-            fragmentManager.beginTransaction().replace(R.id.content_frame, new Usg()).commit();
-            title.setText("USG");
-        } else if (id == R.id.nav_cso) {
-            fragmentManager.beginTransaction().replace(R.id.content_frame, new Cso()).commit();
-            title.setText("CSO");
-        } else if (id == R.id.nav_around) {
-            fragmentManager.beginTransaction().replace(R.id.content_frame, new AroundDLSU()).commit();
-            title.setText("Around DLSU");
-        } else if (id == R.id.nav_services) {
-            fragmentManager.beginTransaction().replace(R.id.content_frame, new CampusServices()).commit();
-            title.setText("Campus Services");
-        } else  if (id == R.id.nav_about) {
+        } else  if (id == R.id.nav_valuesandprayers) {
+            fragmentManager.beginTransaction().replace(R.id.content_frame, new ValuesAndPrayers()).commit();
+            title.setText("Values and Prayers");
+        } else if (id == R.id.nav_offices) {
+            fragmentManager.beginTransaction().replace(R.id.content_frame, new Offices()).commit();
+            title.setText("Offices");
+        } else if (id == R.id.nav_studentorgs) {
+            fragmentManager.beginTransaction().replace(R.id.content_frame, new StudentOrgs()).commit();
+            title.setText("Student Organizations");
+        } else if (id == R.id.nav_fyi) {
+            fragmentManager.beginTransaction().replace(R.id.content_frame, new ForYourInformation()).commit();
+            title.setText("For Your Information");
+        } else if (id == R.id.nav_about) {
             fragmentManager.beginTransaction().replace(R.id.content_frame, new About()).commit();
             title.setText("About");
         }

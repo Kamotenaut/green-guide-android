@@ -69,7 +69,7 @@
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".ValuesPrayers"
+            android:name=".CoreValues"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
@@ -109,13 +109,29 @@
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".HymnsAndCheers"
+            android:name=".Cheers"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".DressCode"
+        <activity
+            android:name=".DressCode"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Prayers"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Hymns"
+            android:label="@string/title_activity_hymns"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".LpepScheduleb"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".StudentAffairs"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar"></activity>
-
     </application>
 
 </manifest>

@@ -35,7 +35,7 @@
                 android:textColor="#fff"
                 android:layout_below="@+id/lsposerviceslogo"
                 android:layout_centerHorizontal="true"
-                android:text="LSPO Services"
+                android:text="Liturgical Activities"
                 android:layout_marginTop="5dp"
                 android:textSize="20sp"
                 />
