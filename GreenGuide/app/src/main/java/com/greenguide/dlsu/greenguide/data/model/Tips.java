@@ -2,14 +2,13 @@ package com.greenguide.dlsu.greenguide.data.model;
 
 public class Tips {
 
-    public static final String TABLE_NAME = "tips";
-    public static final String COLUMN_NAME_ID = "id";
-    public static final String COLUMN_NAME_DESC = "description";
-
     private int id;
     private String description;
 
-    public Tips(){}
+    public Tips(int id, String description){
+        this.id = id;
+        this.description = description;
+    }
 
     public int getId() {
         return id;

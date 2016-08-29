@@ -1,6 +1,8 @@
 package com.greenguide.dlsu.greenguide;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Typeface;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -8,6 +10,8 @@ import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.TextView;
+
+import com.greenguide.dlsu.greenguide.data.DatabaseHelper;
 
 public class DeanMessage extends AppCompatActivity {
 
@@ -17,12 +21,16 @@ public class DeanMessage extends AppCompatActivity {
     private TextView welcometxt;
     private TextView titletxt;
 
+    final static String KEY_MESSAGE_IS_READ = "message_is_read";
+    final static String DEAN_PREF = "dean_message_pref";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dean_message);
 
         String fontPath = "fonts/Montserrat-Regular.ttf";
+        SharedPreferences sharedPreferences = getSharedPreferences(DEAN_PREF, Context.MODE_PRIVATE);
 
         deantxt = (TextView) findViewById(R.id.deantxt);
         messagetxt = (TextView) findViewById(R.id.messagetxt);
@@ -34,6 +42,16 @@ public class DeanMessage extends AppCompatActivity {
         messagetxt.setTypeface(tf);
         welcometxt.setTypeface(tf);
         titletxt.setTypeface(tf);
+
+        String message = sharedPreferences.getString(KEY_MESSAGE_IS_READ, null);
+        if(message == null) {
+            SharedPreferences.Editor editor = sharedPreferences.edit();
+            editor.putString(KEY_MESSAGE_IS_READ, "true");
+            editor.commit();
+        }
+        else{
+            finish();
+        }
 
         setStatusBarTranslucent(true);
         btnbegin = (Button)findViewById(R.id.btnbegin);
