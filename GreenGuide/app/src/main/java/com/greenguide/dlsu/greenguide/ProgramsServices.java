@@ -20,7 +20,7 @@ public class ProgramsServices extends AppCompatActivity {
     TextView title;
     private Toolbar toolbar;
     RecyclerView recycler;
-    OrgAdapter adapter;
+   ProgramsAdapter adapter;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,7 +39,7 @@ public class ProgramsServices extends AppCompatActivity {
 
         ArrayList<NameTag> list = StudentOffices.getInstance().getPrograms();
 
-        adapter = new OrgAdapter(list);
+        adapter = new ProgramsAdapter(list);
         recycler = (RecyclerView) findViewById(R.id.progservlist);
         recycler.setHasFixedSize(true);
         LinearLayoutManager llm = new LinearLayoutManager(getBaseContext());

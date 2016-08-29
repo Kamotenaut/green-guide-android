@@ -16,7 +16,7 @@ import com.greenguide.dlsu.greenguide.data.stored.StudentOffices;
 import java.util.ArrayList;
 
 
-public class UsgExecom extends Fragment {
+public class Usgexecom extends Fragment {
     RecyclerView recycler;
     ProfileAdapter adapter;
     @Override

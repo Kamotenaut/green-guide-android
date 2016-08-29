@@ -85,9 +85,58 @@ public class CommonAdapter extends RecyclerView.Adapter<CommonAdapter.CommonView
                     }
                 }
             });
-            if(list.get(position).equals("Hymns and Cheers")) {
-
-                holder.vImage.setImageResource(R.drawable.l1);
+            if(list.get(position).equals("Dean's Message")) {
+                //holder.vImage.setImageResource(R.drawable);
+            }else if(list.get(position).equals("Lasallian Pledge")) {
+                holder.vImage.setImageResource(R.drawable.pledge);
+            } else if(list.get(position).equals("Lasallian Hymns")) {
+                holder.vImage.setImageResource(R.drawable.hymns);
+            } else if(list.get(position).equals("DLSU Cheers")) {
+                holder.vImage.setImageResource(R.drawable.dlsucheers);
+            } else if(list.get(position).equals("LPEP Schedule A")) {
+                holder.vImage.setImageResource(R.drawable.lpepa);
+            } else if(list.get(position).equals("LPEP Schedule B")) {
+                holder.vImage.setImageResource(R.drawable.lpepb);
+            } else if(list.get(position).equals("Arrows Express")) {
+                holder.vImage.setImageResource(R.drawable.arrowsexpress);
+            } else if(list.get(position).equals("Photocopy Services")) {
+                //holder.vImage.setImageResource(R.drawable);
+            } else if(list.get(position).equals("CSO Executive Board")) {
+                //holder.vImage.setImageResource(R.drawable.);
+            } else if(list.get(position).equals("Parking Locations")) {
+                //holder.vImage.setImageResource(R.drawable.);
+            } else if(list.get(position).equals("Wifi Spots")) {
+                //holder.vImage.setImageResource(R.drawable.);
+            } else if(list.get(position).equals("Printing Services")) {
+                //holder.vImage.setImageResource(R.drawable.hymns);
+            } else if(list.get(position).equals("Places to Eat")) {
+                holder.vImage.setImageResource(R.drawable.eat);
+            } else if(list.get(position).equals("School Supplies")) {
+                holder.vImage.setImageResource(R.drawable.supplies);
+            } else if(list.get(position).equals("Core Values")) {
+                holder.vImage.setImageResource(R.drawable.values);
+            } else if(list.get(position).equals("Prayers")) {
+                holder.vImage.setImageResource(R.drawable.prayers);
+            } else if(list.get(position).equals("About the USG")) {
+                //holder.vImage.setImageResource(R.drawable.hymns);
+            } else if(list.get(position).equals("About the CSO")) {
+                holder.vImage.setImageResource(R.drawable.aboutcso);
+            } else if(list.get(position).equals("USG Officers")) {
+                //holder.vImage.setImageResource(R.drawable.hymns);
+            } else if(list.get(position).equals("Programs and Services")) {
+                holder.vImage.setImageResource(R.drawable.programsservices);
+            } else if(list.get(position).equals("CSO Organizations")) {
+                holder.vImage.setImageResource(R.drawable.csoorgs);
+            } else if(list.get(position).equals("Tips and Tidbits")) {
+                //holder.vImage.setImageResource(R.drawable.);
+            } else if(list.get(position).equals("Administrative Offices")) {
+                //holder.vImage.setImageResource(R.drawable.);
+            } else if(list.get(position).equals("Liturgical Activities")) {
+                holder.vImage.setImageResource(R.drawable.liturgical);
+            } else if(list.get(position).equals("Housing Facilities")) {
+                holder.vImage.setImageResource(R.drawable.housing);
+            } else if(list.get(position).equals("Student Affairs Offices")) {
+                //holder.vImage.setImageResource(R.drawable.hymns);
             }
         }
 

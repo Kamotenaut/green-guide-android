@@ -13,25 +13,26 @@ import com.greenguide.dlsu.greenguide.data.model.NameTag;
 import java.util.List;
 
 /**
- * Created by jasonsioco on 8/13/2016.
+ * Created by jasonsioco on 8/30/2016.
  */
-public class OrgAdapter extends RecyclerView.Adapter<OrgAdapter.OrgViewHolder>{
+public class ProgramsAdapter extends RecyclerView.Adapter<ProgramsAdapter.ProgramsViewHolder>{
+
 
     private List<NameTag> list;
 
-    public OrgAdapter(List<NameTag> list) {
+    public ProgramsAdapter(List<NameTag> list) {
         this.list = list;
     }
 
-    public static class OrgViewHolder extends RecyclerView.ViewHolder{
+    public static class ProgramsViewHolder extends RecyclerView.ViewHolder{
         protected TextView vTitle;
-        //protected TextView vDescription;
+        protected TextView vDescription;
         protected ImageView vPhoto;
 
-        public OrgViewHolder(View v, List<NameTag> list) {
+        public ProgramsViewHolder(View v, List<NameTag> list) {
             super(v);
             vTitle = (TextView) v.findViewById(R.id.orgtitle);
-            //vDescription = (TextView) v.findViewById(R.id.orgdescription);
+            vDescription = (TextView) v.findViewById(R.id.orgdescription);
             vPhoto = (ImageView)v.findViewById(R.id.orgimg);
             String fontPath = "fonts/Montserrat-Regular.ttf";
             Typeface tf = Typeface.createFromAsset(v.getContext().getAssets(), fontPath);
@@ -43,16 +44,16 @@ public class OrgAdapter extends RecyclerView.Adapter<OrgAdapter.OrgViewHolder>{
     }
 
     @Override
-    public OrgViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View itemView = LayoutInflater.from(parent.getContext()).inflate(R.layout.org_item, parent, false);
+    public ProgramsViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+        View itemView = LayoutInflater.from(parent.getContext()).inflate(R.layout.prog_item, parent, false);
 
-        return new OrgViewHolder(itemView,list);
+        return new ProgramsViewHolder(itemView,list);
     }
 
     @Override
-    public void onBindViewHolder(OrgViewHolder holder, final int position) {
+    public void onBindViewHolder(ProgramsViewHolder holder, final int position) {
         holder.vTitle.setText(list.get(position).getName());
-        //holder.vDescription.setText(list.get(position).getDescription());
+        holder.vDescription.setText(list.get(position).getDescription());
         switch(list.get(position).getName()){
             case "":;break;
         }
