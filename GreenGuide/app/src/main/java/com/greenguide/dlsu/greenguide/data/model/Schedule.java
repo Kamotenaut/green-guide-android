@@ -4,9 +4,15 @@ public class Schedule {
 
     private String time, description, label;
 
-    public Schedule ( String time, String description ){
-        this.time = time;
+    public Schedule ( String description, String time, String label ){
         this.description = description;
+        this.time = time;
+        this.label = label;
+    }
+
+    public Schedule ( String description, String time ){
+        this.description = description;
+        this.time = time;
     }
 
     public String getTime() {

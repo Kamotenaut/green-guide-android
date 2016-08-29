@@ -1,18 +1,16 @@
 package com.greenguide.dlsu.greenguide.data.model;
 
-public class Spot {
+public class NameTag {
 
-    private String name, description, location;
+    String name, description;
 
-    public Spot(String name, String description, String location){
+    public NameTag(String name, String description){
         this.name = name;
         this.description = description;
-        this.location = location;
     }
 
-    public Spot(String name, String description){
+    public NameTag(String name){
         this.name = name;
-        this.description = description;
     }
 
     public String getName() {
@@ -29,13 +27,5 @@ public class Spot {
 
     public void setDescription(String description) {
         this.description = description;
-    }
-
-    public String getLocation() {
-        return location;
-    }
-
-    public void setLocation(String location) {
-        this.location = location;
     }
 }

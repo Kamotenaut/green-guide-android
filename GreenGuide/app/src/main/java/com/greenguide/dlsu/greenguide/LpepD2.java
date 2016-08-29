@@ -10,6 +10,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.greenguide.dlsu.greenguide.data.model.Schedule;
+import com.greenguide.dlsu.greenguide.data.stored.LPEPScheduler;
+
 import java.util.ArrayList;
 
 
@@ -36,25 +39,7 @@ public class LpepD2 extends Fragment {
                              Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.fragment_lpep_d2, container, false);
 
-        ArrayList<Schedule> list = new ArrayList();
-        list.add(new Schedule("Registration","7:00AM"));
-        list.add(new Schedule("Prayer Services","8:00AM"));
-        list.add(new Schedule("Lasallian Module","8:15AM"));
-        list.add(new Schedule("Movement to eating area","10:00AM"));
-        list.add(new Schedule("AM Snacks","10:15AM"));
-        list.add(new Schedule("Movement to classrooms","10:30AM"));
-        list.add(new Schedule("Student Testimonial Videos\n" +
-                "DO Module","10:45AM"));
-        list.add(new Schedule("Movement to eating areas","12:00PM"));
-        list.add(new Schedule("Lunch","12:10PM"));
-        list.add(new Schedule("Movement to HSSH Grounds","1:10PM"));
-        list.add(new Schedule("LAMBS Sponsors Program","1:30PM"));
-        list.add(new Schedule("Learning the Alma Mater Song\n" +
-                "Teaching of Lasallian Cheers","2:00PM"));
-        list.add(new Schedule("CAO Presentation","3:30PM"));
-        list.add(new Schedule("LPEP Party Celebration","4:10PM"));
-        list.add(new Schedule("Movement to CSO Tour","4:30PM"));
-        list.add(new Schedule("CSO Tour","4:40PM"));
+        ArrayList<Schedule> list = LPEPScheduler.getInstance().getScheduleA("Day 2");
         adapter = new ListAdapter(list);
         recycler = (RecyclerView) v.findViewById(R.id.lpepd2list);
         recycler.setHasFixedSize(true);

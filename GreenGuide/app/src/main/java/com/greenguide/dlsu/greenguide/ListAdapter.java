@@ -10,6 +10,8 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.greenguide.dlsu.greenguide.data.model.Schedule;
+
 import org.w3c.dom.Text;
 
 import java.util.List;
@@ -51,7 +53,7 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ListViewHolder
 
     @Override
     public void onBindViewHolder(ListViewHolder holder, final int position) {
-        holder.vName.setText(list.get(position).getTitle());
+        holder.vName.setText(list.get(position).getDescription());
         holder.vTime.setText(list.get(position).getTime());
 
     }

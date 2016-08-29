@@ -11,8 +11,6 @@ import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.greenguide.dlsu.greenguide.data.DatabaseHelper;
-
 public class DeanMessage extends AppCompatActivity {
 
     private Button btnbegin;

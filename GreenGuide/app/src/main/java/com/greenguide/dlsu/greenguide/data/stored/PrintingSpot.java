@@ -9,11 +9,14 @@ public class PrintingSpot {
 
     private static PrintingSpot instance = null;
 
-    private ArrayList<Spot> printingList;
-    private ArrayList<String> locationList;
+    private ArrayList<Spot> printingMnlList;
+    private ArrayList<Spot> printingOffList;
+    private ArrayList<Spot> photocopyMnlList;
 
     private PrintingSpot(){
-        insertPrinting();
+        insertPrintingMnl();
+        insertPrintingOff();
+        insertPhotocopyMnl();
     }
 
     public static PrintingSpot getInstance(){
@@ -23,36 +26,51 @@ public class PrintingSpot {
         return instance;
     }
 
-    private void insertPrinting(){
+    private void insertPrintingMnl(){
 
-        printingList = new ArrayList<>();
-        locationList = new ArrayList<>();
-
+        printingMnlList = new ArrayList<>();
         //Manila Campus
-        String manila = Location.Manila.getLocation();
-        locationList.add(manila);
-        printingList.add( new Spot("Andrew Hall", "2nd Floor", manila));
-        printingList.add( new Spot("Copytrade", "beside Tapa King; in front of University Mall", manila));
-        printingList.add( new Spot("Computer Shop", "EGI; Sherwood", manila));
-        printingList.add( new Spot("Piso Print", "in front of the University Mall; 2nd floor of One Archers Place", manila));
-        printingList.add( new Spot("Photocopying Stations", "Around Campus", manila));
-        printingList.add( new Spot("Student Cooperative (SCOOP)", "Ground Floor, Br. Connon Hall", manila));
-        printingList.add( new Spot("Nitronet", "Beside Tapa King", manila));
+        printingMnlList.add( new Spot("Andrew Hall", "2nd Floor"));
+        printingMnlList.add( new Spot("Student Cooperative (SCOOP)", "Ground Floor, Br. Connon Hall"));
 
     }
 
-    public ArrayList<String> getLocationList(){
-        return locationList;
+    private void insertPrintingOff(){
+        printingOffList = new ArrayList<>();
+
+        printingOffList.add( new Spot("Copytrade", "beside Tapa King; in front of University Mall"));
+        printingOffList.add( new Spot("Computer Shop", "EGI; Sherwood"));
+        printingOffList.add( new Spot("Piso Print", "in front of the University Mall; 2nd floor of One Archers Place"));;
+        printingOffList.add( new Spot("Nitronet", "Beside Tapa King"));
     }
 
-    public ArrayList<Spot> getPrintingList(String location){
-        ArrayList<Spot> temp = new ArrayList<>();
+    private void insertPhotocopyMnl(){
 
-        for( Spot s : printingList ){
-            if( s.getLocation().equalsIgnoreCase(location) ){
-                temp.add(s);
-            }
-        }
-        return temp;
+        photocopyMnlList = new ArrayList<>();
+
+        photocopyMnlList.add( new Spot("Andrew Gonzales Hall", "2nd Floor Hallway"));
+        photocopyMnlList.add( new Spot("Andrew Gonzales Hall", "2nd Floor Library"));
+        photocopyMnlList.add( new Spot("Andrew Gonzales Hall", "8th Floor Hallway"));
+        photocopyMnlList.add( new Spot("Andrew Gonzales Hall", "15th Floor Hallway"));
+        photocopyMnlList.add( new Spot("Faculty Association", "3rd Floor, Miguel Building"));
+        photocopyMnlList.add( new Spot("Gokongwei Building", "Ground Floor"));
+        photocopyMnlList.add( new Spot("Henry Sy, Sr. Hall", "7th Floor, Library"));
+        photocopyMnlList.add( new Spot("Henry Sy, Sr. Hall", "9th Floor, Library"));
+        photocopyMnlList.add( new Spot("La Salle Building", "2nd Floor, Medrano Hall"));
+        photocopyMnlList.add( new Spot("Miguel Building", "Ground Floor"));
+        photocopyMnlList.add( new Spot("SJ Hallway", "Ground Floor"));
+        photocopyMnlList.add( new Spot("Yuchengco Building", "Ground Floor"));
+    }
+
+    public ArrayList<Spot> getPhotocopyMnlList(){
+        return photocopyMnlList;
+    }
+
+    public ArrayList<Spot> getPrintingMnlList() {
+        return printingMnlList;
+    }
+
+    public ArrayList<Spot> getPrintingOffList(){
+        return printingOffList;
     }
 }

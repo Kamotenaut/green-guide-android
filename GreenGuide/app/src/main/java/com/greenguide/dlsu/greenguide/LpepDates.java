@@ -10,6 +10,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.greenguide.dlsu.greenguide.data.model.Schedule;
+
 import java.util.ArrayList;
 
 
@@ -36,8 +38,8 @@ public class LpepDates extends Fragment {
         View v = inflater.inflate(R.layout.fragment_lpep_dates, container, false);
 
         ArrayList<Schedule> list = new ArrayList();
-        list.add(new Schedule("September 5, 2016","Day 1"));
-        list.add(new Schedule("September 6, 2016","Day 2"));
+        list.add(new Schedule("September 5, 2016","Day 1", ""));
+        list.add(new Schedule("September 6, 2016","Day 2", ""));
 
         adapter = new ListAdapter(list);
         recycler = (RecyclerView) v.findViewById(R.id.lpepdateslist);

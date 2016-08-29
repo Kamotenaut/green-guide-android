@@ -10,6 +10,8 @@ import android.view.MenuItem;
 import android.widget.TextView;
 
 import com.bignerdranch.expandablerecyclerview.Model.ParentListItem;
+import com.greenguide.dlsu.greenguide.data.model.Spot;
+import com.greenguide.dlsu.greenguide.data.stored.PrintingSpot;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -41,23 +43,12 @@ public class Photocopy extends AppCompatActivity {
         List<ExpandableParentListItem> expandableParentListItems = new ArrayList<>();
         List<ParentListItem> parentListItems = new ArrayList<>();
         expandableParentListItems.add(new ExpandableParentListItem("Manila Campus"));
-        List<ExpandableChildListItem> childItemList = new ArrayList<>();
-        childItemList.add(new ExpandableChildListItem("Andrew Hall", "2nd floor"));
-        childItemList.add(new ExpandableChildListItem("Gokongwei Building", "1st floor"));
-        expandableParentListItems.get(0).setChildItemList(childItemList);
+        List<ExpandableChildListItem> itemList = new ArrayList<>();
+        for(Spot s : PrintingSpot.getInstance().getPhotocopyMnlList()){
+            itemList.add( new ExpandableChildListItem(s.getName(), s.getDescription()));
+        }
+        expandableParentListItems.get(0).setChildItemList(itemList);
         parentListItems.add(expandableParentListItems.get(0));
-
-        expandableParentListItems.add(new ExpandableParentListItem("STC Campus"));
-        List<ExpandableChildListItem> childItemList2 = new ArrayList<>();
-        childItemList2.add(new ExpandableChildListItem("Building 1", "2nd floor"));
-        expandableParentListItems.get(1).setChildItemList(childItemList2);
-        parentListItems.add(expandableParentListItems.get(1));
-
-        expandableParentListItems.add(new ExpandableParentListItem("Outside DLSU"));
-        List<ExpandableChildListItem> childItemList3 = new ArrayList<>();
-        childItemList3.add(new ExpandableChildListItem("Building 1", "2nd floor"));
-        expandableParentListItems.get(2).setChildItemList(childItemList3);
-        parentListItems.add(expandableParentListItems.get(2));
 
 
         ExpandableAdapter adapter = new ExpandableAdapter(getBaseContext(), parentListItems);

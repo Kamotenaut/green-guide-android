@@ -13,7 +13,9 @@ public enum OfficeType {
     COE("Gokongwei College of Engineering"),
     COS("College of Science"),
     LAW("College of Law"),
-    SAO("Student Affairs Offices");
+    STC("Science and Technology Complex"),
+    SAO("Student Affairs Offices"),
+    USG("Executive Board");
 
     private final String office;
 

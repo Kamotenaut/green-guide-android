@@ -10,6 +10,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.greenguide.dlsu.greenguide.data.model.Schedule;
+import com.greenguide.dlsu.greenguide.data.stored.ArrowsExpressScheduler;
+
 import java.util.ArrayList;
 
 
@@ -36,9 +39,7 @@ public class StcToTaft extends Fragment {
                              Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.fragment_stc_to_taft, container, false);
 
-        ArrayList<Schedule> list = new ArrayList();
-        list.add(new Schedule("First Trip","7:30AM"));
-        list.add(new Schedule("Final Trip","6:30PM"));
+        ArrayList<Schedule> list = ArrowsExpressScheduler.getInstance().getStcToDlsu();
         adapter = new ListAdapter(list);
         recycler = (RecyclerView) v.findViewById(R.id.stctotaftlist);
         recycler.setHasFixedSize(true);

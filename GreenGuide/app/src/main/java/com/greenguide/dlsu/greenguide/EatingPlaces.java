@@ -42,19 +42,6 @@ public class EatingPlaces extends AppCompatActivity {
 
         List<ExpandableParentListItem> expandableParentListItems = new ArrayList<>();
         List<ParentListItem> parentListItems = new ArrayList<>();
-//        expandableParentListItems.add(new ExpandableParentListItem("EGI Tower"));
-//        List<ExpandableChildListItem> childItemList = new ArrayList<>();
-//        childItemList.add(new ExpandableChildListItem("Wai Ying", "Wai Ying serves affordable Chinese food. Found in the 1st floor."));
-//        childItemList.add(new ExpandableChildListItem("Orange and Spices", "Orange and Spices offer a variety of homemade dishes. Found at the 1st floor."));
-//        expandableParentListItems.get(0).setChildItemList(childItemList);
-//        parentListItems.add(expandableParentListItems.get(0));
-//
-//        expandableParentListItems.add(new ExpandableParentListItem("Agno"));
-//        List<ExpandableChildListItem> childItemList2 = new ArrayList<>();
-//        childItemList2.add(new ExpandableChildListItem("Ate Rica's Bacsilogan", "The iconic Bacsilog that every Lasallian loves."));
-//        expandableParentListItems.get(1).setChildItemList(childItemList2);
-//        parentListItems.add(expandableParentListItems.get(1));
-
 
         int index = 0;
         for(String s : EatingSpot.getInstance().getLocationList() ){

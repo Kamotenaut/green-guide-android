@@ -8,7 +8,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.uncopt.android.widget.text.justify.JustifiedTextView;
+import com.greenguide.dlsu.greenguide.data.model.NameTag;
 
 import java.util.List;
 
@@ -17,9 +17,9 @@ import java.util.List;
  */
 public class OrgAdapter extends RecyclerView.Adapter<OrgAdapter.OrgViewHolder>{
 
-    private List<Org> list;
+    private List<NameTag> list;
 
-    public OrgAdapter(List<Org> list) {
+    public OrgAdapter(List<NameTag> list) {
         this.list = list;
     }
 
@@ -28,7 +28,7 @@ public class OrgAdapter extends RecyclerView.Adapter<OrgAdapter.OrgViewHolder>{
         protected TextView vDescription;
         protected ImageView vPhoto;
 
-        public OrgViewHolder(View v, List<Org> list) {
+        public OrgViewHolder(View v, List<NameTag> list) {
             super(v);
             vTitle = (TextView) v.findViewById(R.id.orgtitle);
             vDescription = (TextView) v.findViewById(R.id.orgdescription);
@@ -51,9 +51,9 @@ public class OrgAdapter extends RecyclerView.Adapter<OrgAdapter.OrgViewHolder>{
 
     @Override
     public void onBindViewHolder(OrgViewHolder holder, final int position) {
-        holder.vTitle.setText(list.get(position).getTitle());
+        holder.vTitle.setText(list.get(position).getName());
         holder.vDescription.setText(list.get(position).getDescription());
-        switch(list.get(position).getTitle()){
+        switch(list.get(position).getName()){
             case "":;break;
         }
 

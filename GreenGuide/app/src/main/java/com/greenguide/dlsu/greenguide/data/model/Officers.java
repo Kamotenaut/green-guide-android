@@ -12,6 +12,11 @@ public class Officers {
         this.office = office;
     }
 
+    public Officers(String name, String position){
+        this.name = name;
+        this.position = position;
+    }
+
     public String getName() {
         return name;
     }

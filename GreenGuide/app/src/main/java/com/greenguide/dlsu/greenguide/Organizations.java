@@ -48,7 +48,7 @@ public class Organizations extends AppCompatActivity {
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
         adapter.addFragment(new Aso(), "ASO");
         adapter.addFragment(new Aspire(), "ASPIRE");
-        adapter.addFragment(new Cap11(), "CAP11");
+        adapter.addFragment(new Cap12(), "CAP12");
         adapter.addFragment(new Probe(), "PROBE");
         adapter.addFragment(new Engage(), "ENGAGE");
         viewPager.setAdapter(adapter);
