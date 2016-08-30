@@ -71,13 +71,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
-                    <ImageView
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"
-                        android:layout_margin="15dp"
-                        android:layout_gravity="center"
-                        android:src="@drawable/avatar" />
-
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -89,6 +82,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="Spirit of Faith"
+                            android:gravity="center"
                             android:textAllCaps="true"
                             android:textColor="#1e1e1e"
                             android:textSize="20sp"
@@ -100,18 +94,9 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginBottom="3dp"
-                            android:text="Let us remember that we are in the most holy presence of God."
+                            android:text="The spirit of faith is the spirit that allows one to:\nBe aware of God’s active presence in the events and circumstances of one’s life\nJudge and evaluate things in the light of the Gospel\nSearch for God’s will in order to carry out his saving plan\nUnite one’s actions to the on-going saving action of God in the world\nTrust God’s loving presence and providence"
                             android:textColor="#393939"
                             android:textSize="12sp" />
-
-                        <TextView
-                            android:id="@+id/vptxttag1"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:textColor="#393939"
-                            android:text="Ating alalahanin na ang Diyos ay ating kapiling."
-                            android:textStyle="italic"
-                            android:textSize="12sp"/>
                     </LinearLayout>
                 </LinearLayout>
             </android.support.v7.widget.CardView>
@@ -127,13 +112,6 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
-
-                    <ImageView
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"
-                        android:layout_margin="15dp"
-                        android:layout_gravity="center"
-                        android:src="@drawable/avatar" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -146,6 +124,8 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="Zeal for Service"
+
+                            android:gravity="center"
                             android:textAllCaps="true"
                             android:textColor="#1e1e1e"
                             android:textSize="20sp"
@@ -157,18 +137,9 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginBottom="3dp"
-                            android:text="I will continue, O my God to do all my actions for the love of you."
+                            android:text="Zeal for service is the active expression of one’s faith. It is the enthusiastic and total gift of self for the safe of the mission. This desire to be of greater service to others conditions a Lasallian’s quest for excellence and continuous self-improvement."
                             android:textColor="#393939"
                             android:textSize="12sp" />
-
-                        <TextView
-                            android:id="@+id/vptxttag2"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:textColor="#393939"
-                            android:text="Ipagpapatuloy ko, O Diyos, ang lahat ng aking gawain upang ikaw ay lalong pakaibigin."
-                            android:textStyle="italic"
-                            android:textSize="12sp"/>
                     </LinearLayout>
                 </LinearLayout>
             </android.support.v7.widget.CardView>
@@ -185,13 +156,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
-                    <ImageView
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"
-                        android:layout_margin="15dp"
-                        android:layout_gravity="center"
-                        android:src="@drawable/avatar" />
-
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -203,6 +167,8 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="Communion in mission"
+
+                            android:gravity="center"
                             android:textAllCaps="true"
                             android:textColor="#1e1e1e"
                             android:textSize="20sp"
@@ -214,18 +180,9 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginBottom="3dp"
-                            android:text="Live Jesus in our hearts.\nForever!"
+                            android:text="Communion as a relationship with God is the source of all mission and ministry. To pursue the Lasallian mission, we need to promote solidarity and collaboration among members of out community, as well as develop a greater sense of openness to all persons, especially to those in need. As a goal of our mission, communion suggests the unity that comes from reconciliation between God, human beings, and creation."
                             android:textColor="#393939"
                             android:textSize="12sp" />
-
-                        <TextView
-                            android:id="@+id/vptxttag3"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:textColor="#393939"
-                            android:text="Mabuhay ka Hesus sa aming puso. Magpakailanman!"
-                            android:textStyle="italic"
-                            android:textSize="12sp"/>
                     </LinearLayout>
                 </LinearLayout>
             </android.support.v7.widget.CardView>

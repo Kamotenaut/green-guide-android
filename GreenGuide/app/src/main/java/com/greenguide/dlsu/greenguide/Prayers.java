@@ -5,25 +5,73 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
-public class Prayers extends AppCompatActivity {
+import com.google.android.youtube.player.YouTubeBaseActivity;
+import com.google.android.youtube.player.YouTubeInitializationResult;
+import com.google.android.youtube.player.YouTubePlayer;
+import com.google.android.youtube.player.YouTubePlayerView;
+
+public class Prayers extends YouTubeBaseActivity
+        implements YouTubePlayer.OnInitializedListener{
 
     private Toolbar toolbar;
+    private TextView titletxt1;
+    private TextView titletxt2;
+    private TextView titletxt3;
+    private TextView tagtxt1;
+    private TextView tagtxt2;
+    private TextView tagtxt3;
+    private TextView txt1;
+    private TextView txt2;
+    private TextView txt3;
     private TextView header;
-
+    YouTubePlayer mPlayer;
+    private static final int RECOVERY_REQUEST = 1;
+    private YouTubePlayerView youTubeView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_prayers);
         toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
+        //setSupportActionBar(toolbar);
         header = (TextView) findViewById(R.id.prayersheader);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        titletxt1 = (TextView) findViewById(R.id.vptitle1);
+        titletxt2 = (TextView) findViewById(R.id.vptitle2);
+        titletxt3 = (TextView) findViewById(R.id.vptitle3);
+        tagtxt1 = (TextView) findViewById(R.id.vptxttag1);
+        tagtxt2 = (TextView) findViewById(R.id.vptxttag2);
+        tagtxt3 = (TextView) findViewById(R.id.vptxttag3);
+        txt1 = (TextView) findViewById(R.id.vptxt1);
+        txt2 = (TextView) findViewById(R.id.vptxt2);
+        txt3 = (TextView) findViewById(R.id.vptxt3);
+        ImageView back = (ImageView) findViewById(R.id.backbtn);
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
+
+        youTubeView = (YouTubePlayerView) findViewById(R.id.youtube_view);
+        youTubeView.initialize(Config.YOUTUBE_API_KEY, this);
+        //getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         setTitle("");
         String fontPath = "fonts/Montserrat-Regular.ttf";
         Typeface tf = Typeface.createFromAsset(getBaseContext().getAssets(), fontPath);
         header.setTypeface(tf);
+        titletxt1.setTypeface(tf);
+        titletxt2.setTypeface(tf);
+        titletxt3.setTypeface(tf);
+        //tagtxt1.setTypeface(tf);
+        //tagtxt2.setTypeface(tf);
+        //tagtxt3.setTypeface(tf);
+        txt1.setTypeface(tf);
+        txt2.setTypeface(tf);
+        txt3.setTypeface(tf);
 
     }
 
@@ -36,5 +84,25 @@ public class Prayers extends AppCompatActivity {
                 return true;
         }
         return super.onOptionsItemSelected(item);
+    }
+
+
+    @Override
+    public void onInitializationSuccess(YouTubePlayer.Provider provider, YouTubePlayer player, boolean b) {
+        if (!b) {
+            mPlayer = player;
+            player.setShowFullscreenButton(false);
+            mPlayer.cueVideo("GfyTXcdH-zg");
+        }
+    }
+
+    @Override
+    public void onInitializationFailure(YouTubePlayer.Provider provider, YouTubeInitializationResult youTubeInitializationResult) {
+        if (youTubeInitializationResult.isUserRecoverableError()) {
+            youTubeInitializationResult.getErrorDialog(this, RECOVERY_REQUEST).show();
+        } else {
+            String error = String.format(getString(R.string.player_error), youTubeInitializationResult.toString());
+            Toast.makeText(this, error, Toast.LENGTH_LONG).show();
+        }
     }
 }

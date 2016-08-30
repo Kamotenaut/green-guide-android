@@ -56,7 +56,7 @@ public class CommonAdapter extends RecyclerView.Adapter<CommonAdapter.CommonView
                 public void onClick(View v){
                     Intent i;
                     switch(list.get(position)){
-                        case "Dean's Message":i = new Intent(v.getContext(),DeanMessage.class); v.getContext().startActivity(i);break;
+                        case "Dean's Message":i = new Intent(v.getContext(),DeanActivity.class); v.getContext().startActivity(i);break;
                         case "Lasallian Pledge":i = new Intent(v.getContext(),LasallianPledge.class); v.getContext().startActivity(i);break;
                         case "Lasallian Hymns":i = new Intent(v.getContext(),Hymns.class); v.getContext().startActivity(i);break;
                         case "DLSU Cheers":i = new Intent(v.getContext(),Cheers.class); v.getContext().startActivity(i);break;

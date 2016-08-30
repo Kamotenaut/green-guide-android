@@ -29,9 +29,9 @@ public class EatingSpot {
         //Manila Campus
 
         eatingList.add( new Spot("One Archer’s Place",
-                "Chinese food (Ersao);" +
-                "Mexican food (El Pollo Frito);" +
-                "Japanese food (Ichiro);" +
+                "Ersao;" +
+                "El Pollo Frito;" +
+                "Ichiro;" +
                 "Manang’s;" +
                 "The Burger Transit;" +
                 "The Steak Shack;" +

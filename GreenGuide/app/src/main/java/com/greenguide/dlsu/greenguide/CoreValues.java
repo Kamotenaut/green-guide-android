@@ -13,9 +13,6 @@ public class CoreValues extends AppCompatActivity {
     private TextView titletxt1;
     private TextView titletxt2;
     private TextView titletxt3;
-    private TextView tagtxt1;
-    private TextView tagtxt2;
-    private TextView tagtxt3;
     private TextView txt1;
     private TextView txt2;
     private TextView txt3;
@@ -31,9 +28,6 @@ public class CoreValues extends AppCompatActivity {
         titletxt1 = (TextView) findViewById(R.id.vptitle1);
         titletxt2 = (TextView) findViewById(R.id.vptitle2);
         titletxt3 = (TextView) findViewById(R.id.vptitle3);
-        tagtxt1 = (TextView) findViewById(R.id.vptxttag1);
-        tagtxt2 = (TextView) findViewById(R.id.vptxttag2);
-        tagtxt3 = (TextView) findViewById(R.id.vptxttag3);
         txt1 = (TextView) findViewById(R.id.vptxt1);
         txt2 = (TextView) findViewById(R.id.vptxt2);
         txt3 = (TextView) findViewById(R.id.vptxt3);
@@ -46,12 +40,9 @@ public class CoreValues extends AppCompatActivity {
         titletxt1.setTypeface(tf);
         titletxt2.setTypeface(tf);
         titletxt3.setTypeface(tf);
-        //tagtxt1.setTypeface(tf);
-        //tagtxt2.setTypeface(tf);
-        //tagtxt3.setTypeface(tf);
-        txt1.setTypeface(tf);
-        txt2.setTypeface(tf);
-        txt3.setTypeface(tf);
+        //txt1.setTypeface(tf);
+        //txt2.setTypeface(tf);
+        //txt3.setTypeface(tf);
 
     }
 
