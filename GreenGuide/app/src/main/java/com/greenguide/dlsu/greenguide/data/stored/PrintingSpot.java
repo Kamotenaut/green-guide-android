@@ -10,13 +10,17 @@ public class PrintingSpot {
     private static PrintingSpot instance = null;
 
     private ArrayList<Spot> printingMnlList;
+    private ArrayList<Spot> printingStcList;
     private ArrayList<Spot> printingOffList;
     private ArrayList<Spot> photocopyMnlList;
+    private ArrayList<Spot> photocopyStcList;
 
     private PrintingSpot(){
         insertPrintingMnl();
         insertPrintingOff();
+        insertPrintingStc();
         insertPhotocopyMnl();
+        insertPhotocopyStc();
     }
 
     public static PrintingSpot getInstance(){
@@ -62,8 +66,28 @@ public class PrintingSpot {
         photocopyMnlList.add( new Spot("Yuchengco Building", "Ground Floor"));
     }
 
+    private void insertPrintingStc(){
+        printingStcList = new ArrayList<>();
+
+        printingStcList.add( new Spot("College Library", "3rd floor"));
+    }
+
+    private void insertPhotocopyStc(){
+        photocopyStcList = new ArrayList<>();
+
+        photocopyStcList.add( new Spot("College Library", "3rd floor"));
+    }
+
+    public ArrayList<Spot> getPrintingStcList() {
+        return printingStcList;
+    }
+
     public ArrayList<Spot> getPhotocopyMnlList(){
         return photocopyMnlList;
+    }
+
+    public ArrayList<Spot> getPhotocopyStcList() {
+        return photocopyStcList;
     }
 
     public ArrayList<Spot> getPrintingMnlList() {

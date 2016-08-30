@@ -25,12 +25,12 @@ public class SchoolSupplies {
     private void insertSuppliesMnl(){
         suppliesListMnl = new ArrayList<>();
 
-        suppliesListMnl.add(new Spot("DLSU Bookstore", "Ground Floor, SPS Building"));
+        suppliesListMnl.add(new Spot("Animo Bookstore", "Ground Floor, Yuchengco Hall"));
         suppliesListMnl.add(new Spot("Full Booked", "Torre Lorenzo II"));
         suppliesListMnl.add(new Spot("Mini Candy & Supplies stalls", "Agno"));
         suppliesListMnl.add(new Spot("National Book Store", "near LRT"));
-        suppliesListMnl.add(new Spot("The Store", ""));
-        suppliesListMnl.add(new Spot("Satellite Bookstore", "6th Floor, Andrew Building"));
+        suppliesListMnl.add(new Spot("The Store", "2nd Floor Enrique Razon Sports Center"));
+        suppliesListMnl.add(new Spot("Office Warehouse", "One Archer’s Place"));
 
     }
 
@@ -45,7 +45,9 @@ public class SchoolSupplies {
         suppliesListStc.add(new Spot("DLSU-STC Bookstore", ""));
         suppliesListStc.add(new Spot("Humana Printing Services", "Humana Building"));
         suppliesListStc.add(new Spot("National Book Store", "Paseo De Sta. Rosa"));
+        suppliesListMnl.add(new Spot("The Store", "West Wing Basement, Milagros R. Del Rosario Building, DLSU-STC"));
         suppliesListStc.add(new Spot("PC Butlers", ""));
+        suppliesListStc.add(new Spot("National Book Store", "Nuvali"));
     }
 
     public ArrayList<Spot> getSuppliesListStc() {

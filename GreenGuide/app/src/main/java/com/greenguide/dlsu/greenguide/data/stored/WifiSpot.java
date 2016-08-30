@@ -52,7 +52,7 @@ public class WifiSpot {
         wifiList.add( new Spot("St. La Salle Hall", "2nd Floor North Wing and Medrano Hall", manila));
         wifiList.add( new Spot("St. Miguel Hall",
                 "Ground Floor Area and 2nd to 4th Floors (Hallway and Classrooms)", manila));
-        wifiList.add( new Spot("Razon Building", "2nd, 9th and 10th Floors", manila));
+        wifiList.add( new Spot("Enrique Razon Sports Center", "2nd, 9th and 10th Floors", manila));
         wifiList.add( new Spot("Velasco Hall",
                 "Ground Floor Area and 2nd to 5th Floors (Hallway and Classrooms)", manila));
         wifiList.add( new Spot("William Hall", "Ground Floor Lobby and Study Area", manila));

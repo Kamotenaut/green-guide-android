@@ -30,9 +30,8 @@ public class AdministrativeOffices {
         adminList.add(new Officers("Dr. Gerardo C. Janairo", "Chancellor", OfficeType.ADMIN.getType()));
         adminList.add(new Officers("Dr. Robert  C. Roleda", "Vice Chancellor for Academics (VCA)", OfficeType.ADMIN.getType()));
         adminList.add(new Officers("Br. Michael J. Broughton FSC","Vice President for Lasalian Mission (VPLM)", OfficeType.ADMIN.getType()));
-        adminList.add(new Officers("", "Vice President for Finance", OfficeType.ADMIN.getType()));
         adminList.add(new Officers("Dr. Raymond Girard Tan","Vice Chancellor for Research and Innovation (VCRI) ", OfficeType.ADMIN.getType()));
-        adminList.add(new Officers("Mr. Edwin P. Santiago", "Vice Chancellor for Administration", OfficeType.ADMIN.getType()));
+        adminList.add(new Officers("", "Vice Chancellor for Administration", OfficeType.ADMIN.getType()));
         adminList.add(new Officers("Dr. Gil Nonato C. Santos", "Vice Chancellor for DLSU-STC", OfficeType.ADMIN.getType()));
     }
 

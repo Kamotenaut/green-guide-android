@@ -31,7 +31,7 @@ public class ParkingSpot {
         //Manila Campus
         locationList.add(Location.Manila.getLocation());
         parkingList.add( new Spot("Br. Andrew Gonzales FSC Hall Parking", "", Location.Manila.getLocation()));
-        parkingList.add( new Spot("Sport Complex Parking", "", Location.Manila.getLocation()));
+        parkingList.add( new Spot("Enrique Razon Sports Center Parking", "", Location.Manila.getLocation()));
 
         //STC Campus
         locationList.add(Location.STC.getLocation());
@@ -41,7 +41,7 @@ public class ParkingSpot {
         //Outside Campus
         String off = Location.OFF.getLocation();
         locationList.add(off);
-        parkingList.add( new Spot("Beach", "near Razon Sports Complex", off));
+        parkingList.add( new Spot("Beach", "near Enrique Razon Sports Center", off));
         parkingList.add( new Spot("Burgundy Transpacific Parking", "", off));
         parkingList.add( new Spot("EGI Parking", "", off));
         parkingList.add( new Spot("Green Court", "", off));

@@ -58,7 +58,7 @@ public class EatingSpot {
                 "Bonchon Chicken"));
 
         eatingList.add( new Spot("DLSU Canteens",
-                "La Casita (2nd floor, Enrique Razon Sports Complex);" +
+                "La Casita (2nd floor, Enrique Razon Sports Center);" +
                 "La Casita (6th Floor, Br. Andrew Gonzales Hall);" +
                 "Br. Bloemen Hall (Animo Biz, Along SJ Walk);" +
                 "Perico’s (Ground Floor - La Salle Hall)"));
