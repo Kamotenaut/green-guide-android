@@ -57,6 +57,7 @@ public class About extends android.app.Fragment{
         recycler.setLayoutManager(llm);
         llm.setOrientation(LinearLayoutManager.VERTICAL);
         recycler.setAdapter(adapter);
+        recycler.setFocusable(false);
 
         return v;
     }

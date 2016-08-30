@@ -63,13 +63,17 @@ public class ProfileAdapter extends RecyclerView.Adapter<ProfileAdapter.ProfileV
         holder.vDescription.setText(list.get(position).getDescription());
         holder.vPosition.setText(list.get(position).getPosition());
         switch(list.get(position).getPosition()){
-            case "USG President":holder.vPhoto.setImageResource(R.drawable.usg_president);break;
+//            case "USG President":holder.vPhoto.setImageResource(R.drawable.usg_president);break;
             case "Council Chairperson":holder.vPhoto.setImageResource(R.drawable.cso_council_chairperson);break;
             case "Executive Vice Chairperson for Externals":holder.vPhoto.setImageResource(R.drawable.cso_vc_externals);break;
             case "Executive Vice Chairperson for Internals":holder.vPhoto.setImageResource(R.drawable.cso_vc_internals);break;
             case "Executive Vice Chairperson for Activities and Documentations":holder.vPhoto.setImageResource(R.drawable.cso_vc_docu);break;
             case "Executive Vice Chairperson for Finance":holder.vPhoto.setImageResource(R.drawable.cso_vc_finance);break;
             case "Executive Vice Chairperson for Science and Technology Complex":holder.vPhoto.setImageResource(R.drawable.cso_vc_stc);break;
+//            case "Vice President for External Affairs" : holder.vPhoto.setImageResource(R.drawable.external_affairs); break;
+//            case "Vice President for Internal Affairs" : holder.vPhoto.setImageResource(R.drawable.internal_affairs); break;
+//            case "Executive Secretary" : holder.vPhoto.setImageResource(R.drawable.executive_secretary); break;
+//            case "Executive Treasurer" : holder.vPhoto.setImageResource(R.drawable.executive_treasurer); break;
         }
 
 

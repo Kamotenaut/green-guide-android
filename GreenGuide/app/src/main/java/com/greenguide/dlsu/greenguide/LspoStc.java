@@ -39,24 +39,6 @@ public class LspoStc extends Fragment {
 
         List<ExpandableParentListItem> expandableParentListItems = new ArrayList<>();
         List<ParentListItem> parentListItems = new ArrayList<>();
-        expandableParentListItems.add(new ExpandableParentListItem("Venue"));
-        List<ExpandableChildListItem> childItemList = new ArrayList<>();
-        childItemList.add(new ExpandableChildListItem("Location","Room E108, Milagros Del Rosario Bldg. Loc 104"));
-        expandableParentListItems.get(0).setChildItemList(childItemList);
-        parentListItems.add(expandableParentListItems.get(0));
-
-        expandableParentListItems.add(new ExpandableParentListItem("Daily Masses"));
-        List<ExpandableChildListItem> childItemList1 = new ArrayList<>();
-        childItemList1.add(new ExpandableChildListItem("Monday - Friday", "12:10 p.m. St. John Baptist de La Salle Chapel, LC1 Building"));
-        childItemList1.add(new ExpandableChildListItem("First Friday", "8:30 a.m. Covered Court"));
-        expandableParentListItems.get(1).setChildItemList(childItemList1);
-        parentListItems.add(expandableParentListItems.get(1));
-
-        expandableParentListItems.add(new ExpandableParentListItem("Confession"));
-        List<ExpandableChildListItem> childItemList2 = new ArrayList<>();
-        childItemList2.add(new ExpandableChildListItem("Tuesday and Thursday", "9:00 a.m – 11:00a.m. St. John Baptist de La Salle Chapel, LC1 Building"));
-        expandableParentListItems.get(2).setChildItemList(childItemList1);
-        parentListItems.add(expandableParentListItems.get(2));
 
 
         adapter = new ExpandableAltAdapter(v.getContext(), parentListItems);
