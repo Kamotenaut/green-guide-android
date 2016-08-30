@@ -42,7 +42,7 @@ public class SchoolSupplies {
         suppliesListStc = new ArrayList<>();
 
         suppliesListStc.add(new Spot("AK Designs", "Paseo De Sta. Rosa"));
-        suppliesListStc.add(new Spot("DLSU-STC Bookstore", ""));
+        suppliesListStc.add(new Spot("Animo Bookstore", ""));
         suppliesListStc.add(new Spot("Humana Printing Services", "Humana Building"));
         suppliesListStc.add(new Spot("National Book Store", "Paseo De Sta. Rosa"));
         suppliesListMnl.add(new Spot("The Store", "West Wing Basement, Milagros R. Del Rosario Building, DLSU-STC"));
