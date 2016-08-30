@@ -110,25 +110,15 @@ public class Hymns extends YouTubeBaseActivity
             content.setText(R.string.alma_mater_song);
             youTubeView.setVisibility(View.VISIBLE);
             mPlayer.cueVideo("ZgBEsw1BERI");
-        } else if (id == R.id.nav_dls_song) {
-            title.setText(R.string.de_la_salle_song_title);
-            content.setText(R.string.de_la_salle_song);
-        } else if (id == R.id.nav_green_archer_song) {
-            title.setText(R.string.green_archers_song_title);
-            content.setText(R.string.green_archers_song);
-        } else if (id == R.id.nav_archer_song) {
-            title.setText(R.string.archers_song_title);
-            content.setText(R.string.archers_song);
-        } else if (id == R.id.nav_victory_song) {
-            title.setText(R.string.victory_song_title);
-            content.setText(R.string.victory_song);
-        } else if (id == R.id.nav_marching) {
-            title.setText(R.string.marching_song_title);
-            content.setText(R.string.marching_song);
-        } else if (id == R.id.nav_fighting) {
-            title.setText(R.string.fighting_song_title);
-            content.setText(R.string.fighting_song);
+        } else if (id == R.id.nav_live_jesus) {
+            title.setText(R.string.live_jesus_title);
+            content.setText(R.string.live_jesus);
+
+            youTubeView.setVisibility(View.VISIBLE);
+            mPlayer.cueVideo("GfyTXcdH-zg");
         }
+
+
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(Gravity.RIGHT);

@@ -63,17 +63,25 @@ public class ProfileAdapter extends RecyclerView.Adapter<ProfileAdapter.ProfileV
         holder.vDescription.setText(list.get(position).getDescription());
         holder.vPosition.setText(list.get(position).getPosition());
         switch(list.get(position).getPosition()){
-//            case "USG President":holder.vPhoto.setImageResource(R.drawable.usg_president);break;
+            case "USG President":holder.vPhoto.setImageResource(R.drawable.usgpresident);break;
             case "Council Chairperson":holder.vPhoto.setImageResource(R.drawable.cso_council_chairperson);break;
             case "Executive Vice Chairperson for Externals":holder.vPhoto.setImageResource(R.drawable.cso_vc_externals);break;
             case "Executive Vice Chairperson for Internals":holder.vPhoto.setImageResource(R.drawable.cso_vc_internals);break;
             case "Executive Vice Chairperson for Activities and Documentations":holder.vPhoto.setImageResource(R.drawable.cso_vc_docu);break;
             case "Executive Vice Chairperson for Finance":holder.vPhoto.setImageResource(R.drawable.cso_vc_finance);break;
             case "Executive Vice Chairperson for Science and Technology Complex":holder.vPhoto.setImageResource(R.drawable.cso_vc_stc);break;
-//            case "Vice President for External Affairs" : holder.vPhoto.setImageResource(R.drawable.external_affairs); break;
-//            case "Vice President for Internal Affairs" : holder.vPhoto.setImageResource(R.drawable.internal_affairs); break;
-//            case "Executive Secretary" : holder.vPhoto.setImageResource(R.drawable.executive_secretary); break;
-//            case "Executive Treasurer" : holder.vPhoto.setImageResource(R.drawable.executive_treasurer); break;
+            case "Vice President for External Affairs" : holder.vPhoto.setImageResource(R.drawable.usg_vp_external); break;
+            case "Vice President for Internal Affairs" : holder.vPhoto.setImageResource(R.drawable.usg_vp_internal); break;
+            case "Executive Secretary" : holder.vPhoto.setImageResource(R.drawable.usg_secretary); break;
+            case "Executive Treasurer" : holder.vPhoto.setImageResource(R.drawable.usg_treasurer); break;
+            case "Computer Studies Government (CSG)" : holder.vPhoto.setImageResource(R.drawable.ccspresident); break;
+            case "College Government of Education (CGE)" : holder.vPhoto.setImageResource(R.drawable.coepresident); break;
+            case "Arts College Government (ACG)" : holder.vPhoto.setImageResource(R.drawable.clapresident); break;
+            case "Business College Government (BCG)" : holder.vPhoto.setImageResource(R.drawable.cobpresident); break;
+            case "College of Engineering Government (ECG)" : holder.vPhoto.setImageResource(R.drawable.gcoepresident); break;
+            case "Science College Government (SCG)" : holder.vPhoto.setImageResource(R.drawable.cospresident); break;
+            case "School of Economics Government (SEG)" : holder.vPhoto.setImageResource(R.drawable.soepresident); break;
+            case "Science and Technology Complex Government (STCG)" : holder.vPhoto.setImageResource(R.drawable.avatar); break;
         }
 
 

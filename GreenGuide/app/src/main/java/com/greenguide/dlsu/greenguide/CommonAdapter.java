@@ -82,6 +82,7 @@ public class CommonAdapter extends RecyclerView.Adapter<CommonAdapter.CommonView
                         case "Liturgical Activities":i = new Intent(v.getContext(),LspoServices.class);v.getContext().startActivity(i);break;
                         case "Housing Facilities":i = new Intent(v.getContext(),Housing.class);v.getContext().startActivity(i);break;
                         case "Student Affairs Offices":i = new Intent(v.getContext(),StudentAffairs.class);v.getContext().startActivity(i);break;
+                        case "Lasallian Mission Offices":i = new Intent(v.getContext(),MissionOffices.class);v.getContext().startActivity(i);break;
                     }
                 }
             });
@@ -137,7 +138,10 @@ public class CommonAdapter extends RecyclerView.Adapter<CommonAdapter.CommonView
                 holder.vImage.setImageResource(R.drawable.housing);
             } else if(list.get(position).equals("Student Affairs Offices")) {
                 //holder.vImage.setImageResource(R.drawable.hymns);
+            } else if(list.get(position).equals("Lasallian Mission Offices")) {
+                //holder.vImage.setImageResource(R.drawable.hymns);
             }
+
         }
 
         @Override

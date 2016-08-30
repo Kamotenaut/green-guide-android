@@ -172,6 +172,24 @@ public class Cheers extends YouTubeBaseActivity
         } else if (id == R.id.nav_fight_again) {
             title.setText(R.string.fight_again_title);
             content.setText(R.string.fight_again);
+        } else if (id == R.id.nav_dls_song) {
+            title.setText(R.string.de_la_salle_song_title);
+            content.setText(R.string.de_la_salle_song);
+        } else if (id == R.id.nav_green_archer_song) {
+            title.setText(R.string.green_archers_song_title);
+            content.setText(R.string.green_archers_song);
+        } else if (id == R.id.nav_archer_song) {
+            title.setText(R.string.archers_song_title);
+            content.setText(R.string.archers_song);
+        } else if (id == R.id.nav_victory_song) {
+            title.setText(R.string.victory_song_title);
+            content.setText(R.string.victory_song);
+        } else if (id == R.id.nav_marching) {
+            title.setText(R.string.marching_song_title);
+            content.setText(R.string.marching_song);
+        } else if (id == R.id.nav_fighting) {
+            title.setText(R.string.fighting_song_title);
+            content.setText(R.string.fighting_song);
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout_cheers);

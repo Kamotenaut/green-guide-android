@@ -15,8 +15,7 @@ import com.google.android.youtube.player.YouTubeInitializationResult;
 import com.google.android.youtube.player.YouTubePlayer;
 import com.google.android.youtube.player.YouTubePlayerView;
 
-public class Prayers extends YouTubeBaseActivity
-        implements YouTubePlayer.OnInitializedListener{
+public class Prayers extends AppCompatActivity{
 
     private Toolbar toolbar;
     private TextView titletxt1;
@@ -37,7 +36,7 @@ public class Prayers extends YouTubeBaseActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_prayers);
         toolbar = (Toolbar) findViewById(R.id.toolbar);
-        //setSupportActionBar(toolbar);
+        setSupportActionBar(toolbar);
         header = (TextView) findViewById(R.id.prayersheader);
         titletxt1 = (TextView) findViewById(R.id.vptitle1);
         titletxt2 = (TextView) findViewById(R.id.vptitle2);
@@ -48,17 +47,8 @@ public class Prayers extends YouTubeBaseActivity
         txt1 = (TextView) findViewById(R.id.vptxt1);
         txt2 = (TextView) findViewById(R.id.vptxt2);
         txt3 = (TextView) findViewById(R.id.vptxt3);
-        ImageView back = (ImageView) findViewById(R.id.backbtn);
-        back.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                finish();
-            }
-        });
 
-        youTubeView = (YouTubePlayerView) findViewById(R.id.youtube_view);
-        youTubeView.initialize(Config.YOUTUBE_API_KEY, this);
-        //getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         setTitle("");
         String fontPath = "fonts/Montserrat-Regular.ttf";
         Typeface tf = Typeface.createFromAsset(getBaseContext().getAssets(), fontPath);
@@ -86,23 +76,4 @@ public class Prayers extends YouTubeBaseActivity
         return super.onOptionsItemSelected(item);
     }
 
-
-    @Override
-    public void onInitializationSuccess(YouTubePlayer.Provider provider, YouTubePlayer player, boolean b) {
-        if (!b) {
-            mPlayer = player;
-            player.setShowFullscreenButton(false);
-            mPlayer.cueVideo("GfyTXcdH-zg");
-        }
-    }
-
-    @Override
-    public void onInitializationFailure(YouTubePlayer.Provider provider, YouTubeInitializationResult youTubeInitializationResult) {
-        if (youTubeInitializationResult.isUserRecoverableError()) {
-            youTubeInitializationResult.getErrorDialog(this, RECOVERY_REQUEST).show();
-        } else {
-            String error = String.format(getString(R.string.player_error), youTubeInitializationResult.toString());
-            Toast.makeText(this, error, Toast.LENGTH_LONG).show();
-        }
-    }
 }
