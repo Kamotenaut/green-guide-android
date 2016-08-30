@@ -30,11 +30,6 @@ public class Usgexecom extends Fragment {
         View v = inflater.inflate(R.layout.fragment_usg_execom, container, false);
 
         ArrayList<Profile> list = new ArrayList();
-//        list.add(new Profile("Zed Laqui", "USG President", "USG president is the highest position of the USG"));
-//        list.add(new Profile("Karl Ong", "Vice President for Internal Affairs", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porttitor sed orci quis imperdiet. Aenean ac lorem non magna pellentesque molestie. "));
-//        list.add(new Profile("Reigner Sanchez", "Vice President for External Affairs", "Lorem ipsum dolor sit amet, consectetur adipiscing elit."));
-//        list.add(new Profile("Monica Otayza", "Executive Secretary", "Lorem ipsum dolor sit amet, consectetur adipiscing elit."));
-//        list.add(new Profile("Brian Chen", "Executive Treasurer", "Lorem ipsum dolor sit amet, consectetur adipiscing elit."));
 
         for(Officers o : StudentOffices.getInstance().getUsgEB()){
             list.add(new Profile(o.getName(), o.getPosition(), ""));

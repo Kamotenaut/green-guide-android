@@ -65,13 +65,6 @@ public class StudentAffairs extends AppCompatActivity {
         expandableParentListItems.get(1).setChildItemList(childItemList1);
         parentListItems.add(expandableParentListItems.get(1));
 
-//        expandableParentListItems.add(new ExpandableParentListItem("Lasallian Pastoral Office (LSPO)"));
-//        List<ExpandableChildListItem> childItemList4 = new ArrayList<>();
-//        for(NameTag name : SAOOrganizations.getInstance().getLspo()){
-//            childItemList4.add(new ExpandableChildListItem(name.getName(), ""));
-//        }
-//        expandableParentListItems.get(3).setChildItemList(childItemList4);
-//        parentListItems.add(expandableParentListItems.get(3));
 
         expandableParentListItems.add(new ExpandableParentListItem("Office of Counseling and Career Services (OCCS)"));
         List<ExpandableChildListItem> childItemList2 = new ArrayList<>();
