@@ -35,7 +35,7 @@ public class CSOOrganizations {
 
         probe.add(new NameTag("AdCreate Society"));
         probe.add(new NameTag("Business Management Society (BMS)"));
-        probe.add(new NameTag("Economics NameTag (EconOrg)"));
+        probe.add(new NameTag("Economics Organization (EconOrg)"));
         probe.add(new NameTag("Junior Entrepreneurs Marketing Association (JEMA)"));
         probe.add(new NameTag("Junior Philippine Institute of Accountants (JPIA)"));
         probe.add(new NameTag("Ley La Salle (LSS)"));
@@ -50,7 +50,7 @@ public class CSOOrganizations {
     private void insertCap(){
         cap = new ArrayList<>();
 
-        cap.add(new NameTag("The NameTag for American Studies Students (AMSTUD)"));
+        cap.add(new NameTag("The Organization for American Studies Students (AMSTUD)"));
         cap.add(new NameTag("Behavioral Sciences Society (BSS)"));
         cap.add(new NameTag("Dalubhasaan ng mga Umuusbong na Mag-aaral ng Araling Filipino (DANUM)"));
         cap.add(new NameTag("European Studies Association (ESA)"));
@@ -102,15 +102,15 @@ public class CSOOrganizations {
 
         aspire.add(new NameTag("La Salle Computer Society (LSCS)"));
         aspire.add(new NameTag("Union of Students Inspired Towards Education (UNITED)"));
-        aspire.add(new NameTag("DLSU Filipino & Chinese NameTag (ENGLICOM)"));
+        aspire.add(new NameTag("DLSU Filipino & Chinese Organization (ENGLICOM)"));
         aspire.add(new NameTag("Rotaract Club of DLSU (ROTARACT)"));
-        aspire.add(new NameTag("United International Student NameTag (UNISTO)"));
+        aspire.add(new NameTag("United International Student Organization (UNISTO)"));
         aspire.add(new NameTag("AISEC-DLSU"));
         aspire.add(new NameTag("Moomedia"));
         aspire.add(new NameTag("Outdoor Club (OC)"));
         aspire.add(new NameTag("Writers’ Guild (WG)"));
-        aspire.add(new NameTag("De La Salle University – Environmental Conservation NameTag (ECO)"));
-        aspire.add(new NameTag("Gakuen Anime Soshiki (GAS – School of Anime NameTag)"));
+        aspire.add(new NameTag("De La Salle University – Environmental Conservation Organization (ECO)"));
+        aspire.add(new NameTag("Gakuen Anime Soshiki (GAS – School of Anime Organization)"));
     }
 
     public ArrayList<NameTag> getAspire() {

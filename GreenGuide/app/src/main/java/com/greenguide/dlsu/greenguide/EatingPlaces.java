@@ -44,11 +44,11 @@ public class EatingPlaces extends AppCompatActivity {
         List<ParentListItem> parentListItems = new ArrayList<>();
 
         int index = 0;
-        for(String s : EatingSpot.getInstance().getLocationList() ){
-            expandableParentListItems.add( new ExpandableParentListItem(s));
+        for( Spot s : EatingSpot.getInstance().getEatingList() ){
+            expandableParentListItems.add( new ExpandableParentListItem(s.getName()));
             List<ExpandableChildListItem> itemList = new ArrayList<>();
-            for(Spot spot : EatingSpot.getInstance().getEatingList(s)){
-                itemList.add(new ExpandableChildListItem(spot.getName(), spot.getDescription()));
+            for( String str : s.getDescription().split(";")) {
+                itemList.add(new ExpandableChildListItem(str, ""));
             }
             expandableParentListItems.get(index).setChildItemList(itemList);
             parentListItems.add(expandableParentListItems.get(index));

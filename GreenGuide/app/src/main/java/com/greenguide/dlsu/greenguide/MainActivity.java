@@ -13,8 +13,15 @@ public class MainActivity extends AppCompatActivity {
         Intent i = new Intent(getBaseContext(),Navigation.class);
         startActivity(i);
         finish();
+    }
 
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+    }
 
-
+    @Override
+    protected void onResume() {
+        super.onResume();
     }
 }

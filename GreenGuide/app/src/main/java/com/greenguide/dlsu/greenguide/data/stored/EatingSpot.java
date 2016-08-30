@@ -10,7 +10,6 @@ public class EatingSpot {
     private static EatingSpot instance = null;
 
     private ArrayList<Spot> eatingList;
-    private ArrayList<String> locationList;
 
     private EatingSpot(){
         insertEatingSpots();
@@ -26,30 +25,51 @@ public class EatingSpot {
     private void insertEatingSpots(){
 
         eatingList = new ArrayList<>();
-        locationList = new ArrayList<>();
 
         //Manila Campus
-        locationList.add(Location.Manila.getLocation());
-        eatingList.add( new Spot("Animo Biz", "Bloemen Hall", Location.Manila.getLocation()));
-        eatingList.add( new Spot("La Casita Canteen", "Enrique Razon Sports Center", Location.Manila.getLocation()));
-        eatingList.add( new Spot("Perico's Canteen", "St. La Salle Hall", Location.Manila.getLocation()));
+
+        eatingList.add( new Spot("One Archer’s Place",
+                "Chinese food (Ersao);" +
+                "Mexican food (El Pollo Frito);" +
+                "Japanese food (Ichiro);" +
+                "Manang’s;" +
+                "The Burger Transit;" +
+                "The Steak Shack;" +
+                "Holly’s Coffee;" +
+                "Pasta Boy"));
+
+        eatingList.add( new Spot("EGI Taft",
+                "Wai Ying;" +
+                "Jus & Jerry’s;" +
+                "Orange and Spices;" +
+                "Food Attack;" +
+                "Cafe Laya;" +
+                "Zen Tea"));
+
+        eatingList.add( new Spot("SM Green Taft",
+                "Eduardo’s Peri-Peri;" +
+                "Dunkin Donuts;" +
+                "Auntie Anne’s;" +
+                "Sbarro;" +
+                "Tummy Box"));
+
+        eatingList.add( new Spot("University Mall",
+                "KFC;" +
+                "Bonchon Chicken"));
+
+        eatingList.add( new Spot("DLSU Canteens",
+                "La Casita (2nd floor, Enrique Razon Sports Complex);" +
+                "La Casita (6th Floor, Br. Andrew Gonzales Hall);" +
+                "Br. Bloemen Hall (Animo Biz, Along SJ Walk);" +
+                "Perico’s (Ground Floor - La Salle Hall)"));
+
+        eatingList.add( new Spot("Agno",
+                "Caric's;" +
+                "Ate Rica's Bacsilog"));
 
     }
 
-    public ArrayList<String> getLocationList(){
-        return locationList;
+    public ArrayList<Spot> getEatingList() {
+        return eatingList;
     }
-
-    public ArrayList<Spot> getEatingList(String location){
-        ArrayList<Spot> temp = new ArrayList<>();
-
-        for( Spot s : eatingList ){
-            if( s.getLocation().equalsIgnoreCase(location) ){
-                temp.add(s);
-            }
-        }
-        return temp;
-    }
-
-
 }
