@@ -36,7 +36,7 @@ public class About extends android.app.Fragment{
         //final LinearLayoutManager layoutManager = new org.solovyev.android.views.llm.LinearLayoutManager(v.getContext(), LinearLayoutManager.VERTICAL, false);
 
         title = (TextView) v.findViewById(R.id.devtitle);
-        title.setTypeface(tf);
+        //title.setTypeface(tf);
         ArrayList<Profile> list = new ArrayList();
         list.add(new Profile("Jeno Panganiban", "BS-CS-ST", "Project Manager",R.drawable.panganiban));
         list.add(new Profile("Megan Avanceña", "BS-CS-IST", "Designer",R.drawable.avancena));

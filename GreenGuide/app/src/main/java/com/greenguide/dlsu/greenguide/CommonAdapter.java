@@ -87,7 +87,7 @@ public class CommonAdapter extends RecyclerView.Adapter<CommonAdapter.CommonView
                 }
             });
             if(list.get(position).equals("Dean's Message")) {
-                //holder.vImage.setImageResource(R.drawable);
+                holder.vImage.setImageResource(R.drawable.generic3);
             }else if(list.get(position).equals("Lasallian Pledge")) {
                 holder.vImage.setImageResource(R.drawable.pledge);
             } else if(list.get(position).equals("Lasallian Hymns")) {
@@ -101,15 +101,15 @@ public class CommonAdapter extends RecyclerView.Adapter<CommonAdapter.CommonView
             } else if(list.get(position).equals("Arrows Express")) {
                 holder.vImage.setImageResource(R.drawable.arrowsexpress);
             } else if(list.get(position).equals("Photocopy Services")) {
-                //holder.vImage.setImageResource(R.drawable);
+                holder.vImage.setImageResource(R.drawable.generic1);
             } else if(list.get(position).equals("CSO Executive Board")) {
-                //holder.vImage.setImageResource(R.drawable.);
+                holder.vImage.setImageResource(R.drawable.generic2);
             } else if(list.get(position).equals("Parking Locations")) {
-                //holder.vImage.setImageResource(R.drawable.);
+                holder.vImage.setImageResource(R.drawable.arrowsexpress);
             } else if(list.get(position).equals("Wifi Spots")) {
-                //holder.vImage.setImageResource(R.drawable.);
+                holder.vImage.setImageResource(R.drawable.generic3);
             } else if(list.get(position).equals("Printing Services")) {
-                //holder.vImage.setImageResource(R.drawable.hymns);
+                holder.vImage.setImageResource(R.drawable.generic2);
             } else if(list.get(position).equals("Places to Eat")) {
                 holder.vImage.setImageResource(R.drawable.eat);
             } else if(list.get(position).equals("School Supplies")) {
@@ -119,27 +119,27 @@ public class CommonAdapter extends RecyclerView.Adapter<CommonAdapter.CommonView
             } else if(list.get(position).equals("Prayers")) {
                 holder.vImage.setImageResource(R.drawable.prayers);
             } else if(list.get(position).equals("About the USG")) {
-                //holder.vImage.setImageResource(R.drawable.hymns);
+                holder.vImage.setImageResource(R.drawable.generic4);
             } else if(list.get(position).equals("About the CSO")) {
                 holder.vImage.setImageResource(R.drawable.aboutcso);
             } else if(list.get(position).equals("USG Officers")) {
-                //holder.vImage.setImageResource(R.drawable.hymns);
+                holder.vImage.setImageResource(R.drawable.generic1);
             } else if(list.get(position).equals("Programs and Services")) {
                 holder.vImage.setImageResource(R.drawable.programsservices);
             } else if(list.get(position).equals("CSO Organizations")) {
                 holder.vImage.setImageResource(R.drawable.csoorgs);
             } else if(list.get(position).equals("Tips and Tidbits")) {
-                //holder.vImage.setImageResource(R.drawable.);
+                holder.vImage.setImageResource(R.drawable.generic4);
             } else if(list.get(position).equals("Administrative Offices")) {
-                //holder.vImage.setImageResource(R.drawable.);
+                holder.vImage.setImageResource(R.drawable.generic3);
             } else if(list.get(position).equals("Liturgical Activities")) {
                 holder.vImage.setImageResource(R.drawable.liturgical);
             } else if(list.get(position).equals("Housing Facilities")) {
                 holder.vImage.setImageResource(R.drawable.housing);
             } else if(list.get(position).equals("Student Affairs Offices")) {
-                //holder.vImage.setImageResource(R.drawable.hymns);
+                holder.vImage.setImageResource(R.drawable.generic1);
             } else if(list.get(position).equals("Lasallian Mission Offices")) {
-                //holder.vImage.setImageResource(R.drawable.hymns);
+                holder.vImage.setImageResource(R.drawable.generic2);
             }
 
         }

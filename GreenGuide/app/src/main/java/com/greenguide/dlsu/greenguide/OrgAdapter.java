@@ -75,13 +75,15 @@ public class OrgAdapter extends RecyclerView.Adapter<OrgAdapter.OrgViewHolder>{
             case "Samahan ng mga Mag-aaral sa Sikolohiya (SMS)": holder.vPhoto.setImageResource(R.drawable.sms);break;
             case "Team Communications (TEAMCOMM)": holder.vPhoto.setImageResource(R.drawable.teamcomm);break;
             case "Kapatiran ng Kabataan para sa Kaunlaran (KKK)": holder.vPhoto.setImageResource(R.drawable.kkk);break;
-            //case "Cultura" : holder.vPhoto.setImageResource();break;
+            case "Cultura" : //holder.vPhoto.setImageResource();
+                holder.vPhoto.setVisibility(View.GONE);
+                break;
 
             case "Association of Computer Engineering Students (ACCESS)": holder.vPhoto.setImageResource(R.drawable.access);break;
             case "Chemical Engineering Society (ChEn)": holder.vPhoto.setImageResource(R.drawable.chen);break;
             case "Civil Engineering Society (CES)": holder.vPhoto.setImageResource(R.drawable.ces);break;
             case "Electronics and Communications Engineering Society (ECES)": holder.vPhoto.setImageResource(R.drawable.eces);break;
-            //case "Industrial Management Engineering Society (IMES)": holder.vPhoto.setImageResource(R.drawable.imes);break;
+            case "Industrial Management Engineering Society (IMES)": holder.vPhoto.setImageResource(R.drawable.imes);break;
             case "Mechanical Engineering Society (MES)": holder.vPhoto.setImageResource(R.drawable.mes);break;
             case "Society of Manufacturing Engineering (SME)": holder.vPhoto.setImageResource(R.drawable.sme);break;
 
@@ -92,11 +94,11 @@ public class OrgAdapter extends RecyclerView.Adapter<OrgAdapter.OrgViewHolder>{
 
             case "La Salle Computer Society (LSCS)": holder.vPhoto.setImageResource(R.drawable.lscs);break;
             case "Union of Students Inspired Towards Education (UNITED)": holder.vPhoto.setImageResource(R.drawable.united);break;
-            //case "DLSU Filipino & Chinese Organization (ENGLICOM)": holder.vPhoto.setImageResource(R.drawable.englicom);break;
+            case "DLSU Filipino & Chinese Organization (ENGLICOM)": holder.vPhoto.setImageResource(R.drawable.englicom);break;
             case "Rotaract Club of DLSU (ROTARACT)": holder.vPhoto.setImageResource(R.drawable.rotaract);break;
             case "United International Student Organization (UNISTO)": holder.vPhoto.setImageResource(R.drawable.unisto);break;
             case "AISEC-DLSU": holder.vPhoto.setImageResource(R.drawable.aisec_dlsu);break;
-            //case "Moomedia": holder.vPhoto.setImageResource(R.drawable.moo);break;
+            case "Moomedia": holder.vPhoto.setImageResource(R.drawable.moomedia);break;
             case "Outdoor Club (OC)": holder.vPhoto.setImageResource(R.drawable.oc);break;
             case "Writers’ Guild (WG)": holder.vPhoto.setImageResource(R.drawable.wg);break;
             case "De La Salle University – Environmental Conservation Organization (ECO)": holder.vPhoto.setImageResource(R.drawable.eco);break;
