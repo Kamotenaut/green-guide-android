@@ -35,7 +35,7 @@ public class EatingSpot {
                 "Manang’s;" +
                 "The Burger Transit;" +
                 "The Steak Shack;" +
-                "Holly’s Coffee;" +
+                "Bing's Fong;" +
                 "Pasta Boy"));
 
         eatingList.add( new Spot("EGI Taft",

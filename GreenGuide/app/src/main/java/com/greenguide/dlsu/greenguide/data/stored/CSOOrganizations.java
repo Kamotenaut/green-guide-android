@@ -61,7 +61,6 @@ public class CSOOrganizations {
         cap.add(new NameTag("Samahan ng mga Mag-aaral sa Sikolohiya (SMS)"));
         cap.add(new NameTag("Team Communications (TEAMCOMM)"));
         cap.add(new NameTag("Kapatiran ng Kabataan para sa Kaunlaran (KKK)"));
-        cap.add(new NameTag("Cultura"));
     }
 
     public ArrayList<NameTag> getCap() {

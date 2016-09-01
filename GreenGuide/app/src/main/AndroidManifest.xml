@@ -111,10 +111,6 @@
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".DressCode"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
             android:name=".Prayers"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />

@@ -75,9 +75,6 @@ public class OrgAdapter extends RecyclerView.Adapter<OrgAdapter.OrgViewHolder>{
             case "Samahan ng mga Mag-aaral sa Sikolohiya (SMS)": holder.vPhoto.setImageResource(R.drawable.sms);break;
             case "Team Communications (TEAMCOMM)": holder.vPhoto.setImageResource(R.drawable.teamcomm);break;
             case "Kapatiran ng Kabataan para sa Kaunlaran (KKK)": holder.vPhoto.setImageResource(R.drawable.kkk);break;
-            case "Cultura" : //holder.vPhoto.setImageResource();
-                holder.vPhoto.setVisibility(View.GONE);
-                break;
 
             case "Association of Computer Engineering Students (ACCESS)": holder.vPhoto.setImageResource(R.drawable.access);break;
             case "Chemical Engineering Society (ChEn)": holder.vPhoto.setImageResource(R.drawable.chen);break;
