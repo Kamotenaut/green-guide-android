@@ -41,13 +41,6 @@ public class StudentAffairs extends AppCompatActivity {
 
         List<ExpandableParentListItem> expandableParentListItems = new ArrayList<>();
         List<ParentListItem> parentListItems = new ArrayList<>();
-//        expandableParentListItems.add(new ExpandableParentListItem("Center for Social Concern and Action (COSCA)"));
-//        List<ExpandableChildListItem> childItemList = new ArrayList<>();
-//        for(NameTag name : SAOOrganizations.getInstance().getCosca()){
-//            childItemList.add(new ExpandableChildListItem(name.getName(), ""));
-//        }
-//        expandableParentListItems.get(0).setChildItemList(childItemList);
-//        parentListItems.add(expandableParentListItems.get(0));
 
         expandableParentListItems.add(new ExpandableParentListItem("Culture and Arts Office (CAO)"));
         List<ExpandableChildListItem> childItemList = new ArrayList<>();

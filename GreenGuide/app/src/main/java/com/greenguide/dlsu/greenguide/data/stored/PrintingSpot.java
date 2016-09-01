@@ -35,7 +35,7 @@ public class PrintingSpot {
         printingMnlList = new ArrayList<>();
         //Manila Campus
         printingMnlList.add( new Spot("Andrew Hall", "2nd Floor"));
-        printingMnlList.add( new Spot("Student Cooperative (SCOOP)", "Ground Floor, Br. Connon Hall"));
+        printingMnlList.add( new Spot("Student Co-Operative (SCOOP)", "Ground Floor, Br. Connon Hall"));
 
     }
 

@@ -65,6 +65,7 @@ public class WifiSpot {
         wifiList.add( new Spot("College Classrooms", "4th Floor", stc));
         wifiList.add( new Spot("College Library", "3rd Floor, West Wing", stc));
         wifiList.add( new Spot("Multi-Purpose Hall", "2nd Floor, West Wing", stc));
+        wifiList.add( new Spot("Student Hub", "2nd Floor, West Wing", stc));
         wifiList.add( new Spot("Students’ Center", "4th Floor, West Wing", stc));
         wifiList.add( new Spot("Quadrangle Huts", "Basement near the Cafeteria", stc));
 

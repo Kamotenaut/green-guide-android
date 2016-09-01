@@ -50,6 +50,7 @@ public class ParkingSpot {
         parkingList.add( new Spot("Mcdonald's La Salle", "beside South gate", off));
         parkingList.add( new Spot("Moldex", "along Vito Cruz across Starbucks", off));
         parkingList.add( new Spot("University Mall Parking", "", off));
+        parkingList.add( new Spot("Leon Guinto Street", "", off ));
 
     }
 

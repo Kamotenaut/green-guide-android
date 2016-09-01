@@ -16,7 +16,7 @@ import com.greenguide.dlsu.greenguide.data.stored.CSOOrganizations;
 import java.util.ArrayList;
 
 
-public class Cap12 extends Fragment {
+public class Cap11 extends Fragment {
     RecyclerView recycler;
     OrgAdapter adapter;
 
