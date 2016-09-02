@@ -24,7 +24,7 @@ public class LpepScheduleb extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_lpep_schedule);
+        setContentView(R.layout.activity_lpep_scheduleb);
 
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);

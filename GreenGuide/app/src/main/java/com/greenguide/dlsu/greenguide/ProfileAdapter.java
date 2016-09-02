@@ -81,7 +81,7 @@ public class ProfileAdapter extends RecyclerView.Adapter<ProfileAdapter.ProfileV
             case "College of Engineering Government (ECG)" : holder.vPhoto.setImageResource(R.drawable.gcoepresident); break;
             case "Science College Government (SCG)" : holder.vPhoto.setImageResource(R.drawable.cospresident); break;
             case "School of Economics Government (SEG)" : holder.vPhoto.setImageResource(R.drawable.soepresident); break;
-            case "Science and Technology Complex Government (STCG)" : holder.vPhoto.setImageResource(R.drawable.avatar); break;
+            case "Science and Technology Complex Government (STCG)" : holder.vPhoto.setImageResource(R.drawable.stcpresident); break;
         }
 
 
