@@ -26,7 +26,7 @@ public class SchoolSupplies {
         suppliesListMnl = new ArrayList<>();
 
         suppliesListMnl.add(new Spot("Animo Bookstore", "Ground Floor, Yuchengco Hall"));
-        suppliesListMnl.add(new Spot("Full Booked", "Torre Lorenzo II"));
+        suppliesListMnl.add(new Spot("Fully Booked", "Torre Lorenzo II"));
         suppliesListMnl.add(new Spot("Mini Candy & Supplies stalls", "Agno"));
         suppliesListMnl.add(new Spot("National Book Store", "near LRT"));
         suppliesListMnl.add(new Spot("The Store", "2nd Floor Enrique Razon Sports Center"));
