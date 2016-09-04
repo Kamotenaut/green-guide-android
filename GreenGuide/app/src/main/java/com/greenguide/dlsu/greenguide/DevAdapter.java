@@ -7,8 +7,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.uncopt.android.widget.text.justify.JustifiedTextView;
-
 import java.util.List;
 
 import de.hdodenhof.circleimageview.CircleImageView;
