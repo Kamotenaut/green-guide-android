@@ -31,7 +31,7 @@ public class Offices extends android.app.Fragment{
         List list = new ArrayList();
         list.add("Administrative Offices");
         list.add("Lasallian Mission Offices");
-        list.add("Student Affairs Offices");
+        //list.add("Student Affairs Offices");
         adapter = new CommonAdapter(list);
         recycler = (RecyclerView) v.findViewById(R.id.officeslist);
         recycler.setHasFixedSize(true);

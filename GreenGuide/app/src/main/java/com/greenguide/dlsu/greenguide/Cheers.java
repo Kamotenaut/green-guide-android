@@ -184,6 +184,8 @@ public class Cheers extends YouTubeBaseActivity
         } else if (id == R.id.nav_victory_song) {
             title.setText(R.string.victory_song_title);
             content.setText(R.string.victory_song);
+            youTubeView.setVisibility(View.VISIBLE);
+            mPlayer.cueVideo("mFJA_a1icXI");
         } else if (id == R.id.nav_marching) {
             title.setText(R.string.marching_song_title);
             content.setText(R.string.marching_song);

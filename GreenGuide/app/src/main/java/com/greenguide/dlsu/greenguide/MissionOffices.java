@@ -50,14 +50,70 @@ public class MissionOffices extends AppCompatActivity {
         expandableParentListItems.get(0).setChildItemList(childItemList);
         parentListItems.add(expandableParentListItems.get(0));
 
+//        expandableParentListItems.add(new ExpandableParentListItem("Lasallian Pastoral Office (LSPO)"));
+//        List<ExpandableChildListItem> childItemList1 = new ArrayList<>();
+//        for(NameTag name : SAOOrganizations.getInstance().getLspo()){
+//            childItemList1.add(new ExpandableChildListItem(name.getName(), ""));
+//        }
+//        expandableParentListItems.get(1).setChildItemList(childItemList1);
+//        parentListItems.add(expandableParentListItems.get(1));
 
-        expandableParentListItems.add(new ExpandableParentListItem("Lasallian Pastoral Office (LSPO)"));
+        expandableParentListItems.add(new ExpandableParentListItem("Culture and Arts Office (CAO)"));
         List<ExpandableChildListItem> childItemList1 = new ArrayList<>();
-        for(NameTag name : SAOOrganizations.getInstance().getLspo()){
+        for(NameTag name : SAOOrganizations.getInstance().getCao()){
             childItemList1.add(new ExpandableChildListItem(name.getName(), ""));
         }
         expandableParentListItems.get(1).setChildItemList(childItemList1);
         parentListItems.add(expandableParentListItems.get(1));
+
+        expandableParentListItems.add(new ExpandableParentListItem("Student Discipline Formation Office (SDFO)"));
+        List<ExpandableChildListItem> childItemList2 = new ArrayList<>();
+        for(NameTag name : SAOOrganizations.getInstance().getSdfo()){
+            childItemList2.add(new ExpandableChildListItem(name.getName(), ""));
+        }
+        expandableParentListItems.get(2).setChildItemList(childItemList2);
+        parentListItems.add(expandableParentListItems.get(2));
+
+        expandableParentListItems.add(new ExpandableParentListItem("Lasallian Pastoral Office (LSPO)"));
+        List<ExpandableChildListItem> childItemList3 = new ArrayList<>();
+        for(NameTag name : SAOOrganizations.getInstance().getLspo()){
+            childItemList3.add(new ExpandableChildListItem(name.getName(), ""));
+        }
+        expandableParentListItems.get(3).setChildItemList(childItemList3);
+        parentListItems.add(expandableParentListItems.get(3));
+
+
+        expandableParentListItems.add(new ExpandableParentListItem("Office of Counseling and Career Services (OCCS)"));
+        List<ExpandableChildListItem> childItemList4 = new ArrayList<>();
+        for(NameTag name : SAOOrganizations.getInstance().getOccs()){
+            childItemList4.add(new ExpandableChildListItem(name.getName(), ""));
+        }
+        expandableParentListItems.get(4).setChildItemList(childItemList4);
+        parentListItems.add(expandableParentListItems.get(4));
+
+        expandableParentListItems.add(new ExpandableParentListItem("Office of Sports Development"));
+        List<ExpandableChildListItem> childItemList5 = new ArrayList<>();
+        for(NameTag name : SAOOrganizations.getInstance().getOsd()){
+            childItemList5.add(new ExpandableChildListItem(name.getName(), ""));
+        }
+        expandableParentListItems.get(5).setChildItemList(childItemList5);
+        parentListItems.add(expandableParentListItems.get(5));
+
+        expandableParentListItems.add(new ExpandableParentListItem("Student Leadership, Involvement, Formation & Empowerment (SLIFE)"));
+        List<ExpandableChildListItem> childItemList6 = new ArrayList<>();
+        for(NameTag name : SAOOrganizations.getInstance().getSlife()){
+            childItemList6.add(new ExpandableChildListItem(name.getName(), ""));
+        }
+        expandableParentListItems.get(6).setChildItemList(childItemList6);
+        parentListItems.add(expandableParentListItems.get(6));
+
+        expandableParentListItems.add(new ExpandableParentListItem("Student Media Office"));
+        List<ExpandableChildListItem> childItemList7 = new ArrayList<>();
+        for(NameTag name : SAOOrganizations.getInstance().getSmo()){
+            childItemList7.add(new ExpandableChildListItem(name.getName(), ""));
+        }
+        expandableParentListItems.get(7).setChildItemList(childItemList7);
+        parentListItems.add(expandableParentListItems.get(7));
 
 
 

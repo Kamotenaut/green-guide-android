@@ -180,7 +180,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginBottom="3dp"
-                            android:text="Communion as a relationship with God is the source of all mission and ministry. To pursue the Lasallian mission, we need to promote solidarity and collaboration among members of out community, as well as develop a greater sense of openness to all persons, especially to those in need. As a goal of our mission, communion suggests the unity that comes from reconciliation between God, human beings, and creation."
+                            android:text="Communion as a relationship with God is the source of all mission and ministry. To pursue the Lasallian mission, we need to promote solidarity and collaboration among members of our community, as well as develop a greater sense of openness to all persons, especially to those in need. As a goal of our mission, communion suggests the unity that comes from reconciliation between God, human beings, and creation."
                             android:textColor="#393939"
                             android:textSize="15sp" />
                     </LinearLayout>

@@ -134,7 +134,7 @@ public class SAOOrganizations {
         osd.add(new NameTag("Swimming Varsity"));
         osd.add(new NameTag("Table Tennis Varsity"));
         osd.add(new NameTag("Taekwondo Varsity"));
-        osd.add(new NameTag("Track & Field"));
+        osd.add(new NameTag("Track & Field Varsity"));
         osd.add(new NameTag("Volleyball Varsity"));
     }
 

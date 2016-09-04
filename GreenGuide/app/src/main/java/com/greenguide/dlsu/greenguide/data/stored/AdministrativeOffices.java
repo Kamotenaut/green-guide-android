@@ -60,7 +60,7 @@ public class AdministrativeOffices {
 
         //College of Computer Studies
         colleges.add(OfficeType.CCS.getType());
-        collegeList.add(new Officers("Dr. Merlin Tiodosia C. Suarez", "Dean", OfficeType.CCS.getType()));
+        collegeList.add(new Officers("Dr. Merlin Teodosia C. Suarez", "Dean", OfficeType.CCS.getType()));
         collegeList.add(new Officers("Dr. Nelson Marcos", "Vice Dean", OfficeType.CCS.getType()));
 
         //College of Liberal Arts
@@ -71,7 +71,7 @@ public class AdministrativeOffices {
         //Gokongwei College of Engineering
         colleges.add(OfficeType.COE.getType());
         collegeList.add(new Officers("Dr. Jonathan R. Dungca", "Dean", OfficeType.COE.getType()));
-        collegeList.add(new Officers("Mr. Dennis E. Cruz", "Vice Dean", OfficeType.COE.getType()));
+        collegeList.add(new Officers("Mr. Dennis Cruz", "Vice Dean", OfficeType.COE.getType()));
 
         //College of Science
         colleges.add(OfficeType.COS.getType());
