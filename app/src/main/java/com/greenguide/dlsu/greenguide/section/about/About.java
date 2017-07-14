@@ -66,7 +66,7 @@ public class About extends android.app.Fragment{
         list2017.add(new Profile("Brandon Peñaranda", "BS CS-ST", "Android App Developer",R.drawable.avatar));
         list2017.add(new Profile("Patrick Tobias", "BS CS-ST", "iOS App Development Lead",R.drawable.avatar));
         list2017.add(new Profile("Keith Gardose", "BS CS-ST", "iOS App Developer",R.drawable.avatar));
-        list2017.add(new Profile("Nicole Magpale", "BS CS-ST", "Web App Development Lead",R.drawable.avatar));
+        list2017.add(new Profile("Nicolle Magpale", "BS CS-ST", "Web App Development Lead",R.drawable.avatar));
         list2017.add(new Profile("Dyan Nieva", "BS CS-ST", "Web App Developer",R.drawable.avatar));
         list2017.add(new Profile("Mavic Reccion", "BS CS-ST", "Web App Developer",R.drawable.avatar));
         adapter = new DevAdapter(list2017);
