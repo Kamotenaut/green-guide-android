@@ -11,7 +11,6 @@ import com.greenguide.dlsu.greenguide.R;
 
 public class LasallianPledge extends AppCompatActivity {
     private Toolbar toolbar;
-    TextView title;
     TextView content;
     TextView header;
     @Override
@@ -23,13 +22,11 @@ public class LasallianPledge extends AppCompatActivity {
         setTitle("");
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        title = (TextView) findViewById(R.id.pledgetitle);
         header = (TextView) findViewById(R.id.pledgeheader);
         content = (TextView) findViewById(R.id.pledgetxt);
         String fontPath = "fonts/Montserrat-Regular.ttf";
         Typeface tf = Typeface.createFromAsset(getAssets(), fontPath);
 
-        title.setTypeface(tf);
         //content.setTypeface(tf);
         header.setTypeface(tf);
     }
