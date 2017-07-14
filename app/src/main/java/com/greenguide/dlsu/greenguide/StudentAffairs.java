@@ -10,6 +10,9 @@ import android.view.MenuItem;
 import android.widget.TextView;
 
 import com.bignerdranch.expandablerecyclerview.Model.ParentListItem;
+import com.greenguide.dlsu.greenguide.adapter.expandable.ExpandableAdapter;
+import com.greenguide.dlsu.greenguide.adapter.expandable.ExpandableChildListItem;
+import com.greenguide.dlsu.greenguide.adapter.expandable.ExpandableParentListItem;
 import com.greenguide.dlsu.greenguide.data.model.NameTag;
 import com.greenguide.dlsu.greenguide.data.stored.SAOOrganizations;
 
@@ -67,7 +70,7 @@ public class StudentAffairs extends AppCompatActivity {
         expandableParentListItems.get(2).setChildItemList(childItemList2);
         parentListItems.add(expandableParentListItems.get(2));
 
-        expandableParentListItems.add(new ExpandableParentListItem("Office of Sports Development"));
+        expandableParentListItems.add(new ExpandableParentListItem("Office of Sports Development (OSD)"));
         List<ExpandableChildListItem> childItemList3 = new ArrayList<>();
         for(NameTag name : SAOOrganizations.getInstance().getOsd()){
             childItemList3.add(new ExpandableChildListItem(name.getName(), ""));
@@ -83,7 +86,7 @@ public class StudentAffairs extends AppCompatActivity {
         expandableParentListItems.get(4).setChildItemList(childItemList4);
         parentListItems.add(expandableParentListItems.get(4));
 
-        expandableParentListItems.add(new ExpandableParentListItem("Student Media Office"));
+        expandableParentListItems.add(new ExpandableParentListItem("Student Media Office (SMO)"));
         List<ExpandableChildListItem> childItemList5 = new ArrayList<>();
         for(NameTag name : SAOOrganizations.getInstance().getSmo()){
             childItemList5.add(new ExpandableChildListItem(name.getName(), ""));

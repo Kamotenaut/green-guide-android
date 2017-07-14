@@ -11,116 +11,112 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".MainActivity"
+            android:name=".activity.MainActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" /> />
             </intent-filter>
         </activity>
         <activity
-            android:name=".DeanMessage"
+            android:name=".section.lpep.DeanMessage"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".Navigation"
+            android:name=".section.Navigation"
             android:label="@string/title_activity_navigation"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".LpepSchedule"
+            android:name=".section.lpep.schedule_a.LpepSchedule"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".LasallianPledge"
+            android:name=".section.lpep.LasallianPledge"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".ArrowsExpress"
+            android:name=".section.fyi.section.arrows_express.ArrowsExpress"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".Photocopy"
+            android:name=".section.fyi.section.Photocopy"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".Csoexecom"
+            android:name=".section.fyi.section.Parking"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".Parking"
+            android:name=".section.fyi.section.Wifi"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".Wifi"
+            android:name=".section.fyi.section.Printing"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".Printing"
+            android:name=".section.fyi.section.EatingPlaces"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".EatingPlaces"
+            android:name=".section.fyi.section.Supplies"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".Supplies"
+            android:name=".section.values_prayers.section.CoreValues"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".CoreValues"
+            android:name=".section.student_orgs.section.usg_officers.AboutUsg"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".AboutUsg"
+            android:name=".section.student_orgs.section.AboutCso"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".AboutCso"
+            android:name=".section.student_orgs.section.UsgOfficers"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".UsgOfficers"
+            android:name=".section.student_orgs.section.ProgramsServices"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".ProgramsServices"
+            android:name=".section.student_orgs.section.cso_orgs.Organizations"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".Organizations"
+            android:name=".section.fyi.section.Tips"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".Tips"
+            android:name=".section.offices.section.Admin"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".Admin"
+            android:name=".section.fyi.section.liturgical.LspoServices"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".LspoServices"
+            android:name=".section.fyi.section.Housing"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".Housing"
+            android:name=".section.fyi.section.Cheers"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".Cheers"
+            android:name=".section.values_prayers.section.Prayers"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".Prayers"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".Hymns"
+            android:name=".section.fyi.section.Hymns"
             android:label="@string/title_activity_hymns"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".LpepScheduleb"
+            android:name=".section.lpep.schedule_b.LpepScheduleb"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
@@ -128,14 +124,14 @@
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".DeanActivity"
+            android:name=".section.lpep.DeanActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".MissionOffices"
+        <activity android:name=".section.offices.section.MissionOffices"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar"></activity>
         <activity
-            android:name=".SplashActivity"
+            android:name=".activity.SplashActivity"
             android:theme="@style/SplashTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
