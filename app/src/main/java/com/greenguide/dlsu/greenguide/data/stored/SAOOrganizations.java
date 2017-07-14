@@ -60,7 +60,7 @@ public class SAOOrganizations {
         cao.add(new NameTag("La Salle Dance Company – Contemporary"));
         cao.add(new NameTag("La Salle Dance Company – Folk"));
         cao.add(new NameTag("La Salle Dance Company – Street"));
-        cao.add(new NameTag("Green Media Group (CAO)"));
+        cao.add(new NameTag("Green Media Group"));
     }
 
     public ArrayList<NameTag> getCao() {

@@ -36,9 +36,9 @@
                 android:layout_below="@id/logo"
                 android:layout_centerHorizontal="true"
                 android:id="@+id/aboutcsoheader"
-                android:text="About the CSO"
+                android:text="The Council of Student Organizations"
                 android:layout_marginTop="10dp"
-                android:textSize="25sp"
+                android:textSize="20sp"
                 />
 
         </RelativeLayout>
@@ -158,10 +158,10 @@ awareness in our activities."/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/orgscso"
+                android:id="@+id/csoexec"
                 android:textSize="25sp"
                 android:textAlignment="center"
-                android:text="Organizations Under CSO"
+                android:text="CSO Executive Board"
                 android:textAllCaps="true"
                 android:textColor="#313131"
                 android:textStyle="bold"
@@ -170,23 +170,14 @@ awareness in our activities."/>
 
 
 
-            <TextView
+            <android.support.v7.widget.RecyclerView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/csoexecomlist"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textColor="#505050"
+                android:layout_height="match_parent"
                 android:layout_marginBottom="30dp"
-                android:textSize="15sp"
-                android:id="@+id/orgscsotxt"
-                android:textAlignment="center"
-                android:text="Alliance of Science Organizations\n(ASO)\n
-Alliance of Special Interest and
-Socio-civic Organizations\n(ASPIRE)\n
-College of Liberal Arts
-Professional Organizations\n(CAP11)\n
-Professional Organizations of
-Business and Economics\n(PROBE)\n
-Engineering Alliance
-Gearing Towards Excellence\n(ENGAGE)\n"/>
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                />
 
         </LinearLayout>
     </ScrollView>

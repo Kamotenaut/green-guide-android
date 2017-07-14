@@ -70,7 +70,7 @@ public class StudentAffairs extends AppCompatActivity {
         expandableParentListItems.get(2).setChildItemList(childItemList2);
         parentListItems.add(expandableParentListItems.get(2));
 
-        expandableParentListItems.add(new ExpandableParentListItem("Office of Sports Development"));
+        expandableParentListItems.add(new ExpandableParentListItem("Office of Sports Development (OSD)"));
         List<ExpandableChildListItem> childItemList3 = new ArrayList<>();
         for(NameTag name : SAOOrganizations.getInstance().getOsd()){
             childItemList3.add(new ExpandableChildListItem(name.getName(), ""));
@@ -86,7 +86,7 @@ public class StudentAffairs extends AppCompatActivity {
         expandableParentListItems.get(4).setChildItemList(childItemList4);
         parentListItems.add(expandableParentListItems.get(4));
 
-        expandableParentListItems.add(new ExpandableParentListItem("Student Media Office"));
+        expandableParentListItems.add(new ExpandableParentListItem("Student Media Office (SMO)"));
         List<ExpandableChildListItem> childItemList5 = new ArrayList<>();
         for(NameTag name : SAOOrganizations.getInstance().getSmo()){
             childItemList5.add(new ExpandableChildListItem(name.getName(), ""));
