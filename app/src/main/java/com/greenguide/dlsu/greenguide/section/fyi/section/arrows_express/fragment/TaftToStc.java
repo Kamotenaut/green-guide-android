@@ -9,10 +9,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.greenguide.dlsu.greenguide.adapter.ListAdapter;
 import com.greenguide.dlsu.greenguide.R;
 import com.greenguide.dlsu.greenguide.data.model.Schedule;
 import com.greenguide.dlsu.greenguide.data.stored.ArrowsExpressScheduler;
+import com.greenguide.dlsu.greenguide.section.fyi.section.arrows_express.adapter.ScheduleAdapter;
 
 import java.util.ArrayList;
 
@@ -27,7 +27,7 @@ import java.util.ArrayList;
  */
 public class TaftToStc extends Fragment {
     RecyclerView recycler;
-    ListAdapter adapter;
+    ScheduleAdapter adapter;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -40,7 +40,7 @@ public class TaftToStc extends Fragment {
         View v = inflater.inflate(R.layout.fragment_taft_to_stc, container, false);
 
         ArrayList<Schedule> list = ArrowsExpressScheduler.getInstance().getDlsuToLaguna();
-        adapter = new ListAdapter(list);
+        adapter = new ScheduleAdapter(list);
         recycler = (RecyclerView) v.findViewById(R.id.tafttostclist);
         recycler.setHasFixedSize(true);
         LinearLayoutManager llm = new LinearLayoutManager(v.getContext());
