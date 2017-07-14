@@ -3,6 +3,8 @@
     package="com.greenguide.dlsu.greenguide">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -64,10 +66,6 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".section.values_prayers.section.CoreValues"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".section.student_orgs.section.usg_officers.AboutUsg"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
@@ -135,6 +133,17 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+
+        <provider
+            android:name=".provider.PermissionFileProvider"
+            android:authorities="${applicationId}.com.greenguide.dlsu.greenguide.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths"/>
+        </provider>
 
     </application>
 

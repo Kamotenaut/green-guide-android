@@ -24,6 +24,10 @@
             android:icon="@drawable/fyi"
             android:title="For Your Information" />
         <item
+            android:id="@+id/nav_handbook"
+            android:icon="@drawable/handbook"
+            android:title="Student Handbook" />
+        <item
             android:id="@+id/nav_about"
             android:icon="@drawable/about"
             android:title="About" />

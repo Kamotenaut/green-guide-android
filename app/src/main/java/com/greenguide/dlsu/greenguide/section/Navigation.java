@@ -14,6 +14,7 @@ import android.view.MenuItem;
 import android.widget.TextView;
 
 import com.greenguide.dlsu.greenguide.R;
+import com.greenguide.dlsu.greenguide.helper.PdfUtil;
 import com.greenguide.dlsu.greenguide.section.about.About;
 import com.greenguide.dlsu.greenguide.section.fyi.ForYourInformation;
 import com.greenguide.dlsu.greenguide.section.lpep.DeanMessage;
@@ -87,6 +88,8 @@ public class Navigation extends AppCompatActivity
         } else if (id == R.id.nav_fyi) {
             fragmentManager.beginTransaction().replace(R.id.content_frame, new ForYourInformation()).commit();
             title.setText("For Your Information");
+        } else if (id == R.id.nav_handbook) {
+            PdfUtil.OpenPdfIntent(getBaseContext(), "student-handbook.pdf");
         } else if (id == R.id.nav_about) {
             fragmentManager.beginTransaction().replace(R.id.content_frame, new About()).commit();
             title.setText("About");
