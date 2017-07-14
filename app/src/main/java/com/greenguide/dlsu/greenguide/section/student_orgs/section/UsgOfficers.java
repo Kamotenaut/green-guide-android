@@ -11,6 +11,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.widget.TextView;
 
+import com.greenguide.dlsu.greenguide.section.student_orgs.section.usg_officers.AboutUsg;
 import com.greenguide.dlsu.greenguide.section.student_orgs.section.usg_officers.CollegePresidents;
 import com.greenguide.dlsu.greenguide.R;
 import com.greenguide.dlsu.greenguide.section.student_orgs.section.usg_officers.Usgexecom;
@@ -50,6 +51,7 @@ public class UsgOfficers extends AppCompatActivity {
 
     private void setupViewPager(ViewPager viewPager) {
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
+        adapter.addFragment(new AboutUsg(), "About the USG");
         adapter.addFragment(new Usgexecom(), "Executive Board");
         adapter.addFragment(new CollegePresidents(), "College Presidents");
         viewPager.setAdapter(adapter);

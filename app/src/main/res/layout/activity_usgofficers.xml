@@ -35,7 +35,7 @@
                 android:textColor="#fff"
                 android:layout_below="@+id/officerslogo"
                 android:layout_centerHorizontal="true"
-                android:text="USG Officers"
+                android:text="The University Student Government"
                 android:layout_marginTop="5dp"
                 android:textSize="20sp"
                 />

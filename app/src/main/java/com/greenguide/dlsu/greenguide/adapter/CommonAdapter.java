@@ -30,8 +30,7 @@ import com.greenguide.dlsu.greenguide.section.lpep.schedule_a.LpepSchedule;
 import com.greenguide.dlsu.greenguide.section.offices.section.Admin;
 import com.greenguide.dlsu.greenguide.section.offices.section.MissionOffices;
 import com.greenguide.dlsu.greenguide.section.student_orgs.section.AboutCso;
-import com.greenguide.dlsu.greenguide.section.student_orgs.section.AboutUsg;
-import com.greenguide.dlsu.greenguide.section.student_orgs.section.Csoexecom;
+import com.greenguide.dlsu.greenguide.section.student_orgs.section.usg_officers.AboutUsg;
 import com.greenguide.dlsu.greenguide.section.student_orgs.section.ProgramsServices;
 import com.greenguide.dlsu.greenguide.section.student_orgs.section.UsgOfficers;
 import com.greenguide.dlsu.greenguide.section.student_orgs.section.cso_orgs.Organizations;
@@ -91,7 +90,6 @@ public class CommonAdapter extends RecyclerView.Adapter<CommonAdapter.CommonView
                         case "LPEP Schedule":i = new Intent(v.getContext(),LpepSchedule.class);v.getContext().startActivity(i);break;
                         case "Arrows Express":i = new Intent(v.getContext(),ArrowsExpress.class);v.getContext().startActivity(i);break;
                         case "Photocopy Services":i = new Intent(v.getContext(),Photocopy.class);v.getContext().startActivity(i);break;
-                        case "CSO Executive Board":i = new Intent(v.getContext(),Csoexecom.class);v.getContext().startActivity(i);break;
                         case "Parking Locations":i = new Intent(v.getContext(),Parking.class);v.getContext().startActivity(i);break;
                         case "Wifi Spots":i = new Intent(v.getContext(),Wifi.class);v.getContext().startActivity(i);break;
                         case "Printing Services":i = new Intent(v.getContext(),Printing.class);v.getContext().startActivity(i);break;
@@ -99,9 +97,8 @@ public class CommonAdapter extends RecyclerView.Adapter<CommonAdapter.CommonView
                         case "School Supplies":i = new Intent(v.getContext(),Supplies.class);v.getContext().startActivity(i);break;
                         case "Core Values":i = new Intent(v.getContext(),CoreValues.class);v.getContext().startActivity(i);break;
                         case "Prayers":i = new Intent(v.getContext(),Prayers.class);v.getContext().startActivity(i);break;
-                        case "About the USG":i = new Intent(v.getContext(),AboutUsg.class);v.getContext().startActivity(i);break;
                         case "About the CSO":i = new Intent(v.getContext(),AboutCso.class);v.getContext().startActivity(i);break;
-                        case "USG Officers":i = new Intent(v.getContext(),UsgOfficers.class);v.getContext().startActivity(i);break;
+                        case "About the USG":i = new Intent(v.getContext(),UsgOfficers.class);v.getContext().startActivity(i);break;
                         case "Programs and Services":i = new Intent(v.getContext(),ProgramsServices.class);v.getContext().startActivity(i);break;
                         case "CSO Organizations":i = new Intent(v.getContext(),Organizations.class);v.getContext().startActivity(i);break;
                         case "Tips and Tidbits":i = new Intent(v.getContext(),Tips.class);v.getContext().startActivity(i);break;
@@ -127,8 +124,6 @@ public class CommonAdapter extends RecyclerView.Adapter<CommonAdapter.CommonView
                 holder.vImage.setImageResource(R.drawable.arrowsexpress);
             } else if(list.get(position).equals("Photocopy Services")) {
                 holder.vImage.setImageResource(R.drawable.generic1);
-            } else if(list.get(position).equals("CSO Executive Board")) {
-                holder.vImage.setImageResource(R.drawable.generic2);
             } else if(list.get(position).equals("Parking Locations")) {
                 holder.vImage.setImageResource(R.drawable.arrowsexpress);
             } else if(list.get(position).equals("Wifi Spots")) {
@@ -147,8 +142,6 @@ public class CommonAdapter extends RecyclerView.Adapter<CommonAdapter.CommonView
                 holder.vImage.setImageResource(R.drawable.generic4);
             } else if(list.get(position).equals("About the CSO")) {
                 holder.vImage.setImageResource(R.drawable.aboutcso);
-            } else if(list.get(position).equals("USG Officers")) {
-                holder.vImage.setImageResource(R.drawable.generic1);
             } else if(list.get(position).equals("Programs and Services")) {
                 holder.vImage.setImageResource(R.drawable.programsservices);
             } else if(list.get(position).equals("CSO Organizations")) {

@@ -95,7 +95,7 @@ public class MissionOffices extends AppCompatActivity {
         expandableParentListItems.get(4).setChildItemList(childItemList4);
         parentListItems.add(expandableParentListItems.get(4));
 
-        expandableParentListItems.add(new ExpandableParentListItem("Office of Sports Development"));
+        expandableParentListItems.add(new ExpandableParentListItem("Office of Sports Development (OSD)"));
         List<ExpandableChildListItem> childItemList5 = new ArrayList<>();
         for(NameTag name : SAOOrganizations.getInstance().getOsd()){
             childItemList5.add(new ExpandableChildListItem(name.getName(), ""));
@@ -111,7 +111,7 @@ public class MissionOffices extends AppCompatActivity {
         expandableParentListItems.get(6).setChildItemList(childItemList6);
         parentListItems.add(expandableParentListItems.get(6));
 
-        expandableParentListItems.add(new ExpandableParentListItem("Student Media Office"));
+        expandableParentListItems.add(new ExpandableParentListItem("Student Media Office (SMO)"));
         List<ExpandableChildListItem> childItemList7 = new ArrayList<>();
         for(NameTag name : SAOOrganizations.getInstance().getSmo()){
             childItemList7.add(new ExpandableChildListItem(name.getName(), ""));
