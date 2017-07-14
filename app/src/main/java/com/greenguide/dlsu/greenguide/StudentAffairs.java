@@ -10,6 +10,9 @@ import android.view.MenuItem;
 import android.widget.TextView;
 
 import com.bignerdranch.expandablerecyclerview.Model.ParentListItem;
+import com.greenguide.dlsu.greenguide.adapter.expandable.ExpandableAdapter;
+import com.greenguide.dlsu.greenguide.adapter.expandable.ExpandableChildListItem;
+import com.greenguide.dlsu.greenguide.adapter.expandable.ExpandableParentListItem;
 import com.greenguide.dlsu.greenguide.data.model.NameTag;
 import com.greenguide.dlsu.greenguide.data.stored.SAOOrganizations;
 
