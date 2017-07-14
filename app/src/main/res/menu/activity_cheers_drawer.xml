@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item android:title="Cheers">
+        <menu>
+        <item
+            android:id="@+id/nav_ls_spelling"
+            android:title="@string/la_salle_spelling_title" />
+        <item
+            android:id="@+id/nav_who_win"
+            android:title="@string/who_win_title" />
+        <item
+            android:id="@+id/nav_zipa"
+            android:title="@string/zipa_title" />
+        <item
+            android:id="@+id/nav_rekti"
+            android:title="@string/rekti_title" />
+            <item
+                android:id="@+id/nav_haydee"
+                android:title="@string/haydee_title" />
+            <item
+                android:id="@+id/nav_buma"
+                android:title="@string/buma_title" />
+            <item
+                android:id="@+id/nav_strawberry"
+                android:title="@string/strawberry_title" />
+            <item
+                android:id="@+id/nav_derecho"
+                android:title="@string/derecho_title" />
+            <item
+                android:id="@+id/nav_yama"
+                android:title="@string/yama_title" />
+            <item
+                android:id="@+id/nav_fans"
+                android:title="@string/fans_title" />
+            <item
+                android:id="@+id/nav_anchors"
+                android:title="@string/anchors_title" />
+            <item
+                android:id="@+id/nav_men"
+                android:title="@string/men_title" />
+            <item
+                android:id="@+id/nav_onward"
+                android:title="@string/onward_title" />
+            <item
+                android:id="@+id/nav_for_green"
+                android:title="@string/for_green_title" />
+            <item
+                android:id="@+id/nav_rally"
+                android:title="@string/rally_title" />
+            <item
+                android:id="@+id/nav_green_white"
+                android:title="@string/green_white_title" />
+            <item
+                android:id="@+id/nav_hold"
+                android:title="@string/hold_title" />
+            <item
+                android:id="@+id/nav_shoulder"
+                android:title="@string/shoulder_title" />
+            <item
+                android:id="@+id/nav_animo"
+                android:title="@string/animo_title" />
+            <item
+                android:id="@+id/nav_archer"
+                android:title="@string/archer_title" />
+            <item
+                android:id="@+id/nav_fight_again"
+                android:title="@string/fight_again_title" />
+            <item
+                android:id="@+id/nav_dls_song"
+                android:title="@string/de_la_salle_song_title" />
+            <item
+                android:id="@+id/nav_green_archer_song"
+                android:title="@string/green_archers_song_title" />
+            <item
+                android:id="@+id/nav_archer_song"
+                android:title="@string/archers_song_title" />
+            <item
+                android:id="@+id/nav_victory_song"
+                android:title="@string/victory_song_title" />
+            <item
+                android:id="@+id/nav_marching"
+                android:title="@string/marching_song_title" />
+            <item
+                android:id="@+id/nav_fighting"
+                android:title="@string/fighting_song_title" />
+        </menu>
+
+    </item>
+
+</menu>
