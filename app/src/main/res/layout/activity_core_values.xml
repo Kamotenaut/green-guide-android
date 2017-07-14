@@ -1,194 +1,290 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+												 xmlns:app="http://schemas.android.com/apk/res-auto"
+												 android:layout_width="match_parent"
+												 android:layout_height="match_parent">
 
-    <android.support.design.widget.AppBarLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingBottom="10dp"
-        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+	<android.support.design.widget.AppBarLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:paddingBottom="10dp"
+		android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content">
 
-            <android.support.v7.widget.Toolbar
-                android:id="@+id/toolbar"
-                android:layout_width="match_parent"
-                android:layout_height="?attr/actionBarSize"
-                android:background="?attr/colorPrimary"
-                app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+			<android.support.v7.widget.Toolbar
+				android:id="@+id/toolbar"
+				android:layout_width="match_parent"
+				android:layout_height="?attr/actionBarSize"
+				android:background="?attr/colorPrimary"
+				app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
 
-            <ImageView
-                android:id="@+id/logo"
-                android:layout_width="150dp"
-                android:layout_height="50dp"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="20dp"
-                android:src="@drawable/banner" />
+			<ImageView
+				android:id="@+id/logo"
+				android:layout_width="150dp"
+				android:layout_height="50dp"
+				android:layout_centerHorizontal="true"
+				android:layout_marginTop="20dp"
+				android:src="@drawable/banner"/>
 
-            <TextView
-                android:id="@+id/vpheader"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/logo"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="10dp"
-                android:text="Core Values"
-                android:textAlignment="center"
-                android:textColor="#fff"
-                android:textSize="25sp" />
+			<TextView
+				android:id="@+id/vpheader"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_below="@id/logo"
+				android:layout_centerHorizontal="true"
+				android:layout_marginTop="10dp"
+				android:text="Core Values"
+				android:textAlignment="center"
+				android:textColor="#fff"
+				android:textSize="25sp"/>
 
-        </RelativeLayout>
-    </android.support.design.widget.AppBarLayout>
+		</RelativeLayout>
+	</android.support.design.widget.AppBarLayout>
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="#e6e6e6"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+	<ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="#e6e6e6"
+		app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:layout_margin="10dp"
-            android:paddingBottom="20dp"
-            >
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_margin="10dp"
+			android:orientation="vertical"
+			android:paddingBottom="20dp"
+			>
 
-            <android.support.v7.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:cardBackgroundColor="#fff"
-                android:layout_margin="3dp"
-                app:cardCornerRadius="0dp"
-                app:cardElevation="1dp">
+			<android.support.v7.widget.CardView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_margin="10dp"
+				app:cardBackgroundColor="#fff"
+				app:cardCornerRadius="0dp"
+				app:cardElevation="1dp">
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content">
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="10dp"
-                        android:orientation="vertical">
+					<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_margin="10dp"
+						android:padding="10dp"
+						android:orientation="vertical">
 
-                        <TextView
-                            android:id="@+id/vptitle1"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="Spirit of Faith"
-                            android:gravity="center"
-                            android:textAllCaps="true"
-                            android:textColor="#1e1e1e"
-                            android:textSize="20sp"
-                            android:textStyle="bold" />
-
-
-                        <TextView
-                            android:id="@+id/vptxt1"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginBottom="3dp"
-                            android:text="The spirit of faith is the spirit that allows one to:\nBe aware of God’s active presence in the events and circumstances of one’s life\nJudge and evaluate things in the light of the Gospel\nSearch for God’s will in order to carry out his saving plan\nUnite one’s actions to the on-going saving action of God in the world\nTrust God’s loving presence and providence"
-                            android:textColor="#393939"
-                            android:textSize="15sp" />
-                    </LinearLayout>
-                </LinearLayout>
-            </android.support.v7.widget.CardView>
-
-            <android.support.v7.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:cardBackgroundColor="#fff"
-                android:layout_margin="3dp"
-                app:cardCornerRadius="0dp"
-                app:cardElevation="1dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="10dp"
-                        android:orientation="vertical">
-
-                        <TextView
-                            android:id="@+id/vptitle2"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="Zeal for Service"
-
-                            android:gravity="center"
-                            android:textAllCaps="true"
-                            android:textColor="#1e1e1e"
-                            android:textSize="20sp"
-                            android:textStyle="bold" />
+						<TextView
+							android:id="@+id/vptitle1"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:gravity="center"
+							android:text="Spirit of Faith"
+							android:textColor="#1e1e1e"
+							android:textAllCaps="true"
+							android:textSize="20sp"
+							android:layout_marginBottom="5dp"
+							android:textStyle="bold"/>
 
 
-                        <TextView
-                            android:id="@+id/vptxt2"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginBottom="3dp"
-                            android:text="Zeal for service is the active expression of one’s faith. It is the enthusiastic and total gift of self for the safe of the mission. This desire to be of greater service to others conditions a Lasallian’s quest for excellence and continuous self-improvement."
-                            android:textColor="#393939"
-                            android:textSize="15sp" />
-                    </LinearLayout>
-                </LinearLayout>
-            </android.support.v7.widget.CardView>
+						<TextView
+							android:id="@+id/vptxt1"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:layout_marginBottom="3dp"
+							android:text="The spirit of faith is the spirit that allows one to:"
+							android:textColor="#1e1e1e"
+							android:textSize="15sp"/>
 
-            <android.support.v7.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:cardBackgroundColor="#fff"
-                android:layout_margin="3dp"
-                app:cardCornerRadius="0dp"
-                app:cardElevation="1dp">
+						<TableLayout
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content">
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
+							<TableRow>
+								<TextView
+									android:layout_height="wrap_content"
+									android:layout_marginRight="10dp"
+									android:textColor="#1e1e1e"
+									android:text="-"/>
+								<TextView
+									android:layout_width="0dp"
+									android:layout_height="wrap_content"
+									android:layout_weight="1"
+									android:textColor="#1e1e1e"
+									android:gravity="left"
+									android:text="Be aware of God’s active presence in the events and circumstances of one’s life"
+									/>
+							</TableRow>
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="10dp"
-                        android:orientation="vertical">
+							<TableRow>
 
-                        <TextView
-                            android:id="@+id/vptitle3"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="Communion in mission"
+								<TextView
+									android:layout_height="wrap_content"
+									android:layout_marginRight="10dp"
+									android:textColor="#1e1e1e"
+									android:text="-"/>
+								<TextView
+									android:layout_width="0dp"
+									android:layout_height="wrap_content"
+									android:layout_weight="1"
+									android:textColor="#1e1e1e"
+									android:gravity="left"
+									android:text="Judge and evaluate things in the light of the Gospel"
+									/>
+							</TableRow>
 
-                            android:gravity="center"
-                            android:textAllCaps="true"
-                            android:textColor="#1e1e1e"
-                            android:textSize="20sp"
-                            android:textStyle="bold" />
+							<TableRow>
+
+								<TextView
+									android:layout_height="wrap_content"
+									android:layout_marginRight="10dp"
+									android:textColor="#1e1e1e"
+									android:text="-"/>
+								<TextView
+									android:layout_width="0dp"
+									android:layout_height="wrap_content"
+									android:layout_weight="1"
+									android:textColor="#1e1e1e"
+									android:gravity="left"
+									android:text="Search for God’s will in order to carry out his saving plan"
+									/>
+							</TableRow>
+
+							<TableRow>
+
+								<TextView
+									android:layout_height="wrap_content"
+									android:layout_marginRight="10dp"
+									android:textColor="#1e1e1e"
+									android:text="-"/>
+								<TextView
+									android:layout_width="0dp"
+									android:layout_height="wrap_content"
+									android:layout_weight="1"
+									android:textColor="#1e1e1e"
+									android:gravity="left"
+									android:text="Unite one’s actions to the on-going saving action of God in the world"
+									/>
+							</TableRow>
+
+							<TableRow>
+
+								<TextView
+									android:layout_height="wrap_content"
+									android:layout_marginRight="10dp"
+									android:textColor="#1e1e1e"
+									android:text="-"/>
+								<TextView
+									android:layout_width="0dp"
+									android:layout_height="wrap_content"
+									android:layout_weight="1"
+									android:textColor="#1e1e1e"
+									android:gravity="left"
+									android:text="Trust God’s loving presence and providence"
+									/>
+							</TableRow>
+						</TableLayout>
+
+					</LinearLayout>
+				</LinearLayout>
+			</android.support.v7.widget.CardView>
+
+			<android.support.v7.widget.CardView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_margin="10dp"
+				app:cardBackgroundColor="#fff"
+				app:cardCornerRadius="0dp"
+				app:cardElevation="1dp">
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content">
+
+					<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_margin="10dp"
+						android:padding="10dp"
+						android:orientation="vertical">
+
+						<TextView
+							android:id="@+id/vptitle2"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:gravity="center"
+
+							android:text="Zeal for Service"
+							android:textAllCaps="true"
+							android:textColor="#1e1e1e"
+							android:textSize="20sp"
+							android:layout_marginBottom="5dp"
+							android:textStyle="bold"/>
 
 
-                        <TextView
-                            android:id="@+id/vptxt3"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginBottom="3dp"
-                            android:text="Communion as a relationship with God is the source of all mission and ministry. To pursue the Lasallian mission, we need to promote solidarity and collaboration among members of our community, as well as develop a greater sense of openness to all persons, especially to those in need. As a goal of our mission, communion suggests the unity that comes from reconciliation between God, human beings, and creation."
-                            android:textColor="#393939"
-                            android:textSize="15sp" />
-                    </LinearLayout>
-                </LinearLayout>
-            </android.support.v7.widget.CardView>
+						<TextView
+							android:id="@+id/vptxt2"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:layout_marginBottom="3dp"
+							android:text="Zeal for service is the active expression of one’s faith. It is the enthusiastic and total gift of self for the safe of the mission. This desire to be of greater service to others conditions a Lasallian’s quest for excellence and continuous self-improvement."
+							android:textColor="#1e1e1e"
+							android:textSize="15sp"/>
+					</LinearLayout>
+				</LinearLayout>
+			</android.support.v7.widget.CardView>
+
+			<android.support.v7.widget.CardView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_margin="10dp"
+				app:cardBackgroundColor="#fff"
+				app:cardCornerRadius="0dp"
+				app:cardElevation="1dp">
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content">
+
+					<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_margin="10dp"
+						android:padding="10dp"
+						android:orientation="vertical">
+
+						<TextView
+							android:id="@+id/vptitle3"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:gravity="center"
+
+							android:text="Communion in mission"
+							android:textAllCaps="true"
+							android:textColor="#1e1e1e"
+							android:textSize="20sp"
+							android:layout_marginBottom="5dp"
+							android:textStyle="bold"/>
 
 
-        </LinearLayout>
+						<TextView
+							android:id="@+id/vptxt3"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:layout_marginBottom="3dp"
+							android:text="Communion as a relationship with God is the source of all mission and ministry. To pursue the Lasallian mission, we need to promote solidarity and collaboration among members of our community, as well as develop a greater sense of openness to all persons, especially to those in need. As a goal of our mission, communion suggests the unity that comes from reconciliation between God, human beings, and creation."
+							android:textColor="#1e1e1e"
+							android:textSize="15sp"/>
+					</LinearLayout>
+				</LinearLayout>
+			</android.support.v7.widget.CardView>
 
-    </ScrollView>
+
+		</LinearLayout>
+
+	</ScrollView>
 </android.support.design.widget.CoordinatorLayout>
