@@ -51,8 +51,7 @@ public class Lpep extends android.app.Fragment {
         List list = new ArrayList();
         list.add("Dean's Message");
         list.add("Lasallian Pledge");
-        list.add("LPEP Schedule A");
-        list.add("LPEP Schedule B");
+        list.add("LPEP Schedule");
         adapter = new CommonAdapter(list);
         recycler = (RecyclerView) v.findViewById(R.id.lpeplist);
         recycler.setHasFixedSize(true);

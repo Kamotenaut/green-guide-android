@@ -120,10 +120,6 @@
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".section.lpep.schedule_b.LpepScheduleb"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
             android:name=".StudentAffairs"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
