@@ -36,7 +36,7 @@
                 android:layout_below="@id/logo"
                 android:layout_centerHorizontal="true"
                 android:id="@+id/pledgeheader"
-                android:text="Lasallian Pledge"
+                android:text="The Lasallian Pledge"
                 android:layout_marginTop="10dp"
                 android:textSize="25sp"
                 />
@@ -59,7 +59,6 @@
                 android:layout_margin="30dp"
                 android:id="@+id/pledgetitle"
                 android:textSize="30sp"
-                android:text="The Lasallian Pledge"
                 android:textColor="#1e1e1e"
                 android:gravity="center"
                 android:textStyle="bold"
