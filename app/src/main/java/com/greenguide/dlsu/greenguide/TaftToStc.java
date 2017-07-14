@@ -21,7 +21,7 @@ import java.util.ArrayList;
  * Activities that contain this fragment must implement the
  * {@link TaftToStc.OnFragmentInteractionListener} interface
  * to handle interaction events.
- * Use the {@link TaftToStc#newInstance} factory method to
+ * Use the {@link TaftToStc# newInstance} factory method to
  * create an instance of this fragment.
  */
 public class TaftToStc extends Fragment {
@@ -38,7 +38,7 @@ public class TaftToStc extends Fragment {
                              Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.fragment_taft_to_stc, container, false);
 
-        ArrayList<Schedule> list = ArrowsExpressScheduler.getInstance().getDlsuToStc();
+        ArrayList<Schedule> list = ArrowsExpressScheduler.getInstance().getDlsuToLaguna();
         adapter = new ListAdapter(list);
         recycler = (RecyclerView) v.findViewById(R.id.tafttostclist);
         recycler.setHasFixedSize(true);

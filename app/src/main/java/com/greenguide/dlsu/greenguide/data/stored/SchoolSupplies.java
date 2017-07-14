@@ -9,10 +9,10 @@ public class SchoolSupplies {
     private static SchoolSupplies instance = null;
 
     private ArrayList<Spot> suppliesListMnl;
-    private ArrayList<Spot> suppliesListStc;
+    private ArrayList<Spot> suppliesListLaguna;
 
     private SchoolSupplies(){
-        insertSuppliesMnl(); insertSuppliesStc();
+        insertSuppliesMnl(); insertSuppliesLaguna();
     }
 
     public static SchoolSupplies getInstance(){
@@ -25,11 +25,11 @@ public class SchoolSupplies {
     private void insertSuppliesMnl(){
         suppliesListMnl = new ArrayList<>();
 
-        suppliesListMnl.add(new Spot("Animo Bookstore", "Ground Floor, Yuchengco Hall"));
+        suppliesListMnl.add(new Spot("Animo Bookstore", "Enrique Yuchengco Hall, Ground floor"));
         suppliesListMnl.add(new Spot("Fully Booked", "Torre Lorenzo II"));
         suppliesListMnl.add(new Spot("Mini Candy & Supplies stalls", "Agno"));
         suppliesListMnl.add(new Spot("National Book Store", "near LRT"));
-        suppliesListMnl.add(new Spot("The Store", "2nd Floor Enrique Razon Sports Center"));
+        suppliesListMnl.add(new Spot("The Store", "Enrique Yuchengco Hall, Ground floor"));
         suppliesListMnl.add(new Spot("Office Warehouse", "One Archer’s Place"));
 
     }
@@ -38,19 +38,19 @@ public class SchoolSupplies {
         return suppliesListMnl;
     }
 
-    private void insertSuppliesStc(){
-        suppliesListStc = new ArrayList<>();
+    private void insertSuppliesLaguna(){
+        suppliesListLaguna = new ArrayList<>();
 
-        suppliesListStc.add(new Spot("AK Designs", "Paseo De Sta. Rosa"));
-        suppliesListStc.add(new Spot("Animo Bookstore", ""));
-        suppliesListStc.add(new Spot("Humana Printing Services", "Humana Building"));
-        suppliesListStc.add(new Spot("National Book Store", "Paseo De Sta. Rosa"));
-        suppliesListMnl.add(new Spot("The Store", "West Wing Basement, Milagros R. Del Rosario Building, DLSU-STC"));
-        suppliesListStc.add(new Spot("PC Butlers", ""));
-        suppliesListStc.add(new Spot("National Book Store", "Nuvali"));
+        suppliesListLaguna.add(new Spot("AK Designs", "Paseo De Sta. Rosa"));
+        suppliesListLaguna.add(new Spot("Animo Bookstore", ""));
+        suppliesListLaguna.add(new Spot("Humana Printing Services", "Humana Building"));
+        suppliesListLaguna.add(new Spot("National Book Store", "Paseo De Sta. Rosa"));
+        suppliesListLaguna.add(new Spot("The Store", "West Wing Basement, Milagros R. Del Rosario Building, Laguna Campus"));
+        suppliesListLaguna.add(new Spot("PC Butlers", ""));
+        suppliesListLaguna.add(new Spot("National Book Store", "Nuvali"));
     }
 
-    public ArrayList<Spot> getSuppliesListStc() {
-        return suppliesListStc;
+    public ArrayList<Spot> getSuppliesListLaguna() {
+        return suppliesListLaguna;
     }
 }

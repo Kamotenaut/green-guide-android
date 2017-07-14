@@ -50,9 +50,9 @@ public class Photocopy extends AppCompatActivity {
         expandableParentListItems.get(0).setChildItemList(itemList);
         parentListItems.add(expandableParentListItems.get(0));
 
-        expandableParentListItems.add(new ExpandableParentListItem("STC Campus"));
+        expandableParentListItems.add(new ExpandableParentListItem("Laguna Campus"));
         List<ExpandableChildListItem> itemList1 = new ArrayList<>();
-        for(Spot s : PrintingSpot.getInstance().getPhotocopyStcList()){
+        for(Spot s : PrintingSpot.getInstance().getPhotocopyLagunaList()){
             itemList1.add( new ExpandableChildListItem(s.getName(), s.getDescription()));
         }
         expandableParentListItems.get(1).setChildItemList(itemList1);

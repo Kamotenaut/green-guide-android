@@ -31,7 +31,7 @@ public class StudentOrgs extends android.app.Fragment {
         List list = new ArrayList();
         list.add("About the CSO");
         list.add("CSO Executive Board");
-        list.add("CSO Organizations");
+        list.add("Accredited Organizations");
         list.add("About the USG");
         list.add("Programs and Services");
         list.add("USG Officers");

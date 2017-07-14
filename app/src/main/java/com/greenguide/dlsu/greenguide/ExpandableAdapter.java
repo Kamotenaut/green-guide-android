@@ -45,8 +45,8 @@ public class ExpandableAdapter extends ExpandableRecyclerAdapter<ExpandableAdapt
             parentViewHolder.lblListHeader.setText(expandableParentListItem.getmTitle());
             switch(expandableParentListItem.getmTitle()){
                 case "Manila Campus":parentViewHolder.headerImg.setImageResource(R.drawable.generic1);break;
-                case "STC Campus":parentViewHolder.headerImg.setImageResource(R.drawable.stccampus);break;
-                case "Outside DLSU":parentViewHolder.headerImg.setImageResource(R.drawable.outsidedlsu);break;
+                case "Laguna Campus":parentViewHolder.headerImg.setImageResource(R.drawable.stccampus);break;
+                case "Off-Campus Parking":parentViewHolder.headerImg.setImageResource(R.drawable.outsidedlsu);break;
                 case "Makati Campus":parentViewHolder.headerImg.setImageResource(R.drawable.generic2);break;
             }
         }

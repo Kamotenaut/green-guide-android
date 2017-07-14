@@ -48,6 +48,7 @@ public class Housing extends AppCompatActivity {
 
         List<ExpandableParentListItem> expandableParentListItems = new ArrayList<>();
         List<ParentListItem> parentListItems = new ArrayList<>();
+        /*Changed Bellagio to Bellagio Residences and One Archer's Place to One Archers Place*/
 //        expandableParentListItems.add(new ExpandableParentListItem("University Pad"));
 //        List<ExpandableChildListItem> childItemList = new ArrayList<>();
 //        childItemList.add(new ExpandableChildListItem("Address","912 P. Ocampo St. Malate, Manila"));
@@ -75,7 +76,7 @@ public class Housing extends AppCompatActivity {
 //        expandableParentListItems.get(2).setChildItemList(childItemList1);
 //        parentListItems.add(expandableParentListItems.get(2));
 //
-//        expandableParentListItems.add(new ExpandableParentListItem("Bellagio"));
+//        expandableParentListItems.add(new ExpandableParentListItem("Bellagio Residences"));
 //        List<ExpandableChildListItem> childItemList3 = new ArrayList<>();
 //        childItemList3.add(new ExpandableChildListItem("Address","912 P. Ocampo St. Malate, Manila"));
 //        childItemList3.add(new ExpandableChildListItem("Contact Person","Ms. Marilyn Avila"));
@@ -120,7 +121,7 @@ public class Housing extends AppCompatActivity {
 //        expandableParentListItems.get(7).setChildItemList(childItemList1);
 //        parentListItems.add(expandableParentListItems.get(7));
 //
-//        expandableParentListItems.add(new ExpandableParentListItem("One Archer’s Place"));
+//        expandableParentListItems.add(new ExpandableParentListItem("One Archers Place"));
 //        List<ExpandableChildListItem> childItemList8 = new ArrayList<>();
 //        childItemList8.add(new ExpandableChildListItem("Address","912 P. Ocampo St. Malate, Manila"));
 //        childItemList8.add(new ExpandableChildListItem("Contact Person","Ms. Marilyn Avila"));

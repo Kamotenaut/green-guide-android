@@ -8,10 +8,10 @@ public class ArrowsExpressScheduler {
 
     private static  ArrowsExpressScheduler instance = null;
 
-    private ArrayList<Schedule> dlsuToStc, stcToDlsu;
+    private ArrayList<Schedule> dlsuToLaguna, stcToDlsu;
 
     private ArrowsExpressScheduler(){
-        addDlsuToStc(); addStcToDlsu();
+        addDlsuToLaguna(); addLagunaToDlsu();
     }
 
     public static ArrowsExpressScheduler getInstance(){
@@ -21,21 +21,21 @@ public class ArrowsExpressScheduler {
         return instance;
     }
 
-    private void addDlsuToStc(){
-        dlsuToStc = new ArrayList<>();
+    private void addDlsuToLaguna(){
+        dlsuToLaguna = new ArrayList<>();
 
-        dlsuToStc.add(new Schedule("First Trip", "6:00 AM"));
-        dlsuToStc.add(new Schedule("", "7:30 AM"));
-        dlsuToStc.add(new Schedule("", "9:30 AM"));
-        dlsuToStc.add(new Schedule("", "11:00 AM"));
-        dlsuToStc.add(new Schedule("", "1:00 PM"));
-        dlsuToStc.add(new Schedule("", "2:30 PM"));
-        dlsuToStc.add(new Schedule("", "3:30 PM"));
-        dlsuToStc.add(new Schedule("", "5:00 PM"));
-        dlsuToStc.add(new Schedule("Last Trip", "6:30 PM"));
+        dlsuToLaguna.add(new Schedule("First Trip", "6:00 AM"));
+        dlsuToLaguna.add(new Schedule("", "7:30 AM"));
+        dlsuToLaguna.add(new Schedule("", "9:30 AM"));
+        dlsuToLaguna.add(new Schedule("", "11:00 AM"));
+        dlsuToLaguna.add(new Schedule("", "1:00 PM"));
+        dlsuToLaguna.add(new Schedule("", "2:30 PM"));
+        dlsuToLaguna.add(new Schedule("", "3:30 PM"));
+        dlsuToLaguna.add(new Schedule("", "5:00 PM"));
+        dlsuToLaguna.add(new Schedule("Last Trip", "6:30 PM"));
     }
 
-    private void addStcToDlsu(){
+    private void addLagunaToDlsu(){
 
         stcToDlsu = new ArrayList<>();
 
@@ -52,11 +52,11 @@ public class ArrowsExpressScheduler {
     }
 
 
-    public ArrayList<Schedule> getDlsuToStc() {
-        return dlsuToStc;
+    public ArrayList<Schedule> getDlsuToLaguna() {
+        return dlsuToLaguna;
     }
 
-    public ArrayList<Schedule> getStcToDlsu() {
+    public ArrayList<Schedule> getLagunaToDlsu() {
         return stcToDlsu;
     }
 }

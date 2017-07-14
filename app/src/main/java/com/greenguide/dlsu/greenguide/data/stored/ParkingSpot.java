@@ -33,10 +33,10 @@ public class ParkingSpot {
         parkingList.add( new Spot("Br. Andrew Gonzales FSC Hall Parking", "", Location.Manila.getLocation()));
         parkingList.add( new Spot("Enrique Razon Sports Center Parking", "", Location.Manila.getLocation()));
 
-        //STC Campus
-        locationList.add(Location.STC.getLocation());
-        parkingList.add( new Spot("Milagros R. Del Rosario Building", "Visitor's Entrance", Location.STC.getLocation()));
-        parkingList.add( new Spot("Students' Parking", "", Location.STC.getLocation()));
+        //Laguna Campus
+        locationList.add(Location.Laguna.getLocation());
+        parkingList.add( new Spot("Milagros R. Del Rosario Building", "Visitor's Entrance", Location.Laguna.getLocation()));
+        parkingList.add( new Spot("Students' Parking", "", Location.Laguna.getLocation()));
 
         //Outside Campus
         String off = Location.OFF.getLocation();

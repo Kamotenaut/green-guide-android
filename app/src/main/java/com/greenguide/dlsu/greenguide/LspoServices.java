@@ -52,7 +52,7 @@ public class LspoServices extends AppCompatActivity {
     private void setupViewPager(ViewPager viewPager) {
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
         adapter.addFragment(new LspoManila(), "Manila Campus");
-        //adapter.addFragment(new LspoStc(), "STC Campus");
+        //adapter.addFragment(new LspoLaguna(), "Laguna Campus");
         viewPager.setAdapter(adapter);
     }
 

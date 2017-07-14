@@ -50,9 +50,9 @@ public class Supplies extends AppCompatActivity {
         expandableParentListItems.get(0).setChildItemList(childItemList);
         parentListItems.add(expandableParentListItems.get(0));
 
-        expandableParentListItems.add(new ExpandableParentListItem("STC Campus"));
+        expandableParentListItems.add(new ExpandableParentListItem("Laguna Campus"));
         List<ExpandableChildListItem> childItemList2 = new ArrayList<>();
-        for(Spot s : SchoolSupplies.getInstance().getSuppliesListStc()){
+        for(Spot s : SchoolSupplies.getInstance().getSuppliesListLaguna()){
             childItemList2.add(new ExpandableChildListItem(s.getName(), s.getDescription()));
         }
         expandableParentListItems.get(1).setChildItemList(childItemList2);
