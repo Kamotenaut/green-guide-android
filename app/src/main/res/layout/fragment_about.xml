@@ -27,7 +27,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="The DLSU LPEP Green Guide is a website and a mobile application to aid the freshmen in their LPEP. The Green Guide shows the LPEP schedule and materials as well as need-to-knows around DLSU."
+                android:text="The Green Guide also shows tips and need-to-knows to make your life in and around DLSU more enjoyable and convenient."
                 android:textSize="15dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
@@ -36,8 +36,8 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Designed and Developed by"
-        android:id="@+id/devtitle"
+        android:text="Green Guide Dev Team 2016"
+        android:id="@+id/devtitle2016"
         android:textStyle="bold"
         android:textSize="25dp"
         android:layout_margin="20dp"
@@ -46,9 +46,25 @@
     <android.support.v7.widget.RecyclerView
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
-        android:id="@+id/devlist"
+        android:id="@+id/devlist2016"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Green Guide Dev Team 2017"
+                android:textStyle="bold"
+                android:id="@+id/devtitle2017"
+                android:textSize="25dp"
+                android:layout_margin="20dp"
+                android:textColor="#000"
+                />
+            <android.support.v7.widget.RecyclerView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/devlist2017"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -111,6 +127,13 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:text="Special thanks to"
+                            android:textSize="15sp"
+                            android:textColor="#262626"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
                             android:text="Raisa Lee\nJoswin Go-Soco"
                             android:textSize="15sp"
                             android:textColor="#262626"
@@ -165,8 +188,22 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="CCS"
+                            android:text="College of Computer Studies"
                             android:textSize="20sp"
+                            android:textColor="#262626"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Special thanks to"
+                            android:textSize="15sp"
+                            android:textColor="#262626"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Dr. Nelson Marcos"
+                            android:textSize="15sp"
                             android:textColor="#262626"
                             />
                         <TextView
@@ -233,87 +270,82 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Office of Student Leadership Involvement, Formation and Empowerment (Student L.I.F.E.)\nStudent Media Office (SMO)"
+                            android:text="Special thanks to"
                             android:textSize="15sp"
                             android:textColor="#262626"
                             />
-                    </LinearLayout>
-
-                </LinearLayout>
-            </android.support.v7.widget.CardView>
-
-
-            <android.support.v7.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                card_view:cardCornerRadius="0dp"
-                card_view:cardElevation="2dp"
-                card_view:cardBackgroundColor="#fff"
-                android:layout_marginBottom="4dp"
-                android:layout_marginTop="4dp"
-                android:layout_marginLeft="8dp"
-                android:layout_marginRight="8dp"
-                android:backgroundTint="#fff"
-                >
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        android:layout_margin="15dp"
-                        android:layout_gravity="center"
-                        >
-
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Culture and Arts Office (CAO)"
-                            android:textSize="20sp"
+                            android:text="Dean Amelia Galang"
+                            android:textSize="15sp"
                             android:textColor="#262626"
                             />
-                    </LinearLayout>
-
-                </LinearLayout>
-            </android.support.v7.widget.CardView>
-            <android.support.v7.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                card_view:cardCornerRadius="0dp"
-                card_view:cardElevation="2dp"
-                card_view:cardBackgroundColor="#fff"
-                android:layout_marginBottom="4dp"
-                android:layout_marginTop="4dp"
-                android:layout_marginLeft="8dp"
-                android:layout_marginRight="8dp"
-                android:backgroundTint="#fff"
-                >
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        android:layout_margin="15dp"
-                        android:layout_gravity="center"
-                        >
-
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Student Discipline Formation Office (SDFO)"
-                            android:textSize="20sp"
+                            android:text="Vice Dean Andylyn Simeon"
+                            android:textSize="15sp"
                             android:textColor="#262626"
                             />
+                        <TableLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TableRow>
+                                <TextView
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="10dp"
+                                    android:textColor="#393939"
+                                    android:text="-"
+                                    />
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:textColor="#393939"
+                                    android:gravity="left"
+                                    android:text="Culture and Arts Office (CAO)"
+                                    />
+                            </TableRow>
+                            <TableRow>
+                                <TextView
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="10dp"
+                                    android:textColor="#393939"
+                                    android:text="-"
+                                    />
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:textColor="#393939"
+                                    android:gravity="left"
+                                    android:text="Student Discipline Formation Office (SDFO)"
+                                    />
+                            </TableRow>
+                            <TableRow>
+                                <TextView
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="10dp"
+                                    android:textColor="#393939"
+                                    android:text="-"
+                                    />
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:textColor="#393939"
+                                    android:gravity="left"
+                                    android:text="Student Media Office (SMO)"
+                                    />
+                            </TableRow>
+                        </TableLayout>
                     </LinearLayout>
 
                 </LinearLayout>
             </android.support.v7.widget.CardView>
+
             <android.support.v7.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -345,6 +377,7 @@
                             android:textSize="20sp"
                             android:textColor="#262626"
                             />
+
                     </LinearLayout>
 
                 </LinearLayout>
@@ -488,6 +521,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"

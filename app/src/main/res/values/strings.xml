@@ -77,10 +77,11 @@
     <string name="dean_title">Dean of Student Affairs</string>
     <string name="dean_name">Amelia M. Galang</string>
     <string name="begin_button">Begin Journey</string>
+    <!--Added De La Salle University in the last line of lasallian_pledge-->
     <string name="lasallian_pledge">I am Lasallian. I will come to appreciate
     the history and pride of the Lasallian
     Family to which I now belong as a student
-    of De La Salle University.\n\n
+    of De La Salle University\n\n
     I recognize in faith that my life and
     my abilities are the gifts of a good and
     gracious God with the guidance of the
@@ -110,7 +111,8 @@
     an effective and compassionate agent of
     social transformation, a worthy child of
     God and proud citizen of my country.\n\n
-    So help me God!
+    So help me God!\n\n
+    De La Salle University.
     </string>
 
     <!-- TODO: Remove or change this placeholder text -->

@@ -43,14 +43,14 @@ public class Tips extends AppCompatActivity {
 
         final List<String> list = new ArrayList();
         list.add("You must always visibly wear your ID whenever you’re inside the campus.");
-        list.add("You don’t always have to buy a new book, you can borrow from the Library or avail of the Pahiram Libro service of the USG.");
+        list.add("You don’t always have to buy a new book. You can borrow from the Library or avail of the Pahiram Libro service of the USG.");
         list.add("You can also buy second hand books from the Buy Back Books service of DLSU SCOOP.");
-        list.add("Familiarize yourself with the different policies of the school so that you can avoid having any offenses.");
+        list.add("Be informed. Familiarize yourself with the different University policies by reading the Student Handbook.");
         list.add("“H” in your EAF mean Huwebes/Thursday.");
         list.add("Maximize our computer laboratories and libraries.");
-        list.add("For your classes, always make sure that you give leeway for elevator traffic in Andrew Building.");
-        list.add("Try the different food served by student entrepreneurs in Animo BIZ in the Taft Campus or The Entrep Hub in STC.");
-        list.add("Join student organizations, it’s a great way for your to meet new people.");
+        list.add("Make sure to give leeway for elevator traffic if you have classes in Br. Andrew Gonzalez Hall.");
+        list.add("Try the different food served by student entrepreneurs in Animo BIZ in the Manila Campus or The Entrep Hub in Laguna Campus.");
+        list.add("Join student organizations. It’s a great way for your to meet new people.");
         list.add("As you start off college, try to get really good grades so that you can become a Dean’s Lister.");
         Random rand = new Random();
         int num = rand.nextInt(list.size());

@@ -28,7 +28,7 @@ public class EatingSpot {
 
         //Manila Campus
 
-        eatingList.add( new Spot("One Archer’s Place",
+        eatingList.add( new Spot("One Archers Place",
                 "Ersao;" +
                 "El Pollo Frito;" +
                 "Ichiro;" +
@@ -46,7 +46,7 @@ public class EatingSpot {
                 "Cafe Laya;" +
                 "Zen Tea"));
 
-        eatingList.add( new Spot("SM Green Taft",
+        eatingList.add( new Spot("SM Green",
                 "Eduardo’s Peri-Peri;" +
                 "Dunkin Donuts;" +
                 "Auntie Anne’s;" +

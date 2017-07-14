@@ -3,9 +3,9 @@ package com.greenguide.dlsu.greenguide.data.model;
 public enum Location {
 
     Manila("Manila Campus"),
-    STC("STC Campus"),
+    Laguna("Laguna Campus"),
     Makati("Makati Campus"),
-    OFF("Outside DLSU");
+    OFF("Off-Campus");
 
     private String location;
 

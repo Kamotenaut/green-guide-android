@@ -40,7 +40,7 @@ public class StcToTaft extends Fragment {
                              Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.fragment_stc_to_taft, container, false);
 
-        ArrayList<Schedule> list = ArrowsExpressScheduler.getInstance().getStcToDlsu();
+        ArrayList<Schedule> list = ArrowsExpressScheduler.getInstance().getLagunaToDlsu();
         adapter = new ListAdapter(list);
         recycler = (RecyclerView) v.findViewById(R.id.stctotaftlist);
         recycler.setHasFixedSize(true);

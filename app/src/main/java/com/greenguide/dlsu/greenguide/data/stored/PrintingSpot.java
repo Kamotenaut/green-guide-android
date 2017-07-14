@@ -10,17 +10,17 @@ public class PrintingSpot {
     private static PrintingSpot instance = null;
 
     private ArrayList<Spot> printingMnlList;
-    private ArrayList<Spot> printingStcList;
+    private ArrayList<Spot> printingLagunaList;
     private ArrayList<Spot> printingOffList;
     private ArrayList<Spot> photocopyMnlList;
-    private ArrayList<Spot> photocopyStcList;
+    private ArrayList<Spot> photocopyLagunaList;
 
     private PrintingSpot(){
         insertPrintingMnl();
         insertPrintingOff();
-        insertPrintingStc();
+        insertPrintingLaguna();
         insertPhotocopyMnl();
-        insertPhotocopyStc();
+        insertPhotocopyLaguna();
     }
 
     public static PrintingSpot getInstance(){
@@ -34,7 +34,7 @@ public class PrintingSpot {
 
         printingMnlList = new ArrayList<>();
         //Manila Campus
-        printingMnlList.add( new Spot("Andrew Hall", "2nd Floor"));
+        printingMnlList.add( new Spot("Br. Andrew Gonzalez Hall, Law Library, 2nd floor", "2nd Floor"));
         printingMnlList.add( new Spot("Student Co-Operative (SCOOP)", "Ground Floor, Br. Connon Hall"));
 
     }
@@ -43,9 +43,8 @@ public class PrintingSpot {
         printingOffList = new ArrayList<>();
 
         printingOffList.add( new Spot("Copytrade", "beside Tapa King; in front of University Mall"));
-        printingOffList.add( new Spot("Computer Shop", "EGI; Sherwood"));
+        printingOffList.add( new Spot("Computer Shop", "Speedbytes (EGI)\nTechtite (One Archers Place)\nNitronet (beside Tapa King)"));
         printingOffList.add( new Spot("Piso Print", "in front of the University Mall; 2nd floor of One Archers Place"));;
-        printingOffList.add( new Spot("Nitronet", "Beside Tapa King"));
     }
 
     private void insertPhotocopyMnl(){
@@ -66,28 +65,28 @@ public class PrintingSpot {
         photocopyMnlList.add( new Spot("Yuchengco Building", "Ground Floor"));
     }
 
-    private void insertPrintingStc(){
-        printingStcList = new ArrayList<>();
+    private void insertPrintingLaguna(){
+        printingLagunaList = new ArrayList<>();
 
-        printingStcList.add( new Spot("College Library", "3rd floor"));
+        printingLagunaList.add( new Spot("College Library", "3rd floor"));
     }
 
-    private void insertPhotocopyStc(){
-        photocopyStcList = new ArrayList<>();
+    private void insertPhotocopyLaguna(){
+        photocopyLagunaList = new ArrayList<>();
 
-        photocopyStcList.add( new Spot("College Library", "3rd floor"));
+        photocopyLagunaList.add( new Spot("College Library", "3rd floor"));
     }
 
-    public ArrayList<Spot> getPrintingStcList() {
-        return printingStcList;
+    public ArrayList<Spot> getPrintingLagunaList() {
+        return printingLagunaList;
     }
 
     public ArrayList<Spot> getPhotocopyMnlList(){
         return photocopyMnlList;
     }
 
-    public ArrayList<Spot> getPhotocopyStcList() {
-        return photocopyStcList;
+    public ArrayList<Spot> getPhotocopyLagunaList() {
+        return photocopyLagunaList;
     }
 
     public ArrayList<Spot> getPrintingMnlList() {

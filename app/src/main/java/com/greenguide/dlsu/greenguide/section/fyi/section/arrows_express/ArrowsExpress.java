@@ -51,8 +51,9 @@ public class ArrowsExpress extends AppCompatActivity {
 
     private void setupViewPager(ViewPager viewPager) {
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
-        adapter.addFragment(new TaftToStc(), "Taft to STC");
-        adapter.addFragment(new StcToTaft(), "STC to Taft");
+        /*Changed Taft to STC into Manila to Laguna and vice versa*/
+        adapter.addFragment(new TaftToStc(), "Manila to Laguna");
+        adapter.addFragment(new StcToTaft(), "Laguna to Manila");
         viewPager.setAdapter(adapter);
     }
 
