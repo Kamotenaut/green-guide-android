@@ -12,22 +12,21 @@ import android.widget.TextView;
 
 import com.greenguide.dlsu.greenguide.R;
 import com.greenguide.dlsu.greenguide.StudentAffairs;
-import com.greenguide.dlsu.greenguide.section.fyi.section.arrows_express.ArrowsExpress;
 import com.greenguide.dlsu.greenguide.section.fyi.section.Cheers;
 import com.greenguide.dlsu.greenguide.section.fyi.section.EatingPlaces;
 import com.greenguide.dlsu.greenguide.section.fyi.section.Housing;
 import com.greenguide.dlsu.greenguide.section.fyi.section.Hymns;
-import com.greenguide.dlsu.greenguide.section.fyi.section.liturgical.LspoServices;
 import com.greenguide.dlsu.greenguide.section.fyi.section.Parking;
 import com.greenguide.dlsu.greenguide.section.fyi.section.Photocopy;
 import com.greenguide.dlsu.greenguide.section.fyi.section.Printing;
 import com.greenguide.dlsu.greenguide.section.fyi.section.Supplies;
 import com.greenguide.dlsu.greenguide.section.fyi.section.Tips;
 import com.greenguide.dlsu.greenguide.section.fyi.section.Wifi;
+import com.greenguide.dlsu.greenguide.section.fyi.section.arrows_express.ArrowsExpress;
+import com.greenguide.dlsu.greenguide.section.fyi.section.liturgical.LspoServices;
 import com.greenguide.dlsu.greenguide.section.lpep.DeanActivity;
 import com.greenguide.dlsu.greenguide.section.lpep.LasallianPledge;
 import com.greenguide.dlsu.greenguide.section.lpep.schedule_a.LpepSchedule;
-import com.greenguide.dlsu.greenguide.section.lpep.schedule_b.LpepScheduleb;
 import com.greenguide.dlsu.greenguide.section.offices.section.Admin;
 import com.greenguide.dlsu.greenguide.section.offices.section.MissionOffices;
 import com.greenguide.dlsu.greenguide.section.student_orgs.section.AboutCso;
@@ -88,8 +87,7 @@ public class CommonAdapter extends RecyclerView.Adapter<CommonAdapter.CommonView
                         case "Lasallian Pledge":i = new Intent(v.getContext(),LasallianPledge.class); v.getContext().startActivity(i);break;
                         case "Lasallian Hymns":i = new Intent(v.getContext(),Hymns.class); v.getContext().startActivity(i);break;
                         case "DLSU Cheers":i = new Intent(v.getContext(),Cheers.class); v.getContext().startActivity(i);break;
-                        case "LPEP Schedule A":i = new Intent(v.getContext(),LpepSchedule.class);v.getContext().startActivity(i);break;
-                        case "LPEP Schedule B":i = new Intent(v.getContext(),LpepScheduleb.class);v.getContext().startActivity(i);break;
+                        case "LPEP Schedule":i = new Intent(v.getContext(),LpepSchedule.class);v.getContext().startActivity(i);break;
                         case "Arrows Express":i = new Intent(v.getContext(),ArrowsExpress.class);v.getContext().startActivity(i);break;
                         case "Photocopy Services":i = new Intent(v.getContext(),Photocopy.class);v.getContext().startActivity(i);break;
                         case "Parking Locations":i = new Intent(v.getContext(),Parking.class);v.getContext().startActivity(i);break;
@@ -120,10 +118,8 @@ public class CommonAdapter extends RecyclerView.Adapter<CommonAdapter.CommonView
                 holder.vImage.setImageResource(R.drawable.hymns);
             } else if(list.get(position).equals("DLSU Cheers")) {
                 holder.vImage.setImageResource(R.drawable.dlsucheers);
-            } else if(list.get(position).equals("LPEP Schedule A")) {
+            } else if(list.get(position).equals("LPEP Schedule")) {
                 holder.vImage.setImageResource(R.drawable.lpepa);
-            } else if(list.get(position).equals("LPEP Schedule B")) {
-                holder.vImage.setImageResource(R.drawable.lpepb);
             } else if(list.get(position).equals("Arrows Express")) {
                 holder.vImage.setImageResource(R.drawable.arrowsexpress);
             } else if(list.get(position).equals("Photocopy Services")) {
