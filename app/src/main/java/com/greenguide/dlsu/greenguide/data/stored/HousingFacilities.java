@@ -24,80 +24,82 @@ public class HousingFacilities {
     private void insertHousing(){
         housingList = new ArrayList<>();
 
-        housingList.add( new Address("University Pad",
-                "912 P. Ocampo St., Malate, Manila",
-                "Ms. Marilyn Avila",
-                "525-0001\n" +
-                "0917-566- 3795",
-                "www.universitypad.com.ph;\n" +
-                "info@universitypad.com.ph"));
+        housingList.add( new Address("@HomeDormtel",
+                "2470 Del Carmen Street, Malate, Manila",
+                "Marmi Grace O.Sutilo",
+                "522 2913\n" +
+                        "353 8315\n" +
+                            "0915 407 9439",
+                "http://athomedorm.wixsite.com/athome-dorm/contact\n" +
+                        "https://www.facebook.com/athomedorm\n" +
+                        "at_homedorm@yahoo.com"));
 
-        housingList.add( new Address("Torre Lorenzo 2",
-                "2426 Taft Avenue, Manila",
-                "Aika Nicolas",
-                "400 0131\n" +
-                "0917 504 9023",
-                "www.torrelorenzo2.com"));
+        housingList.add( new Address("CaraCeline Dormtel",
+                "2450 Del Carmen Corner Kapitan Ticong St., Malate, Manila",
+                "Geraldine Magallanes",
+                "0998 559 0264\n" +
+                        "0955 840 8029",
+                "https://www.facebook.com/ccdorm/\n" +
+                        "caracelinedorm@yahoo.com"));
 
-        housingList.add( new Address("WWW Residences",
-                "909 Estrada St. corner Leon Guinto St. Malate, Manila",
-                "Gilbert Lorenzo\n" +
-                "Maribeth Chiang",
-                "523 7974\n" +
-                "866 4226\n" +
-                "0905 334 3061",
-                "wwwresidencestaft@gmail.com"));
+        housingList.add( new Address("Homelike Ladies Dorm",
+                "950 Kapitan Ticong St., Malate, Manila",
+                "Rosa Bella Reyes",
+                "525 1580\n" +
+                        "0919 399 5501",
+                        "https://www.facebook.com/pages/Homelike-Ladies-Dormitory/236647396412727"));
 
-        housingList.add( new Address("Bellagio",
-                "2450 L. Guinto St., Malate, Manila",
-                "Mary Ann Tero",
-                "523-0345\n" +
-                "216 0370\n" +
-                "0917 811 0839\n" +
-                "0917 374 0963",
-                "bellagio_residences@yahoo.com\n" +
-                "FB Account: Bellagio Residences"));
+        housingList.add( new Address("Orlando Suites",
+                "2489 Singalong cor. Estrada St., Malate, Manila",
+                "Alfredo de Lima",
+                "567 7677\n" +
+                        "567 7678\n" +
+                            "567 4470",
+                "https://www.facebook.com/Orlando-Suites-Manila-186631001388947/"));
 
-        housingList.add( new Address("University College Residence",
-                "1052 Estrada St. cor. Arellano Ave., Malate, Manila",
-                "Jaz Daiz",
-                "521-1951\n" +
-                "521 1954\n" +
-                "0905 667 6712",
-                ""));
+        housingList.add( new Address("Providence Tower Condominium",
+                "2471 Leon Guinto St., Malate, Manila",
+                "Lucita Vitas\n" +
+                    "Susan Galvez",
+                "664 3263\n" +
+                        "524 4714\n" +
+                        "0920 923 4322",
+                "http://www.providencetowermanila.com/\n" +
+                "https://www.facebook.com/Providence-Tower-52358686874/"));
 
         housingList.add( new Address("Residencia De Dios",
                 "943 Estrada St., Malate, Manila",
-                "Marie Butron",
-                "526-7876\n" +
-                "0905 782 7906",
-                "residencia.dedios@yahoo.com"));
+                "Marina Butron\n" +
+                        "Jenny Barrozo",
+                "516 3380\n" +
+                        "526 7876",
+                "https://www.facebook.com/Residencia-de-Dios-239986576357877/\n" +
+                        "residencia.dedios@yahoo.com"));
 
         housingList.add( new Address("Tahilan Residence and Study Center",
-                "2396 Leon Guinto Street, Malate, Manila",
-                "Rita Esguerra\n" +
-                "Bernadette Balon",
-                "525-7574\n" +
-                "0915-644- 1456",
+                "2396 Leon Guinto St., Malate, Manila",
+                "Diana Rueda\n" +
+                        "Marela Alinea\n" +
+                            "Coleen Pangilinan",
+                "525 7574\n" +
+                        "0917 576 0959\n" +
+                            "0917 713 0539",
                 "tahilan@yahoo.com"));
 
-        housingList.add( new Address("@HomeDormtel",
-                "2470 Del Carmen Street, Malate. Manila",
-                "Marmi Grace O.Sutilo",
-                "522-2913\n" +
-                "353-8315",
-                "athomedorm.wix.com\n" +
-                "at_homedorm@yahoo.com\n" +
-                "https://www.facebook.com/athomedorm"));
+        housingList.add( new Address("Torre Lorenzo 1",
+                "2587 Taft Ave. cor. P. Ocampo St., Malate, Manila",
+                "Raymond Salcedo",
+                "400 01147\n" +
+                        "0917 800 0182",
+                "www.torrelorenzo.com"));
 
-        housingList.add( new Address("One Archer’s Place",
-                "Castro St. cor. F. Reyes Malate, Manila",
-                "Liza Ebarte\n" +
-                "Phamie Pastor",
-                "0917 872 7193\n" +
-                "0917-874- 9258",
-                "www.onearchersplace.com"));
-
+        housingList.add( new Address("University Pad",
+                "912 P. Ocampo St., Malate, Manila",
+                "Darwin Villanueva",
+                "525 0001\n" +
+                        "0917 566 3795",
+                "www.universitypad.com.ph\n" +
+                    "info@universitypad.com.ph"));
     }
 
     public ArrayList<Address> getHousingList() {
