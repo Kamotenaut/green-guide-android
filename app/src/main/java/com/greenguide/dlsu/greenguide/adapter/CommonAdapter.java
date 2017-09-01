@@ -135,9 +135,9 @@ public class CommonAdapter extends RecyclerView.Adapter<CommonAdapter.CommonView
             } else if(list.get(position).equals("School Supplies")) {
                 holder.vImage.setImageResource(R.drawable.supplies);
             } else if(list.get(position).equals("Core Values")) {
-                holder.vImage.setImageResource(R.drawable.values);
+                holder.vImage.setImageResource(R.drawable.mbs1);
             } else if(list.get(position).equals("Prayers")) {
-                holder.vImage.setImageResource(R.drawable.prayers);
+                holder.vImage.setImageResource(R.drawable.pgp3);
             } else if(list.get(position).equals("About the USG")) {
                 holder.vImage.setImageResource(R.drawable.generic4);
             } else if(list.get(position).equals("About the CSO")) {
