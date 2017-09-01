@@ -63,6 +63,7 @@ public class About extends android.app.Fragment{
         ArrayList<Profile> list2017 = new ArrayList();
         list2017.add(new Profile("Winfred Villaluna", "BS CS-ST", "Project Manager",R.drawable.avatar));
         list2017.add(new Profile("Gelo Reamon", "BS CS-ST", "Android App Development Lead",R.drawable.avatar));
+        list2017.add(new Profile("Gaius Ambion", "BS CS-ST", "Android App Developer",R.drawable.avatar));
         list2017.add(new Profile("Brandon Peñaranda", "BS CS-ST", "Android App Developer",R.drawable.avatar));
         list2017.add(new Profile("Patrick Tobias", "BS CS-ST", "iOS App Development Lead",R.drawable.avatar));
         list2017.add(new Profile("Keith Gardose", "BS CS-ST", "iOS App Developer",R.drawable.avatar));

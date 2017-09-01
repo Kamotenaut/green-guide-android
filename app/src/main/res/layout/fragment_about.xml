@@ -277,14 +277,14 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Dean Amelia Galang"
+                            android:text="Dean Nelca Leila B. Villarin"
                             android:textSize="15sp"
                             android:textColor="#262626"
                             />
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Vice Dean Andylyn Simeon"
+                            android:text="Vice Dean Elaine Marie A. Concepcion"
                             android:textSize="15sp"
                             android:textColor="#262626"
                             />
