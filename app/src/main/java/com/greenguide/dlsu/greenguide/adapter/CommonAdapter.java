@@ -18,6 +18,7 @@ import com.greenguide.dlsu.greenguide.section.fyi.section.Housing;
 import com.greenguide.dlsu.greenguide.section.fyi.section.Hymns;
 import com.greenguide.dlsu.greenguide.section.fyi.section.Parking;
 import com.greenguide.dlsu.greenguide.section.fyi.section.Photocopy;
+import com.greenguide.dlsu.greenguide.section.fyi.section.Policies;
 import com.greenguide.dlsu.greenguide.section.fyi.section.Printing;
 import com.greenguide.dlsu.greenguide.section.fyi.section.Supplies;
 import com.greenguide.dlsu.greenguide.section.fyi.section.Tips;
@@ -91,6 +92,7 @@ public class CommonAdapter extends RecyclerView.Adapter<CommonAdapter.CommonView
                         case "Photocopy Services":i = new Intent(v.getContext(),Photocopy.class);v.getContext().startActivity(i);break;
                         case "Parking Locations":i = new Intent(v.getContext(),Parking.class);v.getContext().startActivity(i);break;
                         case "Wifi Spots":i = new Intent(v.getContext(),Wifi.class);v.getContext().startActivity(i);break;
+                        case "Policies":i = new Intent(v.getContext(),Policies.class);v.getContext().startActivity(i);break;
                         case "Printing Services":i = new Intent(v.getContext(),Printing.class);v.getContext().startActivity(i);break;
                         case "Places to Eat":i = new Intent(v.getContext(),EatingPlaces.class);v.getContext().startActivity(i);break;
                         case "School Supplies":i = new Intent(v.getContext(),Supplies.class);v.getContext().startActivity(i);break;
@@ -127,6 +129,8 @@ public class CommonAdapter extends RecyclerView.Adapter<CommonAdapter.CommonView
                 holder.vImage.setImageResource(R.drawable.arrowsexpress);
             } else if(list.get(position).equals("Wifi Spots")) {
                 holder.vImage.setImageResource(R.drawable.generic3);
+            } else if(list.get(position).equals("Policies")) {
+                holder.vImage.setImageResource(R.drawable.generic2);
             } else if(list.get(position).equals("Printing Services")) {
                 holder.vImage.setImageResource(R.drawable.generic2);
             } else if(list.get(position).equals("Places to Eat")) {

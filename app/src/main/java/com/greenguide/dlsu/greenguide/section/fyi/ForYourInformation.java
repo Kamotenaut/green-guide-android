@@ -43,6 +43,7 @@ public class ForYourInformation extends android.app.Fragment {
         list.add("School Supplies");
         list.add("Wifi Spots");
         list.add("Tips and Tidbits");
+        list.add("Policies");
         adapter = new CommonAdapter(list);
         recycler = (RecyclerView) v.findViewById(R.id.fyilist);
         recycler.setHasFixedSize(true);

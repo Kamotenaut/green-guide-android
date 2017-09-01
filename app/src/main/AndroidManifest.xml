@@ -1,150 +1,155 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.greenguide.dlsu.greenguide">
+		  package="com.greenguide.dlsu.greenguide">
 
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.INTERNET"/>
+	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
 
-    <application
-        android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
-        android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity
-            android:name=".activity.MainActivity"
-            android:screenOrientation="portrait">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" /> />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".section.lpep.DeanMessage"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".section.Navigation"
-            android:label="@string/title_activity_navigation"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".section.lpep.schedule_a.LpepSchedule"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".section.lpep.LasallianPledge"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".section.fyi.section.arrows_express.ArrowsExpress"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".section.fyi.section.Photocopy"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".section.fyi.section.Parking"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".section.fyi.section.Wifi"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".section.fyi.section.Printing"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".section.fyi.section.EatingPlaces"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".section.fyi.section.Supplies"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".section.values_prayers.section.CoreValues"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".section.student_orgs.section.AboutCso"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".section.student_orgs.section.UsgOfficers"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".section.student_orgs.section.ProgramsServices"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".section.student_orgs.section.cso_orgs.Organizations"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".section.fyi.section.Tips"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".section.offices.section.Admin"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".section.fyi.section.liturgical.LspoServices"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".section.fyi.section.Housing"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".section.fyi.section.Cheers"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".section.values_prayers.section.Prayers"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".section.fyi.section.Hymns"
-            android:label="@string/title_activity_hymns"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".StudentAffairs"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".section.lpep.DeanActivity"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".section.offices.section.MissionOffices"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
-        <activity
-            android:name=".activity.SplashActivity"
-            android:theme="@style/SplashTheme">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+	<application
+		android:allowBackup="true"
+		android:icon="@mipmap/ic_launcher"
+		android:label="@string/app_name"
+		android:supportsRtl="true"
+		android:theme="@style/AppTheme">
+		<activity
+			android:name=".activity.MainActivity"
+			android:screenOrientation="portrait">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN"/>
+				/>
+			</intent-filter>
+		</activity>
+		<activity
+			android:name=".section.lpep.DeanMessage"
+			android:screenOrientation="portrait"
+			android:theme="@style/AppTheme.NoActionBar"/>
+		<activity
+			android:name=".section.Navigation"
+			android:label="@string/title_activity_navigation"
+			android:screenOrientation="portrait"
+			android:theme="@style/AppTheme.NoActionBar"/>
+		<activity
+			android:name=".section.lpep.schedule_a.LpepSchedule"
+			android:screenOrientation="portrait"
+			android:theme="@style/AppTheme.NoActionBar"/>
+		<activity
+			android:name=".section.lpep.LasallianPledge"
+			android:screenOrientation="portrait"
+			android:theme="@style/AppTheme.NoActionBar"/>
+		<activity
+			android:name=".section.fyi.section.arrows_express.ArrowsExpress"
+			android:screenOrientation="portrait"
+			android:theme="@style/AppTheme.NoActionBar"/>
+		<activity
+			android:name=".section.fyi.section.Photocopy"
+			android:screenOrientation="portrait"
+			android:theme="@style/AppTheme.NoActionBar"/>
+		<activity
+			android:name=".section.fyi.section.Parking"
+			android:screenOrientation="portrait"
+			android:theme="@style/AppTheme.NoActionBar"/>
+		<activity
+			android:name=".section.fyi.section.Wifi"
+			android:screenOrientation="portrait"
+			android:theme="@style/AppTheme.NoActionBar"/>
+		<activity
+			android:name=".section.fyi.section.Policies"
+			android:screenOrientation="portrait"
+			android:theme="@style/AppTheme.NoActionBar"/>
+		<activity
+			android:name=".section.fyi.section.Printing"
+			android:screenOrientation="portrait"
+			android:theme="@style/AppTheme.NoActionBar"/>
+		<activity
+			android:name=".section.fyi.section.EatingPlaces"
+			android:screenOrientation="portrait"
+			android:theme="@style/AppTheme.NoActionBar"/>
+		<activity
+			android:name=".section.fyi.section.Supplies"
+			android:screenOrientation="portrait"
+			android:theme="@style/AppTheme.NoActionBar"/>
+		<activity
+			android:name=".section.values_prayers.section.CoreValues"
+			android:screenOrientation="portrait"
+			android:theme="@style/AppTheme.NoActionBar"/>
+		<activity
+			android:name=".section.student_orgs.section.AboutCso"
+			android:screenOrientation="portrait"
+			android:theme="@style/AppTheme.NoActionBar"/>
+		<activity
+			android:name=".section.student_orgs.section.UsgOfficers"
+			android:screenOrientation="portrait"
+			android:theme="@style/AppTheme.NoActionBar"/>
+		<activity
+			android:name=".section.student_orgs.section.ProgramsServices"
+			android:screenOrientation="portrait"
+			android:theme="@style/AppTheme.NoActionBar"/>
+		<activity
+			android:name=".section.student_orgs.section.cso_orgs.Organizations"
+			android:screenOrientation="portrait"
+			android:theme="@style/AppTheme.NoActionBar"/>
+		<activity
+			android:name=".section.fyi.section.Tips"
+			android:screenOrientation="portrait"
+			android:theme="@style/AppTheme.NoActionBar"/>
+		<activity
+			android:name=".section.offices.section.Admin"
+			android:screenOrientation="portrait"
+			android:theme="@style/AppTheme.NoActionBar"/>
+		<activity
+			android:name=".section.fyi.section.liturgical.LspoServices"
+			android:screenOrientation="portrait"
+			android:theme="@style/AppTheme.NoActionBar"/>
+		<activity
+			android:name=".section.fyi.section.Housing"
+			android:screenOrientation="portrait"
+			android:theme="@style/AppTheme.NoActionBar"/>
+		<activity
+			android:name=".section.fyi.section.Cheers"
+			android:screenOrientation="portrait"
+			android:theme="@style/AppTheme.NoActionBar"/>
+		<activity
+			android:name=".section.values_prayers.section.Prayers"
+			android:screenOrientation="portrait"
+			android:theme="@style/AppTheme.NoActionBar"/>
+		<activity
+			android:name=".section.fyi.section.Hymns"
+			android:label="@string/title_activity_hymns"
+			android:screenOrientation="portrait"
+			android:theme="@style/AppTheme.NoActionBar"/>
+		<activity
+			android:name=".StudentAffairs"
+			android:screenOrientation="portrait"
+			android:theme="@style/AppTheme.NoActionBar"/>
+		<activity
+			android:name=".section.lpep.DeanActivity"
+			android:screenOrientation="portrait"
+			android:theme="@style/AppTheme.NoActionBar"/>
+		<activity
+			android:name=".section.offices.section.MissionOffices"
+			android:screenOrientation="portrait"
+			android:theme="@style/AppTheme.NoActionBar"/>
+		<activity
+			android:name=".activity.SplashActivity"
+			android:theme="@style/SplashTheme">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN"/>
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+				<category android:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+		</activity>
 
+		<provider
+			android:name=".provider.PermissionFileProvider"
+			android:authorities="${applicationId}.com.greenguide.dlsu.greenguide.provider"
+			android:exported="false"
+			android:grantUriPermissions="true">
+			<meta-data
+				android:name="android.support.FILE_PROVIDER_PATHS"
+				android:resource="@xml/provider_paths"/>
+		</provider>
 
-        <provider
-            android:name=".provider.PermissionFileProvider"
-            android:authorities="${applicationId}.com.greenguide.dlsu.greenguide.provider"
-            android:exported="false"
-            android:grantUriPermissions="true">
-            <meta-data
-                android:name="android.support.FILE_PROVIDER_PATHS"
-                android:resource="@xml/provider_paths"/>
-        </provider>
-
-    </application>
+	</application>
 
 </manifest>
