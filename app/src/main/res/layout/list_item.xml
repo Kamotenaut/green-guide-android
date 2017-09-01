@@ -11,6 +11,7 @@
     android:layout_marginTop="4dp"
     android:layout_marginLeft="8dp"
     android:layout_marginRight="8dp"
+    android:backgroundTint="#000"
     >
     <ImageView
         android:layout_width="match_parent"
@@ -18,6 +19,7 @@
         android:id="@+id/img"
         android:src="@drawable/listbg"
         android:scaleType="centerCrop"
+        android:alpha="0.6"
         />
     <TextView
         android:layout_width="wrap_content"
