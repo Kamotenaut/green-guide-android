@@ -68,7 +68,7 @@ public class ProfileAdapter extends RecyclerView.Adapter<ProfileAdapter.ProfileV
             case "Executive Vice Chairperson for Internals":holder.vPhoto.setImageResource(R.drawable.cso_vc_internals);break;
             case "Executive Vice Chairperson for Activities and Documentations":holder.vPhoto.setImageResource(R.drawable.cso_vc_docu);break;
             case "Executive Vice Chairperson for Finance":holder.vPhoto.setImageResource(R.drawable.cso_vc_finance);break;
-            case "Executive Vice Chairperson for Science and Technology Complex":holder.vPhoto.setImageResource(R.drawable.cso_vc_stc);break;
+            case "Executive Vice Chairperson for Laguna Campus":holder.vPhoto.setImageResource(R.drawable.cso_vc_stc);break;
             case "Vice President for External Affairs" : holder.vPhoto.setImageResource(R.drawable.usg_vp_external); break;
             case "Vice President for Internal Affairs" : holder.vPhoto.setImageResource(R.drawable.usg_vp_internal); break;
             case "Executive Secretary" : holder.vPhoto.setImageResource(R.drawable.usg_secretary); break;

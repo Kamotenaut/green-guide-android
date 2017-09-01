@@ -98,7 +98,7 @@ public class CommonAdapter extends RecyclerView.Adapter<CommonAdapter.CommonView
                         case "School Supplies":i = new Intent(v.getContext(),Supplies.class);v.getContext().startActivity(i);break;
                         case "Core Values":i = new Intent(v.getContext(),CoreValues.class);v.getContext().startActivity(i);break;
                         case "Prayers":i = new Intent(v.getContext(),Prayers.class);v.getContext().startActivity(i);break;
-                        case "About the CSO":i = new Intent(v.getContext(),AboutCso.class);v.getContext().startActivity(i);break;
+                        case "The Council of Student Organizations":i = new Intent(v.getContext(),AboutCso.class);v.getContext().startActivity(i);break;
                         case "The University Student Government":i = new Intent(v.getContext(),UsgOfficers.class);v.getContext().startActivity(i);break;
                         case "Programs and Services":i = new Intent(v.getContext(),ProgramsServices.class);v.getContext().startActivity(i);break;
                         case "Accredited Organizations":i = new Intent(v.getContext(),Organizations.class);v.getContext().startActivity(i);break;
@@ -145,7 +145,7 @@ public class CommonAdapter extends RecyclerView.Adapter<CommonAdapter.CommonView
                 holder.vImage.setImageResource(R.drawable.prayers);
             } else if(list.get(position).equals("The University Student Government")) {
                 holder.vImage.setImageResource(R.drawable.generic4);
-            } else if(list.get(position).equals("About the CSO")) {
+            } else if(list.get(position).equals("The Council of Student Organizations")) {
                 holder.vImage.setImageResource(R.drawable.aboutcso);
             } else if(list.get(position).equals("Programs and Services")) {
                 holder.vImage.setImageResource(R.drawable.programsservices);

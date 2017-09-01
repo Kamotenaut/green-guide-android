@@ -30,7 +30,7 @@ public class StudentOrgs extends android.app.Fragment {
         View v = inflater.inflate(R.layout.fragment_studentorgs, container, false);
 
         List list = new ArrayList();
-        list.add("About the CSO");
+        list.add("The Council of Student Organizations");
         list.add("Accredited Organizations");
         list.add("The University Student Government");
         list.add("Programs and Services");
