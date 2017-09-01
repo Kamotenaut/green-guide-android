@@ -51,7 +51,7 @@ public class UsgOfficers extends AppCompatActivity {
 
     private void setupViewPager(ViewPager viewPager) {
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
-        adapter.addFragment(new AboutUsg(), "About the USG");
+        adapter.addFragment(new AboutUsg(), "The University Student Government");
         adapter.addFragment(new Usgexecom(), "Executive Board");
         adapter.addFragment(new CollegePresidents(), "College Presidents");
         viewPager.setAdapter(adapter);

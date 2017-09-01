@@ -30,7 +30,6 @@ import com.greenguide.dlsu.greenguide.section.lpep.schedule_a.LpepSchedule;
 import com.greenguide.dlsu.greenguide.section.offices.section.Admin;
 import com.greenguide.dlsu.greenguide.section.offices.section.MissionOffices;
 import com.greenguide.dlsu.greenguide.section.student_orgs.section.AboutCso;
-import com.greenguide.dlsu.greenguide.section.student_orgs.section.usg_officers.AboutUsg;
 import com.greenguide.dlsu.greenguide.section.student_orgs.section.ProgramsServices;
 import com.greenguide.dlsu.greenguide.section.student_orgs.section.UsgOfficers;
 import com.greenguide.dlsu.greenguide.section.student_orgs.section.cso_orgs.Organizations;
@@ -98,7 +97,7 @@ public class CommonAdapter extends RecyclerView.Adapter<CommonAdapter.CommonView
                         case "Core Values":i = new Intent(v.getContext(),CoreValues.class);v.getContext().startActivity(i);break;
                         case "Prayers":i = new Intent(v.getContext(),Prayers.class);v.getContext().startActivity(i);break;
                         case "About the CSO":i = new Intent(v.getContext(),AboutCso.class);v.getContext().startActivity(i);break;
-                        case "About the USG":i = new Intent(v.getContext(),UsgOfficers.class);v.getContext().startActivity(i);break;
+                        case "The University Student Government":i = new Intent(v.getContext(),UsgOfficers.class);v.getContext().startActivity(i);break;
                         case "Programs and Services":i = new Intent(v.getContext(),ProgramsServices.class);v.getContext().startActivity(i);break;
                         case "Accredited Organizations":i = new Intent(v.getContext(),Organizations.class);v.getContext().startActivity(i);break;
                         case "Tips and Tidbits":i = new Intent(v.getContext(),Tips.class);v.getContext().startActivity(i);break;
@@ -138,7 +137,7 @@ public class CommonAdapter extends RecyclerView.Adapter<CommonAdapter.CommonView
                 holder.vImage.setImageResource(R.drawable.values);
             } else if(list.get(position).equals("Prayers")) {
                 holder.vImage.setImageResource(R.drawable.prayers);
-            } else if(list.get(position).equals("About the USG")) {
+            } else if(list.get(position).equals("The University Student Government")) {
                 holder.vImage.setImageResource(R.drawable.generic4);
             } else if(list.get(position).equals("About the CSO")) {
                 holder.vImage.setImageResource(R.drawable.aboutcso);

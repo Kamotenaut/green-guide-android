@@ -32,7 +32,7 @@ public class StudentOrgs extends android.app.Fragment {
         List list = new ArrayList();
         list.add("About the CSO");
         list.add("Accredited Organizations");
-        list.add("About the USG");
+        list.add("The University Student Government");
         list.add("Programs and Services");
 
         adapter = new CommonAdapter(list);
