@@ -130,13 +130,13 @@ public class CommonAdapter extends RecyclerView.Adapter<CommonAdapter.CommonView
             } else if(list.get(position).equals("Wifi Spots")) {
                 holder.vImage.setImageResource(R.drawable.generic3);
             } else if(list.get(position).equals("Policies")) {
-                holder.vImage.setImageResource(R.drawable.generic2);
+                holder.vImage.setImageResource(R.drawable.supplies);
             } else if(list.get(position).equals("Printing Services")) {
-                holder.vImage.setImageResource(R.drawable.generic2);
+                holder.vImage.setImageResource(R.drawable.csoorgs);
             } else if(list.get(position).equals("Places to Eat")) {
                 holder.vImage.setImageResource(R.drawable.eat);
             } else if(list.get(position).equals("School Supplies")) {
-                holder.vImage.setImageResource(R.drawable.supplies);
+                holder.vImage.setImageResource(R.drawable.generic2);
             } else if(list.get(position).equals("Core Values")) {
                 holder.vImage.setImageResource(R.drawable.mbs1);
             } else if(list.get(position).equals("Prayers")) {
