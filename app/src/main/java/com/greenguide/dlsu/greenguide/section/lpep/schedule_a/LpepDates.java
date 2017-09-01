@@ -39,10 +39,12 @@ public class LpepDates extends Fragment {
         View v = inflater.inflate(R.layout.fragment_lpep_dates, container, false);
 
         ArrayList<Schedule> list = new ArrayList();
-        list.add(new Schedule("Sept 4, 2017\n(CED, COB, COS, SOE)","Day 1", ""));
-        list.add(new Schedule("Sept 5, 2017\n(CED, COB, COS, SOE)","Day 2", ""));
-        list.add(new Schedule("Sept 6, 2017\n(CLA, GCOE, CCS)","Day 1", ""));
-        list.add(new Schedule("Sept 7, 2017\n(CLA, GCOE, CCS)","Day 2", ""));
+        list.add(new Schedule("CED COB COS SOE", ""));
+        list.add(new Schedule("Sept 4, 2017","Day 1", ""));
+        list.add(new Schedule("Sept 5, 2017","Day 2", ""));
+        list.add(new Schedule("CLA GCOE CCS", ""));
+        list.add(new Schedule("Sept 6, 2017", "Day 1"));
+        list.add(new Schedule("Sept 7, 2017", "Day 2"));
 
         adapter = new ListAdapter(list);
         recycler = (RecyclerView) v.findViewById(R.id.lpepdateslist);

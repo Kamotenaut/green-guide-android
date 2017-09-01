@@ -15,7 +15,7 @@ import java.util.List;
 /**
  * Created by jasonsioco on 8/10/2016.
  */
-public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ListViewHolder>{
+public class ListAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>{
 
     private List<Schedule> list;
 
@@ -27,7 +27,7 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ListViewHolder
         protected TextView vTime;
         protected TextView vName;
 
-        public ListViewHolder(View v, List<Schedule> list) {
+        public ListViewHolder(View v) {
             super(v);
             vName = (TextView) v.findViewById(R.id.activitytitle) ;
             vTime =  (TextView) v.findViewById(R.id.activitytime);
@@ -36,21 +36,58 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ListViewHolder
             vName.setTypeface(tf);
             vTime.setTypeface(tf);
         }
+    }
+
+    public static class HeaderHolder extends RecyclerView.ViewHolder{
+        protected TextView tvHeader;
+        public HeaderHolder(View v) {
+            super(v);
+            tvHeader = (TextView) v.findViewById(R.id.tv_header) ;
+            String fontPath = "fonts/Montserrat-Regular.ttf";
+            Typeface tf = Typeface.createFromAsset(v.getContext().getAssets(), fontPath);
+            tvHeader.setTypeface(tf);
+        }
+    }
 
 
+    @Override
+    public int getItemViewType(int position) {
+        return list.get(position).getTime().trim().isEmpty() ? 1 : 0;
     }
 
     @Override
-    public ListViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View itemView = LayoutInflater.from(parent.getContext()).inflate(R.layout.sched_item, parent, false);
+    public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
 
-        return new ListViewHolder(itemView,list);
+        View itemView = null;
+        switch (viewType)
+        {
+            case 0:
+                itemView = LayoutInflater.from(parent.getContext()).inflate(R.layout.sched_item, parent, false);
+                return new ListViewHolder(itemView);
+            case 1:
+                itemView = LayoutInflater.from(parent.getContext()).inflate(R.layout.sched_header, parent, false);
+                return new HeaderHolder(itemView);
+        }
+
+        return null;
     }
 
     @Override
-    public void onBindViewHolder(ListViewHolder holder, final int position) {
-        holder.vName.setText(list.get(position).getDescription());
-        holder.vTime.setText(list.get(position).getTime());
+    public void onBindViewHolder(RecyclerView.ViewHolder holder, final int position) {
+        int type = getItemViewType(position);
+
+        switch (type)
+        {
+            case 0:
+                ListViewHolder listHolder = (ListViewHolder) holder;
+                listHolder.vName.setText(list.get(position).getDescription());
+                listHolder.vTime.setText(list.get(position).getTime());
+                break;
+            case 1:
+                HeaderHolder h = (HeaderHolder) holder;
+                h.tvHeader.setText(list.get(position).getDescription());
+                break;
+        }
 
     }
 
