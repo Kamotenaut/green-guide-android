@@ -27,11 +27,11 @@ public class AdministrativeOffices {
         adminList = new ArrayList<>();
 
         adminList.add(new Officers("Br. Raymundo B. Suplido FSC", "President", OfficeType.ADMIN.getType()));
-        adminList.add(new Officers("Dr. Gerardo C. Janairo", "Chancellor", OfficeType.ADMIN.getType()));
-        adminList.add(new Officers("Dr. Robert  C. Roleda", "Vice Chancellor for Academics (VCA)", OfficeType.ADMIN.getType()));
+        adminList.add(new Officers("Dr. Robert C. Roleda", "Chancellor", OfficeType.ADMIN.getType()));
+        adminList.add(new Officers("Dr. Merlin Teodosia C. Suarez", "Vice Chancellor for Academics (VCA)", OfficeType.ADMIN.getType()));
         adminList.add(new Officers("Br. Michael J. Broughton FSC","Vice President for Lasalian Mission (VPLM)", OfficeType.ADMIN.getType()));
         adminList.add(new Officers("Dr. Raymond Girard Tan","Vice Chancellor for Research and Innovation (VCRI) ", OfficeType.ADMIN.getType()));
-        adminList.add(new Officers("", "Vice Chancellor for Administration", OfficeType.ADMIN.getType()));
+        adminList.add(new Officers("Dr. Arnel Onesimo A. Uy", "Vice Chancellor for Administration", OfficeType.ADMIN.getType()));
         adminList.add(new Officers("Dr. Gil Nonato C. Santos", "Vice Chancellor for DLSU-STC", OfficeType.ADMIN.getType()));
     }
 
@@ -60,12 +60,12 @@ public class AdministrativeOffices {
 
         //College of Computer Studies
         colleges.add(OfficeType.CCS.getType());
-        collegeList.add(new Officers("Dr. Merlin Teodosia C. Suarez", "Dean", OfficeType.CCS.getType()));
+        collegeList.add(new Officers("Dr. Rafael A. Cabredo", "Dean", OfficeType.CCS.getType()));
         collegeList.add(new Officers("Dr. Nelson Marcos", "Vice Dean", OfficeType.CCS.getType()));
 
         //College of Liberal Arts
         colleges.add(OfficeType.CLA.getType());
-        collegeList.add(new Officers("Dr. Julio C. Teehankee", "Dean", OfficeType.CLA.getType()));
+        collegeList.add(new Officers("Dr. Jazmin B. Llana", "Dean", OfficeType.CLA.getType()));
         collegeList.add(new Officers("Ms. Fides A. del Castillo", "Vice Dean", OfficeType.CLA.getType()));
 
         //Gokongwei College of Engineering
@@ -75,7 +75,7 @@ public class AdministrativeOffices {
 
         //College of Science
         colleges.add(OfficeType.COS.getType());
-        collegeList.add(new Officers("Dr. Jose Santos R. Carandang VI", "Dean", OfficeType.COS.getType()));
+        collegeList.add(new Officers("Dr. Glenn V. Alea", "Dean", OfficeType.COS.getType()));
         collegeList.add(new Officers("Dr. Derrick Ethelbert C. Yu", "Vice Dean", OfficeType.COS.getType()));
 
         //College of Law
