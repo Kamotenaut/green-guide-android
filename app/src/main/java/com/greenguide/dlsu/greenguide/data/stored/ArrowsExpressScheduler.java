@@ -25,13 +25,14 @@ public class ArrowsExpressScheduler {
         dlsuToLaguna = new ArrayList<>();
 
         dlsuToLaguna.add(new Schedule("First Trip", "6:00 AM"));
-        dlsuToLaguna.add(new Schedule("", "7:30 AM"));
-        dlsuToLaguna.add(new Schedule("", "9:30 AM"));
-        dlsuToLaguna.add(new Schedule("", "11:00 AM"));
-        dlsuToLaguna.add(new Schedule("", "1:00 PM"));
-        dlsuToLaguna.add(new Schedule("", "2:30 PM"));
-        dlsuToLaguna.add(new Schedule("", "3:30 PM"));
-        dlsuToLaguna.add(new Schedule("", "5:00 PM"));
+        dlsuToLaguna.add(new Schedule("Departure to STC", "7:30 AM"));
+        dlsuToLaguna.add(new Schedule("Departure to STC", "9:30 AM"));
+        dlsuToLaguna.add(new Schedule("Departure to STC", "11:00 AM"));
+        dlsuToLaguna.add(new Schedule("", "12:30 PM"));
+        dlsuToLaguna.add(new Schedule("Departure to STC", "1:00 PM"));
+        dlsuToLaguna.add(new Schedule("Departure to STC", "2:30 PM"));
+        dlsuToLaguna.add(new Schedule("Departure to STC", "3:30 PM"));
+        dlsuToLaguna.add(new Schedule("Departure to STC", "5:00 PM"));
         dlsuToLaguna.add(new Schedule("Last Trip", "6:30 PM"));
     }
 
@@ -40,13 +41,14 @@ public class ArrowsExpressScheduler {
         stcToDlsu = new ArrayList<>();
 
         stcToDlsu.add(new Schedule("First Trip", "6:00 AM"));
-        stcToDlsu.add(new Schedule("", "7:30 AM"));
-        stcToDlsu.add(new Schedule("", "9:30 AM"));
-        stcToDlsu.add(new Schedule("", "11:00 AM"));
-        stcToDlsu.add(new Schedule("", "1:00 PM"));
-        stcToDlsu.add(new Schedule("", "2:30 PM"));
-        stcToDlsu.add(new Schedule("", "3:30 PM"));
-        stcToDlsu.add(new Schedule("", "5:00 PM"));
+        stcToDlsu.add(new Schedule("Departure to Taft", "7:30 AM"));
+        stcToDlsu.add(new Schedule("Departure to Taft", "9:30 AM"));
+        stcToDlsu.add(new Schedule("Departure to Taft", "11:00 AM"));
+        stcToDlsu.add(new Schedule("", "12:30 PM"));
+        stcToDlsu.add(new Schedule("Departure to Taft", "1:00 PM"));
+        stcToDlsu.add(new Schedule("Departure to Taft", "2:30 PM"));
+        stcToDlsu.add(new Schedule("Departure to Taft", "3:30 PM"));
+        stcToDlsu.add(new Schedule("Departure to Taft", "5:00 PM"));
         stcToDlsu.add(new Schedule("Last Trip", "6:30 PM"));
 
     }
