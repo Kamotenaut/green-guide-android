@@ -6,10 +6,11 @@ package com.greenguide.dlsu.greenguide.data.model;
 public class Profile {
     private String name;
     private String position;
+    private String email;
     private String description;
     private int resid;
 
-    public Profile(String name, String position, String description,int resid){
+    public Profile(String name, String position, String description, int resid){
         this.setName(name);
         this.setPosition(position);
         this.setDescription(description);
@@ -17,10 +18,14 @@ public class Profile {
     }
 
     public Profile(String name, String position, String description){
+        this(name, position, description, "");
+    }
+
+    public Profile(String name, String position, String description, String email){
         this.setName(name);
         this.setPosition(position);
         this.setDescription(description);
-
+        this.setEmail(email);
     }
 
 
@@ -54,5 +59,15 @@ public class Profile {
 
     public void setResid(int resid) {
         this.resid = resid;
+    }
+
+    public String getEmail()
+    {
+        return email;
+    }
+
+    public void setEmail(String email)
+    {
+        this.email = email;
     }
 }

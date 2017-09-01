@@ -56,6 +56,16 @@
                 android:textAlignment="center"
                 android:textColor="#505050"
                 android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="firstname_lastname@dlsu.edu.ph"
+                android:textAlignment="center"
+                android:textColor="#505050"
+                android:textSize="12sp" />
         </LinearLayout>
 
         <LinearLayout

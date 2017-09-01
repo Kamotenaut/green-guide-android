@@ -34,7 +34,7 @@ public class Usgexecom extends Fragment {
         ArrayList<Profile> list = new ArrayList();
 
         for(Officers o : StudentOffices.getInstance().getUsgEB()){
-            list.add(new Profile(o.getName(), o.getPosition(), ""));
+            list.add(new Profile(o.getName(), o.getPosition(), "", o.getEmail()));
         }
 
         adapter = new ProfileAdapter(list);

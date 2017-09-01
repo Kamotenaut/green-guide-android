@@ -28,11 +28,11 @@ public class StudentOffices {
     private void insertUsgEb(){
         usgEB = new ArrayList<>();
 
-        usgEB.add(new Officers("Mikee De Vega", "USG President"));
-        usgEB.add(new Officers("Brian Chen", "Vice President for Internal Affairs"));
-        usgEB.add(new Officers("Gabbie Perez", "Vice President for External Affairs"));
-        usgEB.add(new Officers("Trish Andulte", "Executive Secretary"));
-        usgEB.add(new Officers("Rolf Villon", "Executive Treasurer"));
+        usgEB.add(new Officers("Mikee De Vega", "USG President", "mikee_devega@dlsu.edu.ph"));
+        usgEB.add(new Officers("Brian Chen", "Vice President for Internal Affairs", "brian_chen@dlsu.edu.ph"));
+        usgEB.add(new Officers("Gabbie Perez", "Vice President for External Affairs", "gabrielle_perez@dlsu.edu.ph"));
+        usgEB.add(new Officers("Trish Andulte", "Executive Secretary", "patricia_andulte@dlsu.edu.ph"));
+        usgEB.add(new Officers("Rolf Villon", "Executive Treasurer", "rolf_villon@dlsu.edu.ph"));
     }
 
     public ArrayList<Officers> getUsgEB(){
@@ -42,14 +42,14 @@ public class StudentOffices {
     private void insertCollegeGov(){
         collegeGov = new ArrayList<>();
 
-        collegeGov.add(new Officers("Rastine Pinlac", "Computer Studies Government (CSG)", OfficeType.CCS.getType()));
-        collegeGov.add(new Officers("Alex Penales", "College Government of Education (CGE)", OfficeType.CED.getType()));
-        collegeGov.add(new Officers("Aya Watanabe", "Arts College Government (ACG)", OfficeType.CLA.getType()));
-        collegeGov.add(new Officers("Igi Natanauan", "Business College Government (BCG)", OfficeType.COB.getType()));
-        collegeGov.add(new Officers("Illiana Tan", "College of Engineering Government (ECG)", OfficeType.COE.getType()));
-        collegeGov.add(new Officers("EJ Labios Jr.", "Science College Government (SCG)", OfficeType.COS.getType()));
-        collegeGov.add(new Officers("Adi Briones", "School of Economics Government (SEG)", OfficeType.SOE.getType()));
-        collegeGov.add(new Officers("Da Overos", "Science and Technology Complex Government (STCG)", OfficeType.STC.getType()));
+        collegeGov.add(new Officers("Rastine Pinlac", "Computer Studies Government (CSG)", OfficeType.CCS, "rastine_pinlac@dlsu.edu.ph"));
+        collegeGov.add(new Officers("Alex Penales", "College Government of Education (CGE)", OfficeType.CED, "alexia_penales@dlsu.edu.ph"));
+        collegeGov.add(new Officers("Aya Watanabe", "Arts College Government (ACG)", OfficeType.CLA, "aya_watanabe@dlsu.edu.ph"));
+        collegeGov.add(new Officers("Igi Natanauan", "Business College Government (BCG)", OfficeType.COB, "francis_natanauan@dlsu.edu.ph"));
+        collegeGov.add(new Officers("Illiana Tan", "College of Engineering Government (ECG)", OfficeType.COE, "iliana_tan@dlsu.edu.ph"));
+        collegeGov.add(new Officers("EJ Labios Jr.", "Science College Government (SCG)", OfficeType.COS, "enrique_labios@dlsu.edu.ph"));
+        collegeGov.add(new Officers("Adi Briones", "School of Economics Government (SEG)", OfficeType.SOE, "adrian_briones@dlsu.edu.ph"));
+        collegeGov.add(new Officers("Da Overos", "Science and Technology Complex Government (STCG)", OfficeType.STC, "mark_daryll_overos@dlsu.edu.ph"));
 
     }
 

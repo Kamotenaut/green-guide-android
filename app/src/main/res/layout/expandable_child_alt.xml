@@ -17,13 +17,16 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
             android:orientation="vertical">
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:padding="10dp"
+                android:paddingTop="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
                 android:id="@+id/child_details"
-                android:textColor="#484848"
+                android:textColor="#262626"
                 android:text="details"
                 android:textSize="17sp"
                 />
@@ -31,9 +34,11 @@
                 android:id="@+id/child_title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:padding="10dp"
-                android:textSize="15sp"
-                android:textColor="#000"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textSize="13sp"
+                android:textColor="#505050"
                 android:text="Title" />
 
 

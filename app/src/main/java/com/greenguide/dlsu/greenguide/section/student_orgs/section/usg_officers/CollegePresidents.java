@@ -39,7 +39,7 @@ public class CollegePresidents extends Fragment {    RecyclerView recycler;
 //        list.add(new Profile("Brian Chen", "CLA College President", "Lorem ipsum dolor sit amet, consectetur adipiscing elit."));
 
         for(Officers o : StudentOffices.getInstance().getCollegeGov()){
-            list.add( new Profile(o.getName(), o.getPosition(), ""));
+            list.add( new Profile(o.getName(), o.getPosition(), "", o.getEmail()));
         }
         adapter = new ProfileAdapter(list);
         recycler = (RecyclerView) v.findViewById(R.id.collegepresidentslist);

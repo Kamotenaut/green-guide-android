@@ -1,43 +1,71 @@
 package com.greenguide.dlsu.greenguide.data.model;
 
-public class Officers {
+public class Officers
+{
 
-    private String name,
-            position,
-            office;
+	private String name,
+			position,
+			email;
 
-    public Officers(String name, String position, String office){
-        this.name = name;
-        this.position = position;
-        this.office = office;
-    }
+	private OfficeType office;
 
-    public Officers(String name, String position){
-        this.name = name;
-        this.position = position;
-    }
+	public Officers(String name, String position, OfficeType office)
+	{
+		this(name, position, office, "");
+	}
 
-    public String getName() {
-        return name;
-    }
+	public Officers(String name, String position, OfficeType office, String email)
+	{
+		this.name = name;
+		this.position = position;
+		this.office = office;
+		this.email = email;
+	}
 
-    public void setName(String name) {
-        this.name = name;
-    }
+	public Officers(String name, String position, String email)
+	{
+		this.name = name;
+		this.position = position;
+		this.email = email;
+	}
 
-    public String getPosition() {
-        return position;
-    }
+	public String getName()
+	{
+		return name;
+	}
 
-    public void setPosition(String position) {
-        this.position = position;
-    }
+	public void setName(String name)
+	{
+		this.name = name;
+	}
 
-    public String getOffice() {
-        return office;
-    }
+	public String getPosition()
+	{
+		return position;
+	}
 
-    public void setOffice(String office) {
-        this.office = office;
-    }
+	public void setPosition(String position)
+	{
+		this.position = position;
+	}
+
+	public OfficeType getOffice()
+	{
+		return office;
+	}
+
+	public void setOffice(OfficeType office)
+	{
+		this.office = office;
+	}
+
+	public String getEmail()
+	{
+		return email;
+	}
+
+	public void setEmail(String email)
+	{
+		this.email = email;
+	}
 }

@@ -30,6 +30,7 @@ public class ProfileAdapter extends RecyclerView.Adapter<ProfileAdapter.ProfileV
     public static class ProfileViewHolder extends RecyclerView.ViewHolder{
         protected TextView vName;
         protected TextView vPosition;
+        protected TextView tvEmail;
         protected JustifiedTextView vDescription;
         protected CircleImageView vPhoto;
 
@@ -37,12 +38,14 @@ public class ProfileAdapter extends RecyclerView.Adapter<ProfileAdapter.ProfileV
             super(v);
             vName =  (TextView) v.findViewById(R.id.profilename);
             vPosition = (TextView) v.findViewById(R.id.profileposition);
+            tvEmail = (TextView) v.findViewById(R.id.tv_email);
             vDescription = (JustifiedTextView) v.findViewById(R.id.profiledescription);
             vPhoto = (CircleImageView)v.findViewById(R.id.profileimg);
             String fontPath = "fonts/Montserrat-Regular.ttf";
             Typeface tf = Typeface.createFromAsset(v.getContext().getAssets(), fontPath);
             vName.setTypeface(tf);
             vPosition.setTypeface(tf);
+            tvEmail.setTypeface(tf);
             //vDescription.setTypeface(tf);
         }
 
@@ -61,6 +64,7 @@ public class ProfileAdapter extends RecyclerView.Adapter<ProfileAdapter.ProfileV
         holder.vName.setText(list.get(position).getName());
         holder.vDescription.setText(list.get(position).getDescription());
         holder.vPosition.setText(list.get(position).getPosition());
+        holder.tvEmail.setText(list.get(position).getEmail());
         switch(list.get(position).getPosition()){
             case "USG President":holder.vPhoto.setImageResource(R.drawable.usgpresident);break;
             case "Council Chairperson":holder.vPhoto.setImageResource(R.drawable.cso_council_chairperson);break;
