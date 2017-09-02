@@ -61,15 +61,15 @@ public class About extends android.app.Fragment{
 
         /*Added 2017 Dev Team*/
         ArrayList<Profile> list2017 = new ArrayList();
-        list2017.add(new Profile("Winfred Villaluna", "BS CS-ST", "Project Manager",R.drawable.avatar));
-        list2017.add(new Profile("Gelo Reamon", "BS CS-ST", "Android App Development Lead",R.drawable.avatar));
-        list2017.add(new Profile("Gaius Ambion", "BS CS-ST", "Android App Developer",R.drawable.avatar));
-        list2017.add(new Profile("Brandon Peñaranda", "BS CS-ST", "Android App Developer",R.drawable.avatar));
-        list2017.add(new Profile("Patrick Tobias", "BS CS-ST", "iOS App Development Lead",R.drawable.avatar));
-        list2017.add(new Profile("Keith Gardose", "BS CS-ST", "iOS App Developer",R.drawable.avatar));
-        list2017.add(new Profile("Nicolle Magpale", "BS CS-ST", "Web App Development Lead",R.drawable.avatar));
-        list2017.add(new Profile("Dyan Nieva", "BS CS-ST", "Web App Developer",R.drawable.avatar));
-        list2017.add(new Profile("Mavic Reccion", "BS CS-ST", "Web App Developer",R.drawable.avatar));
+        list2017.add(new Profile("Winfred Villaluna", "BS CS-ST", "Project Manager",R.drawable.villaluna));
+        list2017.add(new Profile("Gelo Reamon", "BS CS-ST", "Android App Development Lead",R.drawable.reamon));
+        list2017.add(new Profile("Gaius Ambion", "BS CS-ST", "Android App Developer",R.drawable.ambion));
+        list2017.add(new Profile("Brandon Peñaranda", "BS CS-ST", "Android App Developer",R.drawable.penaranda));
+        list2017.add(new Profile("Patrick Tobias", "BS CS-ST", "iOS App Development Lead",R.drawable.tobias));
+        list2017.add(new Profile("Keith Gardose", "BS CS-ST", "iOS App Developer",R.drawable.gardose));
+        list2017.add(new Profile("Nicolle Magpale", "BS CS-ST", "Web App Development Lead",R.drawable.magpale));
+        list2017.add(new Profile("Dyan Nieva", "BS CS-ST", "Web App Developer",R.drawable.nieva));
+        list2017.add(new Profile("Mavic Reccion", "BS CS-ST", "Web App Developer",R.drawable.reccion));
         adapter = new DevAdapter(list2017);
         recycler2017 = (RecyclerView) v.findViewById(R.id.devlist2017);
 
